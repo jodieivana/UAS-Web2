@@ -15,10 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('usertype')->default(0);
-            $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->rememberToken();
+            $table->integer('usertype')->default(0);
+            $table->string('subscription_status')->default("Not Subscribed");
+            $table->string('account_status')->default("active");
+            $table->timestamp('last_login');
             $table->timestamps();
         });
     }
