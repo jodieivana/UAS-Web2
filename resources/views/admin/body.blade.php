@@ -30,8 +30,7 @@
                 <div class="col-9">
                     <h6 class="text-muted font-weight-normal">TOTAL USERS</h6>
                   <div class="d-flex align-items-center align-self-start">
-                    <h3 class="mb-0">$12.34</h3>
-
+                    <h3 class="mb-0 angka">2,500</h3>
                   </div>
                 </div>
                 <div class="col-3">
@@ -40,70 +39,70 @@
                   </div>
                 </div>
               </div>
-              <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
+              <p class="text-success ml-2 mb-0 font-weight-medium persen">+3.5%<span class="week"> From last week</span></p>
             </div>
           </div>
         </div>
         <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-9">
-                  <div class="d-flex align-items-center align-self-start">
-                    <h3 class="mb-0">$17.34</h3>
-                    <p class="text-success ml-2 mb-0 font-weight-medium">+11%</p>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-9">
+                      <h6 class="text-muted font-weight-normal">TOTAL BOOKS</h6>
+                    <div class="d-flex align-items-center align-self-start">
+                      <h3 class="mb-0 angka">10,000</h3>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="icon icon-box-success ">
+                      <span class="mdi mdi-arrow-top-right icon-item"></span>
+                    </div>
                   </div>
                 </div>
-                <div class="col-3">
-                  <div class="icon icon-box-success">
-                    <span class="mdi mdi-arrow-top-right icon-item"></span>
-                  </div>
-                </div>
+                <p class="text-success ml-2 mb-0 font-weight-medium persen">+3.5%<span class="week"> From last week</span></p>
               </div>
-              <h6 class="text-muted font-weight-normal">Revenue current</h6>
             </div>
           </div>
-        </div>
-        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-9">
-                  <div class="d-flex align-items-center align-self-start">
-                    <h3 class="mb-0">$12.34</h3>
-                    <p class="text-danger ml-2 mb-0 font-weight-medium">-2.4%</p>
+          <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-9">
+                      <h6 class="text-muted font-weight-normal">TOTAL REVIEWS</h6>
+                    <div class="d-flex align-items-center align-self-start">
+                      <h3 class="mb-0 angka">50,000</h3>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="icon icon-box-success ">
+                      <span class="mdi mdi-arrow-top-right icon-item"></span>
+                    </div>
                   </div>
                 </div>
-                <div class="col-3">
-                  <div class="icon icon-box-danger">
-                    <span class="mdi mdi-arrow-bottom-left icon-item"></span>
-                  </div>
-                </div>
+                <p class="text-success ml-2 mb-0 font-weight-medium persen">+3.5%<span class="week"> From last week</span></p>
               </div>
-              <h6 class="text-muted font-weight-normal">Daily Income</h6>
             </div>
           </div>
-        </div>
-        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-9">
-                  <div class="d-flex align-items-center align-self-start">
-                    <h3 class="mb-0">$31.53</h3>
-                    <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
+          {{-- <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-9">
+                      <h6 class="text-muted font-weight-normal">TOTAL USERS</h6>
+                    <div class="d-flex align-items-center align-self-start">
+                      <h3 class="mb-0 angka">$12.34</h3>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="icon icon-box-success ">
+                      <span class="mdi mdi-arrow-top-right icon-item"></span>
+                    </div>
                   </div>
                 </div>
-                <div class="col-3">
-                  <div class="icon icon-box-success ">
-                    <span class="mdi mdi-arrow-top-right icon-item"></span>
-                  </div>
-                </div>
+                <p class="text-success ml-2 mb-0 font-weight-medium persen">+3.5%<span class="week"> From last week</span></p>
               </div>
-              <h6 class="text-muted font-weight-normal">Expense current</h6>
             </div>
-          </div>
-        </div>
+          </div> --}}
       </div>
       <div class="row">
         <div class="col-md-4 grid-margin stretch-card">
@@ -329,7 +328,7 @@
                       </td>
                       <td>
                         <img src="admin/assets/images/faces/face1.jpg" alt="image" />
-                        <span class="pl-2">Henry Klein</span>
+                        <span class="pl-2 nama">Henry Klein</span>
                       </td>
                       <td> 02312 </td>
                       <td> $14,500 </td>
