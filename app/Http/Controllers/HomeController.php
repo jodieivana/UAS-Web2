@@ -10,8 +10,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-        // return view ('home.userpage');
-        return view ('admin.home');
+        return view ('home.userpage');
+        // return view ('admin.home');
     }
     
     public function redirect()

@@ -23,8 +23,11 @@
         </div>
       </div> --}}
       <div class="row">
-        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-          <div class="card">
+      <div class="container-kecil">
+      <div class="row mx-auto custom-row-width">
+
+        <div class="col-custom grid-margin stretch-card">
+          <div class="card card1">
             <div class="card-body">
               <div class="row">
                 <div class="col-9">
@@ -43,8 +46,8 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-            <div class="card">
+        <div class="col-custom grid-margin stretch-card">
+            <div class="card card2">
               <div class="card-body">
                 <div class="row">
                   <div class="col-9">
@@ -63,8 +66,8 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-            <div class="card">
+          <div class="col-custom grid-margin stretch-card">
+            <div class="card card3">
               <div class="card-body">
                 <div class="row">
                   <div class="col-9">
@@ -83,27 +86,79 @@
               </div>
             </div>
           </div>
-          {{-- <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+ 
+
+        {{-- slide --}}
+        {{-- <div class="row">       --}}
+          <div class="col-custom2 grid-margin stretch-card slide">
             <div class="card">
               <div class="card-body">
-                <div class="row">
-                  <div class="col-9">
-                      <h6 class="text-muted font-weight-normal">TOTAL USERS</h6>
-                    <div class="d-flex align-items-center align-self-start">
-                      <h3 class="mb-0 angka">$12.34</h3>
-                    </div>
+                <h4 class="card-title">Portfolio Slide</h4>
+                <div class="owl-carousel owl-theme full-width owl-carousel-dash portfolio-carousel" id="owl-carousel-basic">
+                  <div class="item">
+                    <img src="admin/assets/images/dashboard/Rectangle.jpg" alt="">
                   </div>
-                  <div class="col-3">
-                    <div class="icon icon-box-success ">
-                      <span class="mdi mdi-arrow-top-right icon-item"></span>
+                  <div class="item">
+                    <img src="admin/assets/images/dashboard/Img_5.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="admin/assets/images/dashboard/img_6.jpg" alt="">
+                  </div>
+                </div>
+                <div class="d-flex py-4">
+                  <div class="preview-list w-100">
+                    <div class="preview-item p-0">
+                      <div class="preview-thumbnail">
+                        <img src="admin/assets/images/faces/face12.jpg" class="rounded-circle" alt="">
+                      </div>
+                      <div class="preview-item-content d-flex flex-grow">
+                        <div class="flex-grow">
+                          <div class="d-flex d-md-block d-xl-flex justify-content-between">
+                            <h6 class="preview-subject">CeeCee Bass</h6>
+                            <p class="text-muted text-small">4 Hours Ago</p>
+                          </div>
+                          <p class="text-muted">Well, it seems to be working now.</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <p class="text-success ml-2 mb-0 font-weight-medium persen">+3.5%<span class="week"> From last week</span></p>
+                <p class="text-muted">Well, it seems to be working now. </p>
+                <div class="progress progress-md portfolio-progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
               </div>
             </div>
-          </div> --}}
+          </div>
+        </div>
+        </div>
+        {{-- ini card 4 --}}
+        <div class="row">
+          <div class="col-xl-3 col-sm-6 colcustom grid-margin stretch-card">
+            <div class="card card4">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-9">
+                      <h6 class="text-muted font-weight-normal">POPULAR BOOKS</h6>
+                    <div class="d-flex align-items-center align-self-start">
+                      <h3 class="mb-0 angka">1</h3>
+                      <img src="admin/assets/images/byron.png" alt="" class="custom-img-size">
+                      <div class="ml-2">
+                        <h3 class="mb-0 judul">FICTION</h3>
+                        <p class="mb-0 judul2">BYRON: A LIFE IN TEN LETTERS</p>
+                      </div>
+                      {{-- <p class="text-success ml-2 mb-0 font-weight-medium persen">BYRON: A LIFE IN TEN LETTERS</p>
+                      <p class="text-success ml-2 mb-0 font-weight-medium persen">ANDREW STAUFFER</p> --}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        
       </div>
+
       <div class="row">
         <div class="col-md-4 grid-margin stretch-card">
           <div class="card">
@@ -499,46 +554,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-4 grid-margin stretch-card">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Portfolio Slide</h4>
-              <div class="owl-carousel owl-theme full-width owl-carousel-dash portfolio-carousel" id="owl-carousel-basic">
-                <div class="item">
-                  <img src="admin/assets/images/dashboard/Rectangle.jpg" alt="">
-                </div>
-                <div class="item">
-                  <img src="admin/assets/images/dashboard/Img_5.jpg" alt="">
-                </div>
-                <div class="item">
-                  <img src="admin/assets/images/dashboard/img_6.jpg" alt="">
-                </div>
-              </div>
-              <div class="d-flex py-4">
-                <div class="preview-list w-100">
-                  <div class="preview-item p-0">
-                    <div class="preview-thumbnail">
-                      <img src="admin/assets/images/faces/face12.jpg" class="rounded-circle" alt="">
-                    </div>
-                    <div class="preview-item-content d-flex flex-grow">
-                      <div class="flex-grow">
-                        <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                          <h6 class="preview-subject">CeeCee Bass</h6>
-                          <p class="text-muted text-small">4 Hours Ago</p>
-                        </div>
-                        <p class="text-muted">Well, it seems to be working now.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <p class="text-muted">Well, it seems to be working now. </p>
-              <div class="progress progress-md portfolio-progress">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+
         <div class="col-md-12 col-xl-4 grid-margin stretch-card">
           <div class="card">
             <div class="card-body">
