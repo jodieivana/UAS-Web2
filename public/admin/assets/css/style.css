@@ -11452,6 +11452,10 @@ input[type="button"].btn-block {
 }
 
 
+.popularbooks {
+  width: 285px;
+}
+
 .container-flex{
   display: flex;
   /* flex-wrap: wrap; 
@@ -11464,19 +11468,32 @@ input[type="button"].btn-block {
 
 .custom-row-width {
   display: flex;
-  justify-content: space-between; /* Memberikan ruang di antara card */
+  justify-content: space-between;
 }
 
 .col-custom {
-  flex: 0 0 calc(32% - 10px); /* Mengatur ukuran col menjadi 25% dari lebar row */
+  flex: 0 0 calc(32% - 10px);
   max-width: calc(32% - 10px);
-  margin-right: 20px; /* Mengatur margin kanan untuk memberikan ruang di antara card */
+  margin-right: 20px;
 }
 
 .col-custom2 {
-  flex: 0 0 calc(99% - 10px); /* Mengatur ukuran col menjadi 25% dari lebar row */
+  flex: 0 0 calc(99% - 10px);
   max-width: calc(99% - 10px);
-  margin-right: 20px; /* Mengatur margin kanan untuk memberikan ruang di antara card */
+  margin-right: 20px;
+}
+
+.slidecard{
+  height: 275px;
+}
+
+.kecilin{
+  height: auto;
+  width: 100px;
+}
+
+.item.kecilin .ml-2 {
+  margin-right: 50px;
 }
 
 .card {
@@ -13776,15 +13793,16 @@ button.bg-dark:focus {
 }
 
 .judul{
-  font-size: 10px;
+  font-size: 18px;
   color: #152E7A;
-  font-weight: 800;
+  font-weight: 200;
 }
 
 .judul2{
-  font-size: 10px;
+  font-size: 20px;
   color: #152E7A;
-  font-weight: 800;
+  font-weight: 400;
+  text-decoration: underline;
 }
 
 .persen {
