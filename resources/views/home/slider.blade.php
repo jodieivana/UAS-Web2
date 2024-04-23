@@ -75,7 +75,7 @@
                                           Our Book Lists
                                     </h1>
                                     <p>
-                                    Explore our curated collection of captivating reads!
+                                    Dive into a captivating world of literature with our curated book lists, selected to every reader's preference.
                                     </p>
                                     <div class="btn-box">
                                           <a href="" class="btn1">
