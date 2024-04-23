@@ -27,4 +27,10 @@ class HomeController extends Controller
             return view('home.userpage');
         }
     }
+
+    public function showUserList()
+    {
+        return view('userlist');
+    }
+
 }

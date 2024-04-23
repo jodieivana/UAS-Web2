@@ -33,4 +33,7 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/redirect',[HomeController::class,'redirect']);
 
+Route::get('/userlist', [HomeController::class, 'showUserList'])->name('userlist');
+
+
 require __DIR__.'/auth.php';
