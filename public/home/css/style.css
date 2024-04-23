@@ -12,6 +12,14 @@
 
 }
 
+.line {
+  border: none;
+  border-top: 2px solid #D0D5E4;
+  width: 70%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
 .form-control:focus {
   box-shadow: none;
 }
@@ -37,10 +45,14 @@
   font-weight: 700;
 }
 
-#registercss:hover{
-  border: #0D1C4B;
+#registercss:hover {
   background-color: #0D1C4B;
+  border-color: #0D1C4B; 
+  padding: 10px 25px; 
+  border-radius: 30px; 
+  font-weight: 700;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -482,7 +494,7 @@ a:focus {
           transform: translateY(0);
 }
 .arrival_section {
-    background-color: #E5EBFE;
+    background-color: #F7F9FF;
 }
 .product_section .option_container {
   position: absolute;
@@ -1176,6 +1188,119 @@ form input[type="submit"]:focus {
     color: #f7444e;
     font-size: 15px;
     font-weight: 400;
+}
+
+.img-bestseller {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 3px 5px 8px #cdcdcd;
+}
+
+.bestseller-cont{
+    max-width: calc(100% - 110px); 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.bestseller-container {
+    padding: 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+
+.carousel-control-prev {
+  background-color: #152E7A;
+  height: 50px;
+  width: 50px;
+  color: #fff; 
+  border-radius: 50px;
+  align-self: center;
+}
+
+.carousel-control-next {
+  background-color: #152E7A;
+  height: 50px;
+  width: 50px;
+  color: #fff; 
+  border-radius: 50px;
+  align-self: center;
+}
+
+.carousel_btn_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+}
+
+.lightp {
+  font-size: large;
+  opacity: 0.5;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.titlep {
+  font-size: larger;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  line-height: 23px;
+}
+
+.headlinep {
+  font-size: x-large;
+  font-weight: bolder;
+  margin: 0;
+  line-height: 23px;
+  text-transform: uppercase;
+  padding-right: 20px;
+}
+
+.newssmall{
+  width: 125px;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 3px 5px 8px #cdcdcd;
+}
+
+.textboxt{
+  padding-left: 20px;
+  width: 180px;
+}
+
+.newscont{
+  width: fit-content;
+  align-items: center;
+  height: 100%; 
+  padding: 10px;
+  padding-left: 0px;
+  margin: 12px;
+}
+
+#verticle-line {
+  width: 1px;
+  min-height: auto;
+  background: #152E7A;
+  opacity: 0.2;
+  margin: 30px;
+}
+
+.releasediv {
+  display: flex;
+  flex-direction: column;
 }
 
 http://kute-themes.com/html/boutique/html/index.html

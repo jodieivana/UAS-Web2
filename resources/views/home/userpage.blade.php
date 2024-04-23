@@ -31,11 +31,11 @@
          <!-- end slider section -->
       </div>
       <!-- why section -->
-      @include('home.why')
+      @include('home.bestseller')
       <!-- end why section -->
       
       <!-- arrival section -->
-      @include('home.arrival')
+      @include('home.release')
       <!-- end arrival section -->
       
       <!-- product section -->
