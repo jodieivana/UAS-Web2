@@ -1,0 +1,127 @@
+[33mcommit d3637285bf9a279c2dad50e800520dd5df7e292a[m[33m ([m[1;36mHEAD -> [m[1;32mcallista[m[33m, [m[1;31morigin/callista[m[33m)[m
+Merge: a754e89 0b53aec
+Author: callistatjonadi <97695104+callistatjonadi@users.noreply.github.com>
+Date:   Tue Apr 23 20:59:08 2024 +0700
+
+    Merge pull request #5 from jodieivana/add-vellyn
+    
+    Add vellyn
+
+[33mcommit 0b53aec23944709806871df599db8df630aa2c6a[m[33m ([m[1;31morigin/add-vellyn[m[33m)[m
+Merge: 397aa61 4d603c9
+Author: callistatjonadi <tjonadicallista@gmail.com>
+Date:   Tue Apr 23 20:52:56 2024 +0700
+
+    rebase
+
+[33mcommit 397aa618535c7e16c3b0f93c41709b70d57836ff[m
+Author: Vellyn Natalie <97731846+vellynnatalie@users.noreply.github.com>
+Date:   Tue Apr 23 20:25:09 2024 +0700
+
+    Revert "Callista"
+
+[33mcommit 5a81b97c25ebf37e9e00b72a12f1ee3285170c19[m
+Author: VellynNatalie <vellyn.natalie1@gmail.com>
+Date:   Tue Apr 2 01:06:25 2024 +0700
+
+    update semua tabel
+
+[33mcommit 7d67dc726647641372f67fb12692c80c990e99a3[m
+Author: VellynNatalie <vellyn.natalie1@gmail.com>
+Date:   Tue Apr 2 00:26:57 2024 +0700
+
+    update tabel
+
+[33mcommit 4d603c912f2b33dedba5e821631a98c43d0f1fe1[m
+Merge: e093bc5 cc48998
+Author: Vellyn Natalie <97731846+vellynnatalie@users.noreply.github.com>
+Date:   Tue Apr 23 20:26:10 2024 +0700
+
+    Merge pull request #4 from jodieivana/revert-1-callista
+    
+    Revert "Callista"
+
+[33mcommit cc489987056df6c38078da835e20edaf3e040b6c[m[33m ([m[1;31morigin/revert-1-callista[m[33m)[m
+Author: Vellyn Natalie <97731846+vellynnatalie@users.noreply.github.com>
+Date:   Tue Apr 23 20:25:09 2024 +0700
+
+    Revert "Callista"
+
+[33mcommit a754e89d2f0064a5bcf4117377a7f68d4a268640[m[33m ([m[1;32mjodie010424[m[33m)[m
+Merge: 990bbb2 a03dcd3
+Author: callistatjonadi <97695104+callistatjonadi@users.noreply.github.com>
+Date:   Tue Apr 23 19:23:14 2024 +0700
+
+    Merge pull request #3 from jodieivana/callista
+    
+    updated admin
+
+[33mcommit a03dcd390519554d04401db93b282e83b32c2fa3[m
+Merge: 4a55bc3 990bbb2
+Author: callistatjonadi <97695104+callistatjonadi@users.noreply.github.com>
+Date:   Tue Apr 23 19:20:41 2024 +0700
+
+    Merge branch 'master' into callista
+
+[33mcommit 4a55bc377da570ac3ffc925dc6251822d71c5a98[m
+Author: callistatjonadi <tjonadicallista@gmail.com>
+Date:   Tue Apr 23 19:01:37 2024 +0700
+
+    apdettttt
+
+[33mcommit 990bbb2d7eb686a3674636a60afc6828b45b57f1[m[33m ([m[1;31morigin/jodie010424[m[33m)[m
+Author: jodieivana <jodieivana2003@gmail.com>
+Date:   Tue Apr 23 18:51:32 2024 +0700
+
+    updated mainpage
+
+[33mcommit e093bc56d4625b6705ec240a367bf6a2138f60f8[m
+Merge: 214bb97 3484335
+Author: Vellyn Natalie <97731846+vellynnatalie@users.noreply.github.com>
+Date:   Mon Apr 15 23:44:34 2024 +0700
+
+    Merge pull request #1 from jodieivana/callista
+    
+    Callista
+
+[33mcommit 34843350aeec18596e07d49989d7196ed5dcbb2a[m
+Author: callistatjonadi <tjonadicallista@gmail.com>
+Date:   Mon Apr 15 21:29:48 2024 +0700
+
+    updatee dashboard
+
+[33mcommit 040faf299632ae9884b7ecf52458d11f6ecc8375[m
+Author: callistatjonadi <tjonadicallista@gmail.com>
+Date:   Sun Apr 14 23:52:33 2024 +0700
+
+    update
+
+[33mcommit 9c3a6e80c3fdfc907de73785998ac327fdca00c6[m
+Author: callistatjonadi <tjonadicallista@gmail.com>
+Date:   Tue Apr 2 13:11:02 2024 +0700
+
+    update dashboard
+
+[33mcommit 214bb979b86f18437751caa44a7b4a05d811140d[m
+Author: VellynNatalie <vellyn.natalie1@gmail.com>
+Date:   Tue Apr 2 01:06:25 2024 +0700
+
+    update semua tabel
+
+[33mcommit 1e65132b8cfd0e249a13f4c39a00b3e881dd8a5a[m
+Author: VellynNatalie <vellyn.natalie1@gmail.com>
+Date:   Tue Apr 2 00:26:57 2024 +0700
+
+    update tabel
+
+[33mcommit ae091318c04ab15bbb309d48728ff852c2662766[m
+Author: callistatjonadi <tjonadicallista@gmail.com>
+Date:   Mon Apr 1 23:54:00 2024 +0700
+
+    admin
+
+[33mcommit 802954115e850210da4e97f6146a94f7d129cba3[m
+Author: jodieivana <jodieivana2003@gmail.com>
+Date:   Mon Apr 1 18:14:24 2024 +0700
+
+    initial commit
