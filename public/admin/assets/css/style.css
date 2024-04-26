@@ -11901,8 +11901,15 @@ input[type="button"].btn-block {
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    float: right; /* Untuk membuat tombol berada di sebelah kanan */
+    float: right;
   }
+
+  .add-book-button:hover {
+    background-color: #152E7A;
+    color: white;
+    text-decoration: none;
+}
+
   
 .alert-link {
   font-weight: 700; }
@@ -17051,13 +17058,13 @@ code {
 .jsgrid .jsgrid-table .jsgrid-filter-row select, .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number], .select2-container--default .select2-selection--single, .select2-container--default .select2-selection--single .select2-search__field, .typeahead,
 .tt-query,
 .tt-hint {
-  border: 1px solid #2c2e33;
+  border: 1px solid #A1ABCA;
   height: calc(2.25rem + 2px);
   font-weight: normal;
   font-size: 0.875rem;
   padding: 0.625rem 0.6875rem;
-  background-color: #2A3038;
-  border-radius: 2px;
+  background-color: white;
+  border-radius: 30px;
   color: #ffffff; }
   .form-control:focus, .asColorPicker-input:focus, .dataTables_wrapper select:focus, .jsgrid .jsgrid-table .jsgrid-filter-row input:focus[type=text],
   .jsgrid .jsgrid-table .jsgrid-filter-row select:focus, .jsgrid .jsgrid-table .jsgrid-filter-row input:focus[type=number], .select2-container--default .select2-selection--single:focus, .select2-container--default .select2-selection--single .select2-search__field:focus, .typeahead:focus,
@@ -17101,7 +17108,8 @@ select.form-control, select.asColorPicker-input, .dataTables_wrapper select,
 select.tt-query,
 select.tt-hint {
   padding: .4375rem .75rem;
-  border: 0;
+  border: 1px solid #A1ABCA;
+  border-radius: 30px;
   color: #4b5564; }
   select.form-control:focus, select.asColorPicker-input:focus, .dataTables_wrapper select:focus,
   .jsgrid .jsgrid-table .jsgrid-filter-row select:focus, .select2-container--default select.select2-selection--single:focus, .select2-container--default .select2-selection--single select.select2-search__field:focus, select.typeahead:focus,
@@ -17202,7 +17210,9 @@ select.tt-hint {
 .form-group label {
   font-size: 0.875rem;
   line-height: 1;
-  vertical-align: top; }
+  vertical-align: top; 
+  color: #152E7A; 
+}
 
 .form-group.has-danger .form-control, .form-group.has-danger .asColorPicker-input, .form-group.has-danger .dataTables_wrapper select, .dataTables_wrapper .form-group.has-danger select, .form-group.has-danger .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .form-group.has-danger input[type=text],
 .form-group.has-danger .jsgrid .jsgrid-table .jsgrid-filter-row select, .jsgrid .jsgrid-table .jsgrid-filter-row .form-group.has-danger select, .form-group.has-danger .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number], .jsgrid .jsgrid-table .jsgrid-filter-row .form-group.has-danger input[type=number], .form-group.has-danger .select2-container--default .select2-selection--single, .select2-container--default .form-group.has-danger .select2-selection--single, .form-group.has-danger .select2-container--default .select2-selection--single .select2-search__field, .select2-container--default .select2-selection--single .form-group.has-danger .select2-search__field, .form-group.has-danger .typeahead,

@@ -20,7 +20,7 @@
                   <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <h4 class="card-title m-0">Book List</h4>
-                        <button class="add-book-button">+ Add Book</button>
+                        <a href="{{ url('view_addbooklist') }}" class="add-book-button">+ Add Book</a>
                       </div>
                     <div class="table-responsive">
                       <table class="table table-bordered">

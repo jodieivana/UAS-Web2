@@ -54,4 +54,6 @@ Route::get('/view_feedbacks', [AdminController::class, 'view_feedbacks']);
 
 Route::get('/view_booklist', [AdminController::class, 'view_booklist']);
 
+Route::get('/view_addbooklist', [AdminController::class, 'view_addbooklist']);
+
 require __DIR__.'/auth.php';

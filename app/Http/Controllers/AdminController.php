@@ -25,4 +25,9 @@ class AdminController extends Controller
     {
         return view('admin.booklist');
     }
+
+    public function view_addbooklist()
+    {
+        return view('admin.addbooklist');
+    }
 }
