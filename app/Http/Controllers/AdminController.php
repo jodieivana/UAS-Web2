@@ -20,4 +20,9 @@ class AdminController extends Controller
     {
         return view('admin.feedbacks');
     }
+
+    public function view_booklist()
+    {
+        return view('admin.booklist');
+    }
 }

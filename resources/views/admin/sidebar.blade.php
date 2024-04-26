@@ -91,7 +91,7 @@
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> BOOK LIST </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ url('view_booklist') }}"> BOOK LIST </a></li>
                 <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> REVIEW </a></li>
               </ul>
             </div>

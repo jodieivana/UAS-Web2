@@ -12024,6 +12024,16 @@ input[type="button"].btn-block {
 .media-body {
   flex: 1; }
 
+.review-edit-link {
+    color: #1D4BD6;
+    text-decoration: underline;
+}
+
+.delete-link {
+    color: #BA2532;
+    text-decoration: underline;
+}
+
 .list-group {
   display: flex;
   flex-direction: column;
