@@ -1,4 +1,4 @@
-<section class="subscribe_section">
+<section class="discoverhome_section">
          <div class="container-fuild">
             <div class="box">
                <div class="row">

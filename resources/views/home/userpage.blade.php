@@ -45,7 +45,7 @@
       @include('home.discoverhome')
 
       <!-- client section -->
-      @include('home.client')
+      @include('home.subscribe')
 
       @include('home.feedback')
       <!-- end client section -->
