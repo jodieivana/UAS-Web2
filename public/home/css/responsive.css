@@ -116,16 +116,16 @@
   }
   .textboxt {
      */
-    padding-left: 10px; /* Reduce padding for smaller screens */
+    padding-left: 10px; 
   }
 
   .newscont {
-    width: 100%; /* Make news containers full-width */
+    width: 100%; 
   }
 
   .bklistisi {
-    width: 100%; /* Make book list items full-width */
-    padding-left: 10px; /* Adjust padding for smaller screens */
+    width: 100%; 
+    padding-left: 10px; 
   }
   
   .adjlists {
@@ -134,11 +134,15 @@
   }
 
   #verticle-line1 {
-    display: none; /* Hide vertical lines on smaller screens */
+    display: none;
   }
 
   .booklistdiv {
     padding-left: 50px;
+  }
+
+  .nwrbawah {
+    padding-top: 50px;
   }
 }
 
@@ -149,17 +153,16 @@
     height: max-content;
   }
   .textboxt {
-     */
-    padding-left: 10px; /* Reduce padding for smaller screens */
+    padding-left: 10px; 
   }
 
   .newscont {
-    width: 100%; /* Make news containers full-width */
+    width: 100%; 
   }
 
   .bklistisi {
-    width: 100%; /* Make book list items full-width */
-    padding-left: 10px; /* Adjust padding for smaller screens */
+    width: 100%;
+    padding-left: 10px; 
   }
   
   .adjlists {
@@ -167,7 +170,7 @@
   }
 
   #verticle-line1, #verticle-line {
-    display: none; /* Hide vertical lines on smaller screens */
+    display: none;
   }
 
   .releasediv {

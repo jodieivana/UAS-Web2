@@ -1250,10 +1250,27 @@ form input[type="submit"]:focus {
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 5px;
-  cursor: pointer
+  cursor: pointer;
+  line-height: 23px;
+  
 }
 
 .lightp:hover {
+  text-decoration: underline;
+}
+
+.lightp2 {
+  font-size: large;
+  opacity: 0.5;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 5px;
+  cursor: pointer;
+  line-height: 23px;
+  
+}
+
+.lightp2:hover {
   text-decoration: underline;
 }
 
@@ -1263,7 +1280,7 @@ form input[type="submit"]:focus {
   font-weight: 400;
   margin: 0;
   line-height: 23px;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .titlep:hover {
@@ -1323,7 +1340,7 @@ form input[type="submit"]:focus {
 .releasediv {
   display: flex;
   flex-direction: column;
-  max-height: 500px;
+  max-height: auto;
 }
 
 .date {
@@ -1337,6 +1354,12 @@ form input[type="submit"]:focus {
 
 .ftrbook {
   height: 230px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.nwrbook {
+  height: 130px;
   width: fit-content;
   cursor: pointer;
 }
@@ -1359,11 +1382,18 @@ form input[type="submit"]:focus {
 .releasecontent{
   display: flex;
   justify-content: center;
-  align-items: center;
   padding-top: 40px;
   padding-bottom: 60px;
 }
 
+.releasecontent2{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.vwrheadline {
+  width: 200px;
+}
 
 
 http://kute-themes.com/html/boutique/html/index.html
