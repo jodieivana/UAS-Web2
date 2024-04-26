@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,7 +46,7 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/redirect',[HomeController::class,'redirect']);
 
-Route::get('/userlist', [HomeController::class, 'showUserList'])->name('userlist');
+Route::get('/view_userlist', [AdminController::class, 'view_userlist']);
 
 
 require __DIR__.'/auth.php';

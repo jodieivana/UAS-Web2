@@ -8574,22 +8574,22 @@ pre {
   .jsgrid .jsgrid-table td {
     padding: 0.9375rem;
     vertical-align: top;
-    border-top: 1px solid #2c2e33; }
+    border-top: 1px solid #CDD9FE; }
   .table thead th, .jsgrid .jsgrid-table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #2c2e33; }
+    border-bottom: 2px solid #CDD9FE; }
   .table tbody + tbody, .jsgrid .jsgrid-table tbody + tbody {
-    border-top: 2px solid #2c2e33; }
+    border-top: 2px solid #CDD9FE; }
 
 .table-sm th,
 .table-sm td {
   padding: 0.3rem; }
 
 .table-bordered {
-  border: 1px solid #2c2e33; }
+  border: 1px solid #CDD9FE; }
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #2c2e33; }
+    border: 1px solid #CDD9FE; }
   .table-bordered thead th,
   .table-bordered thead td {
     border-bottom-width: 2px; }
@@ -17991,10 +17991,10 @@ div.tagsinput {
   margin-bottom: 0;
   color: #6c7293; }
   .table thead th, .jsgrid .jsgrid-table thead th {
-    border-top: 0;
+    background-color: #F0F4FF;
     border-bottom-width: 1px;
     font-weight: 500;
-    color: #6c7293; }
+    color: #152E7A; }
     .table thead th i, .jsgrid .jsgrid-table thead th i {
       margin-left: 0.325rem; }
   .table th, .jsgrid .jsgrid-table th,

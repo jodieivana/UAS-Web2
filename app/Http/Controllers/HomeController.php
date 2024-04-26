@@ -29,4 +29,9 @@ class HomeController extends Controller
 
     }
 
+    public function showUserList()
+    {
+        return view('admin.userlist');
+    }
 }
+
