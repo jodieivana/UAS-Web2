@@ -1,6 +1,6 @@
 <section class="arrival_section">
-   <div class="container releasecontent">
-      <div class="row">
+   <div class="container">
+      <div class="row releasecontent">
          <div class="releasediv ">
             <div class="row newscont">
                <p class="headlinep"  onclick="window.location.href='index.html';">

@@ -42,11 +42,12 @@
       @include('home.newrelease')
       <!-- end product section -->
 
-      <!-- subscribe section -->
-      @include('home.subscribe')
-      <!-- end subscribe section -->
+      @include('home.discoverhome')
+
       <!-- client section -->
       @include('home.client')
+
+      @include('home.feedback')
       <!-- end client section -->
       <!-- footer start -->
       @include('home.footer')

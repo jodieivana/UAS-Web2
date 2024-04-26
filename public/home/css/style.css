@@ -478,7 +478,7 @@ a:focus {
 
 .product_section .box .detail-box h6 {
   margin-top: 10px;
-  color: #002c3e;
+  color: #152E7A;
   font-weight: 600;
 }
 
@@ -557,14 +557,14 @@ a:focus {
 }
 
 .product_section .options .option2 {
-  background-color: #000000;
-  border: 1px solid #000000;
+  background-color: #152E7A;
+  border: 1px solid #152E7A;
   color: #ffffff;
 }
 
 .product_section .options .option2:hover {
   background-color: transparent;
-  color: #000000;
+  color: #152E7A;
 }
 
 .product_section .btn-box {
@@ -580,8 +580,8 @@ a:focus {
 .product_section .btn-box a {
   display: inline-block;
   padding: 10px 40px;
-  background-color: #f7444e;
-  border: 1px solid #f7444e;
+  background-color: #152E7A;
+  border: 1px solid #152E7A;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -590,11 +590,11 @@ a:focus {
 
 .product_section .btn-box a:hover {
   background-color: transparent;
-  color: #f7444e;
+  color: #152E7A;
 }
 
 .arrival_section .heading_container {
-  color: #002c3e;
+  color: #152E7A;
   margin-bottom: 10px;
 }
 
@@ -624,8 +624,8 @@ a:focus {
 .arrival_section a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #f7444e;
-  border: 1px solid #f7444e;
+  background-color: #152E7A;
+  border: 1px solid #152E7A;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -634,13 +634,13 @@ a:focus {
 
 .arrival_section a:hover {
   background-color: transparent;
-  color: #f7444e;
+  color: #152E7A;
 }
 
 .why_section .box {
     text-align: center;
     margin-top: 45px;
-    background-color: #002c3e;
+    background-color: #152E7A;
     padding: 45px 50px;
     border-radius: 5px;
     color: #ffffff;
@@ -670,7 +670,7 @@ a:focus {
 }
 
 .subscribe_section .box {
-  background-color: #d4ced0;
+  background-color: #F7F9FF;
   padding: 75px 45px;
 }
 
@@ -678,7 +678,7 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #002c3e;
+  color: #152E7A;
 }
 
 .subscribe_section .subscribe_form .heading_container h2 {
@@ -711,26 +711,26 @@ a:focus {
 }
 
 .subscribe_section .subscribe_form form input::-webkit-input-placeholder {
-  color: #171620;
+  color: #152E7A;
 }
 
 .subscribe_section .subscribe_form form input:-ms-input-placeholder {
-  color: #171620;
+  color: #152E7A;
 }
 
 .subscribe_section .subscribe_form form input::-ms-input-placeholder {
-  color: #171620;
+  color: #152E7A;
 }
 
 .subscribe_section .subscribe_form form input::placeholder {
-  color: #171620;
+  color: #a5a7b0;
 }
 
 .subscribe_section .subscribe_form form button {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #f7444e;
-  border: 1px solid #f7444e;
+  background-color: #152E7A;
+  border: 1px solid #152E7A;
   color: #ffffff;
   border-radius: 35px;
   -webkit-transition: all 0.3s;
@@ -743,8 +743,8 @@ a:focus {
 }
 
 .subscribe_section .subscribe_form form button:hover {
-  background-color: transparent;
-  color: #f7444e;
+  background-color: #0D1C4B;
+  color: #fff;
 }
 
 .client_section .box {
@@ -841,7 +841,7 @@ a:focus {
   height: 50px;
   opacity: 1;
   color: #ffffff;
-  background-color: #f7444e;
+  background-color: #152E7A;
   border-radius: 100%;
 }
 
@@ -1393,6 +1393,19 @@ form input[type="submit"]:focus {
 }
 .vwrheadline {
   width: 200px;
+}
+
+.discoverp {
+  font-size: large;
+  opacity: 0.5;
+  margin: 0;
+  padding-bottom: 20px;
+  line-height: 23px;
+}
+
+.discoverhmtitle {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 
