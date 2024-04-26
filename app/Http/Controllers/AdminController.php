@@ -15,4 +15,9 @@ class AdminController extends Controller
     {
         return view('admin.reports');
     }
+
+    public function view_feedbacks()
+    {
+        return view('admin.feedbacks');
+    }
 }

@@ -77,7 +77,7 @@
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="{{ url('view_userlist') }}">USER LIST</a></li>
                 <li class="nav-item"> <a class="nav-link" href="{{ url('view_reports') }}">REPORTS</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">FEEDBACKS</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ url('view_feedbacks') }}">FEEDBACKS</a></li>
               </ul>
             </div>
           </li>
