@@ -846,7 +846,7 @@ a:focus {
 
 /* footer section*/
 .footer_section {
-  background-color: #002c3e;
+  background-color: #152E7A;
   color: #ffffff;
   padding-top: 70px;
 }
@@ -889,10 +889,6 @@ a:focus {
 
 .footer_section .footer_contact .contact_link_box a i {
   margin-right: 5px;
-}
-
-.footer_section .footer_contact .contact_link_box a:hover {
-  color: #f7444e;
 }
 
 .footer_section .footer-logo {
@@ -1031,8 +1027,8 @@ li.nav-item ul li a:hover, li.nav-item ul li a:focus {
 /** footer **/
 
 footer {
-    background: #f8f8f8;
-    padding: 90px 0 70px;
+    background: #E5EBFE;
+    padding: 90px 0 90px;
 }
 
 .logo_footer {
@@ -1066,7 +1062,7 @@ footer {
 
 .widget_menu ul li a {
     font-size: 15px;
-    color: #000;
+    color: #152E7A;
     margin-bottom: 0;
     float: left;
     width: 100%;
@@ -1157,7 +1153,7 @@ form input[type="submit"]:focus {
 /** cpy **/
 
 .cpy_ {
-    background: #222;
+    background: #152E7A;
     text-align: center;
     padding: 20px 0;
 }
@@ -1398,6 +1394,21 @@ form input[type="submit"]:focus {
   line-height: 23px;
 }
 
+.feedbackp {
+  font-size: large;
+  opacity: 0.5;
+  margin: 0;
+  padding-top: 10px;
+  line-height: 23px;
+}
+
+.feedbackbwp {
+  font-size: large;
+  opacity: 0.5;
+  margin: 0;
+  line-height: 23px;
+}
+
 .discoverhmtitle {
   margin-left: 50px;
   margin-right: 50px;
@@ -1407,6 +1418,22 @@ form input[type="submit"]:focus {
   border: 1px solid #D0D5E4 !important;
 }
 
+.clocksml {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.feedbacktime {
+  padding-top: 20px;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically in the center */
+}
+
+.svgsml {
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+}
 
 http://kute-themes.com/html/boutique/html/index.html
 https://template.hasthemes.com/noraure/noraure/index.html
