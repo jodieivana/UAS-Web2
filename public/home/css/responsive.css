@@ -53,7 +53,7 @@
   }
 
   .slider_section .detail-box,
-  .about_section .detail-box {
+  .about_section .detail-box, {
     margin-bottom: 45px;
   }
 
@@ -106,5 +106,72 @@
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px;
+  }
+}
+
+@media (max-width: 992px) {
+  .releasediv {
+    
+    height: max-content;
+  }
+  .textboxt {
+     */
+    padding-left: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .newscont {
+    width: 100%; /* Make news containers full-width */
+  }
+
+  .bklistisi {
+    width: 100%; /* Make book list items full-width */
+    padding-left: 10px; /* Adjust padding for smaller screens */
+  }
+  
+  .adjlists {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  #verticle-line1 {
+    display: none; /* Hide vertical lines on smaller screens */
+  }
+
+  .booklistdiv {
+    padding-left: 50px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .releasediv {
+    
+    height: max-content;
+  }
+  .textboxt {
+     */
+    padding-left: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .newscont {
+    width: 100%; /* Make news containers full-width */
+  }
+
+  .bklistisi {
+    width: 100%; /* Make book list items full-width */
+    padding-left: 10px; /* Adjust padding for smaller screens */
+  }
+  
+  .adjlists {
+    padding-bottom: 30px;
+  }
+
+  #verticle-line1, #verticle-line {
+    display: none; /* Hide vertical lines on smaller screens */
+  }
+
+  .releasediv {
+    padding-top: 50px;
+    padding-left: 50px;
   }
 }

@@ -1299,7 +1299,7 @@ form input[type="submit"]:focus {
   height: 100%; 
   padding: 10px;
   padding-left: 0px;
-  margin: 12px;
+  margin: 5px;
 }
 
 #verticle-line {
@@ -1307,15 +1307,64 @@ form input[type="submit"]:focus {
   min-height: auto;
   background: #152E7A;
   opacity: 0.2;
-  margin: 30px;
+  margin: 40px;
+  margin-right: 65px;
+}
+
+#verticle-line1 {
+  width: 1px;
+  min-height: auto;
+  background: #152E7A;
+  opacity: 0.2;
+  margin: 40px;
+  margin-right: 65px;
 }
 
 .releasediv {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
-  margin-bottom: 50px;
+  max-height: 500px;
 }
+
+.date {
+  padding-top: 10px;
+  cursor: default;
+}
+
+.date:hover {
+  text-decoration: none;
+}
+
+.ftrbook {
+  height: 230px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.ftrauthor {
+  padding-top: 5px;
+  padding-bottom: 15px;
+  width:max-content;
+}
+
+.ftrframebk {
+  padding-bottom: 20px;
+}
+
+.bklistisi {
+  padding-bottom: 20px;
+  width: 185px;
+}
+
+.releasecontent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+
 
 http://kute-themes.com/html/boutique/html/index.html
 https://template.hasthemes.com/noraure/noraure/index.html
