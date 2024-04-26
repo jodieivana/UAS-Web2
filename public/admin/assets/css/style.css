@@ -9787,9 +9787,9 @@ input[type="button"].btn-block {
   color: #ffffff;
   text-align: left;
   list-style: none;
-  background-color: #191c24;
+  background-color: white;
   background-clip: padding-box;
-  border: 1px solid #2c2e33;
+  border: 1px solid #CDD9FE;
   border-radius: 0.25rem; }
 
 .dropdown-menu-left {
@@ -9929,7 +9929,7 @@ input[type="button"].btn-block {
   .dropdown-item:hover, .dropdown-item:focus {
     color: #16181b;
     text-decoration: none;
-    background-color: #13151b; }
+    background-color: #F0F4FF; }
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;

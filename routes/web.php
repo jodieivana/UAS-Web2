@@ -48,5 +48,7 @@ Route::get('/redirect',[HomeController::class,'redirect']);
 
 Route::get('/view_userlist', [AdminController::class, 'view_userlist']);
 
+Route::get('/view_reports', [AdminController::class, 'view_reports']);
+
 
 require __DIR__.'/auth.php';

@@ -10,4 +10,9 @@ class AdminController extends Controller
     {
         return view('admin.userlist');
     }
+
+    public function view_reports()
+    {
+        return view('admin.reports');
+    }
 }
