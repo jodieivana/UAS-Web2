@@ -13,11 +13,15 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
+
             <div class="row">
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Book List</h4>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="card-title m-0">Book List</h4>
+                        <button class="add-book-button">+ Add Book</button>
+                      </div>
                     <div class="table-responsive">
                       <table class="table table-bordered">
                         <thead>

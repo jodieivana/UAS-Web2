@@ -11893,6 +11893,17 @@ input[type="button"].btn-block {
 .alert-heading {
   color: inherit; }
 
+  .add-book-button {
+    margin: 20px;
+    background-color: #152E7A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    float: right; /* Untuk membuat tombol berada di sebelah kanan */
+  }
+  
 .alert-link {
   font-weight: 700; }
 
