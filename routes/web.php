@@ -60,4 +60,6 @@ Route::get('/view_addbooklist', [AdminController::class, 'view_addbooklist']);
 
 Route::get('/view_review', [AdminController::class, 'view_review']);
 
+Route::get('/view_bookdetail', [AdminController::class, 'view_bookdetail']);
+
 require __DIR__.'/auth.php';

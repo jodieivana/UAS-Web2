@@ -40,4 +40,9 @@ class AdminController extends Controller
     {
         return view('admin.review');
     }
+
+    public function view_bookdetail()
+    {
+        return view('admin.bookdetail');
+    }
 }
