@@ -27,15 +27,15 @@
          @include('category.header')
          <!-- end header section -->
          <!-- slider section -->
-         @include('bookshelf.top')
+         @include('category.top')
          <!-- end slider section -->
       <!-- </div> -->
       
       <!-- product section -->
-      @include('bookshelf.books')
+      @include('category.bookcategory')
       <!-- end product section -->
 
-      @include('bookshelf.footer')
+      @include('category.footer')
 
       <div class="cpy_">
          <p class="mx-auto">Copyright © 2024 PageTurner 

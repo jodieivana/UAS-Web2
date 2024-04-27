@@ -627,7 +627,7 @@ a:focus {
 }
 
 .readstatus {
-  padding: 10px 30px;
+  padding: 5px 30px;
   padding-left: 20px;
   border-radius: 50px;
   border-color: #A1ABCA;
@@ -637,6 +637,27 @@ a:focus {
 }
 
 .readstatus:active {
+  padding: 10px 30px;
+  padding-left: 20px;
+  border-radius: 50px;
+  border-color: #A1ABCA;
+  color: #152E7A;
+}
+
+
+.readstatus2 {
+  padding: 10px 50px;
+  padding-left: 20px;
+  margin-left: 15px;
+  border-radius: 50px;
+  border-color: #A1ABCA;
+  color: #152E7A;
+  font-size: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.readstatus2:active {
   padding: 10px 30px;
   padding-left: 20px;
   border-radius: 50px;
@@ -1721,6 +1742,23 @@ a:hover{
   color: #0D1C4B !important;
 }
 
+.subjudulh5 {
+  width: 50rem;
+  margin-bottom: 25px;
+}
+
+.marginkanan{
+  margin-right: 20px;
+}
+
+.kecil{
+  font-size: 12px !important;
+  margin-left: 20px !important;
+}
+
+.gariskiri {
+  margin: 0;
+}
 http://kute-themes.com/html/boutique/html/index.html
 https://template.hasthemes.com/noraure/noraure/index.html
 https://preview.hasthemes.com/xoss-preview/xoss/index.html
