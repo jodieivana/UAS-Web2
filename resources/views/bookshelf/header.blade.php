@@ -1,4 +1,3 @@
-
 <header class="header_section">
             <div class="container">
                <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -8,10 +7,10 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                      <ul class="navbar-nav">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                            <a class="nav-link" href="{{ route('userpage') }}">Home<span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                            <a class="nav-link" href="{{ route('bookshelf') }}">Bookshelf</a>
                         </li>
                         <li class="nav-item dropdown">

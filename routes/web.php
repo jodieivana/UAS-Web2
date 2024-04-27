@@ -23,6 +23,14 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/userpage', function () {
+    return view('home.userpage');
+})->middleware(['auth', 'verified'])->name('userpage');
+
+Route::get('/bookshelf', function () {
+    return view('bookshelf.bookshelf');
+})->middleware(['auth', 'verified'])->name('bookshelf');
+
 Route::get('/',[HomeController::class,'index']);
 
 Route::middleware('auth')->group(function () {

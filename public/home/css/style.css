@@ -20,6 +20,14 @@
   padding-bottom: 30px;
 }
 
+.linep {
+  border: none;
+  border-top: 2px solid #D0D5E4;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
 .form-control:focus {
   box-shadow: none;
 }
@@ -669,12 +677,22 @@ a:focus {
   text-align: center;
 }
 
+
 .discoverhome_section {
+  text-align: center;
+}
+
+.bookshelftop_section {
   text-align: center;
 }
 
 .discoverhome_section .box{
   background-color: #F7F9FF;
+  padding: 75px 45px;
+}
+
+.bookshelftop_section .box{
+  background-color: #E5EBFE;
   padding: 75px 45px;
 }
 
@@ -697,6 +715,13 @@ a:focus {
   color: #152E7A;
 }
 
+.bookshelftop_section .subscribe_form .heading_container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #152E7A;
+}
+
 .subscribe_section .subscribe_form .heading_container h2 {
   padding: 0 25px;
 }
@@ -704,6 +729,7 @@ a:focus {
 .discoverhome_section .subscribe_form .heading_container h2 {
   padding: 0 25px;
 }
+
 
 .subscribe_section .subscribe_form form {
   display: -webkit-box;
@@ -719,6 +745,19 @@ a:focus {
 }
 
 .discoverhome_section .subscribe_form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bookshelftop_section .subscribe_form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -755,11 +794,27 @@ a:focus {
   text-align: left;
 }
 
+.bookshelftop_section .subscribe_form form input {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 90px;
+  outline: none;
+  padding: 5px 25px;
+  background-color: #ffffff;
+  margin-top: 15px;
+  text-align: left;
+}
+
 .subscribe_section .subscribe_form form input::-webkit-input-placeholder {
   color: #152E7A;
 }
 
 .discoverhome_section .subscribe_form form input::-webkit-input-placeholder {
+  color: #152E7A;
+}
+
+.bookshelftop_section .subscribe_form form input::-webkit-input-placeholder {
   color: #152E7A;
 }
 
@@ -771,6 +826,10 @@ a:focus {
   color: #152E7A;
 }
 
+.bookshelftop_section .subscribe_form form input:-ms-input-placeholder {
+  color: #152E7A;
+}
+
 .subscribe_section .subscribe_form form input::-ms-input-placeholder {
   color: #152E7A;
 }
@@ -779,11 +838,19 @@ a:focus {
   color: #152E7A;
 }
 
+.bookshelftop_section .subscribe_form form input::-ms-input-placeholder {
+  color: #152E7A;
+}
+
 .subscribe_section .subscribe_form form input::placeholder {
   color: #a5a7b0;
 }
 
 .discoverhome_section .subscribe_form form input::placeholder {
+  color: #a5a7b0;
+}
+
+.bookshelftop_section .subscribe_form form input::placeholder {
   color: #a5a7b0;
 }
 
@@ -819,12 +886,33 @@ a:focus {
   max-width: 285px;
 }
 
+.bookshelftop_section .subscribe_form form button {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #152E7A;
+  border: 1px solid #152E7A;
+  color: #ffffff;
+  border-radius: 35px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  margin-top: 35px;
+  font-weight: 600;
+  width: 100%;
+  max-width: 285px;
+}
+
 .subscribe_section .subscribe_form form button:hover {
   background-color: #0D1C4B;
   color: #fff;
 }
 
 .discoverhome_section .subscribe_form form button:hover {
+  background-color: #0D1C4B;
+  color: #fff;
+}
+
+.bookshelftop_section.subscribe_form form button:hover {
   background-color: #0D1C4B;
   color: #fff;
 }
@@ -1319,6 +1407,15 @@ form input[type="submit"]:focus {
   margin-right: 65px;
 }
 
+#verticle-line3 {
+  width: 1px;
+  min-height: auto;
+  background: #152E7A;
+  opacity: 0.8;
+  margin: 40px;
+  margin-right: 65px;
+}
+
 .releasediv {
   display: flex;
   flex-direction: column;
@@ -1433,6 +1530,40 @@ form input[type="submit"]:focus {
   height: 30px;
   margin-left: 15px;
   cursor: pointer;
+}
+
+.filterbook {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.filterbookp {
+  color: #152E7A;
+  font-weight:500;
+}
+
+.filterbook .nav-item.active .nav-link {
+  color: #152E7A;
+  font-weight: 900;
+}
+
+.tagfilter {
+  opacity: 0.6;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+
+.judulkecil {
+  margin: 25px;
+  margin-left: 0px;
+  margin-top: 0px;
+  font-weight: 700;
 }
 
 http://kute-themes.com/html/boutique/html/index.html
