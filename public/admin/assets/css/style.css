@@ -11941,6 +11941,19 @@ input[type="button"].btn-block {
     text-align: center;
   }
 
+  .edit-book-button {
+    margin-right: 10px;
+    width: 150px;
+    background-color: #152E7A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    float: right !important;
+    text-align: center;
+  }
+
   .delete-book-button {
     width: 150px;
     margin-right: 10px;
@@ -11958,6 +11971,19 @@ input[type="button"].btn-block {
     background-color: #152E7A;
     color: white;
     text-decoration: none;
+}
+
+.ukuranbuku {
+  height: 300px;
+}
+
+.isbn-container {
+  display: flex;
+  align-items: center;
+}
+
+.actions {
+  margin-left: auto;
 }
 
   
@@ -16815,6 +16841,17 @@ code {
     @media (max-width: 576px) {
       .card.corona-gradient-card h4 {
         font-size: 0.75rem; } }
+
+
+.isbn {
+  color: #8593BC;
+  font-weight: normal;
+}
+
+.judulbesar {
+  color: #152E7A;
+  font-size: 40px;
+}
 
 .card-inverse-primary {
   background: rgba(0, 144, 231, 0.2);
