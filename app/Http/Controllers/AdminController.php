@@ -30,4 +30,9 @@ class AdminController extends Controller
     {
         return view('admin.addbooklist');
     }
+    
+    public function view_dashboard()
+    {
+        return view('admin.home');
+    }
 }

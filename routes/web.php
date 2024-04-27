@@ -46,6 +46,8 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/redirect',[HomeController::class,'redirect']);
 
+Route::get('/view_dashboard', [AdminController::class, 'view_dashboard']);
+
 Route::get('/view_userlist', [AdminController::class, 'view_userlist']);
 
 Route::get('/view_reports', [AdminController::class, 'view_reports']);
