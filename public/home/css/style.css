@@ -381,7 +381,7 @@ a:focus {
 
 .slider_section .detail-box a:hover {
   background-color: #0D1C4B;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .slider_section .img-box img {
@@ -581,8 +581,8 @@ a:focus {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 45px;
+          /* justify-content: center; */
+  margin-top: 15px;
 }
 
 .product_section .btn-box a {
@@ -590,15 +590,15 @@ a:focus {
   padding: 10px 40px;
   background-color: #152E7A;
   border: 1px solid #152E7A;
-  color: #ffffff;
-  border-radius: 0;
+  color: #ffffff !important;
+  border-radius: 50px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .product_section .btn-box a:hover {
-  background-color: transparent;
-  color: #152E7A;
+  background-color: #0D1C4B;
+  color: #ffffff !important;
 }
 
 .product_section .btn-box2 {
@@ -608,6 +608,10 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.btn1 a:hover {
+  color: #ffffff !important;
 }
 
 .product_section .btn-box2 a {
@@ -627,8 +631,8 @@ a:focus {
 }
 
 .readstatus {
-  padding: 5px 30px;
-  padding-left: 20px;
+  padding: 10px 40px;
+  padding-left: 15px;
   border-radius: 50px;
   border-color: #A1ABCA;
   color: #152E7A;
@@ -637,8 +641,8 @@ a:focus {
 }
 
 .readstatus:active {
-  padding: 10px 30px;
-  padding-left: 20px;
+  padding: 10px 40px;
+  padding-left: 15px;
   border-radius: 50px;
   border-color: #A1ABCA;
   color: #152E7A;
@@ -1546,6 +1550,12 @@ form input[type="submit"]:focus {
   margin: 5px;
 }
 
+.newscont2{
+  width: fit-content;
+  align-items: center;
+  height: 100%; 
+}
+
 #verticle-line {
   width: 1px;
   min-height: auto;
@@ -1598,6 +1608,15 @@ form input[type="submit"]:focus {
   height: 130px;
   width: fit-content;
   cursor: pointer;
+}
+
+.nwrbook2 {
+  height: 170px;
+  width: fit-content;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .ftrauthor {
@@ -1709,6 +1728,41 @@ form input[type="submit"]:focus {
   font-weight: 900;
 }
 
+.filterbook2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.filterbook2 .nav-item.active .nav-link {
+  color: #152E7A;
+  font-weight: 900;
+}
+
+.filterdis1{
+  margin-bottom: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.filtersub {
+  margin-right: 10px;
+}
+
+.selectdis {
+  width: 170px;
+}
+
+.disbook {
+  margin: 0px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+}
+
 .tagfilter {
   opacity: 0.6;
   padding-right: 20px;
@@ -1755,7 +1809,17 @@ a:hover{
 
 .subjudulh5 {
   width: 50rem;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  opacity: 0.5;
+  margin-top: 15px;
+}
+
+.linex{
+  border: none;
+  border-top: 2px solid #D0D5E4;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 30px;
 }
 
 .marginkanan{
@@ -1770,6 +1834,27 @@ a:hover{
 .gariskiri {
   margin: 0;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  justify-self: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.btnkcl1 {
+  margin: 0px;
+}
+
+.btnkcl2 {
+  margin: 0px;
+  padding-right: 10px;
+}
+
 http://kute-themes.com/html/boutique/html/index.html
 https://template.hasthemes.com/noraure/noraure/index.html
 https://preview.hasthemes.com/xoss-preview/xoss/index.html

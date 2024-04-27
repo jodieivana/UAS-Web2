@@ -5,35 +5,37 @@
                   <div class="col-md-6 offset-md-3">
                      <div class="subscribe_form ">
                         <div class="heading_container heading_center">
-                           <h3>DISCOVER BOOKS</h3>
+                            <h3>DISCOVER BOOKS</h3>
                             <h5 class="subjudulh5">A room without books is like a body without a soul. - Marcus Tullius Cicero</h5>
-                           <hr class="line">
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h5 class="">SELECT
-                                <select name="category" id="category" class="readstatus2 classic">
-                                    <option class="kecil" value="fiction">FICTION</option>
-                                </select>
-                                </h5>
-                            </div>
-                            <div class="col-md-12">
-                                <h5 class="">FILTER RESULTS BY
-                                    <select name="category" id="category" class="readstatus2 classic">
-                                        <option class="kecil" value="fiction">SUBGENRE</option>
-                                    </select>
-                                    <select name="category" id="category" class="readstatus2 classic">
-                                        <option class="kecil" value="fiction">RATING</option>
-                                    </select>
-                                </h5>
-                            </div>
+                           <hr class="linex">
                         </div>
 
-                     
-                     
-                     </div class="row ">
+            
 
-                        
+                            <div class="row filterbook2">
+                                <div class="row filterdis1">
+                                <h5 class="disbook">SELECT</h5>
+                                    <select name="readstatus" id="readstatus" class="readstatus classic selectdis">
+                                        <option value="read">FICTION</option>
+                                        <option value="toread">TO READ</option>
+                                        <option value="reading">READING</option>
+                                    </select>
+                                </div>
+                                <div class="row filterdis1">
+                                    <h5 class="disbook">FILTER BY</h5>
+                                    <select name="readstatus" id="readstatus" class="readstatus classic filtersub">
+                                        <option value="read">SUBGENRE</option>
+                                        <option value="toread">TO READ</option>
+                                        <option value="reading">READING</option>
+                                    </select>
+                                    <select name="readstatus" id="readstatus" class="readstatus classic">
+                                        <option value="read">RATING</option>
+                                        <option value="toread">TO READ</option>
+                                        <option value="reading">READING</option>
+                                    </select>
+                                </div>
+                            </div>
+
                      </div>
                   </div>
                </div>
