@@ -1182,13 +1182,12 @@ select.classic:focus {
 
 li.nav-item ul {
     background: #fff;
-    border: solid #000 2px;
+    border: none;
     border-radius: 0;
     padding: 10px 20px;
-    margin-left: 10px;
     margin-top: 10px;
-    box-shadow: 4px 4px 0px 0 #000;
-    width: 190px;
+    box-shadow: 0 6px 8px 0 #152e7a3c;
+    width:auto;
 }
 
 li.nav-item ul li {
@@ -1725,22 +1724,34 @@ form input[type="submit"]:focus {
 }
 
 .drop-down-discovery {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 20px;
 }
 
 .discoverJudul{
-  padding-top:12px;
+  padding-top:30px;
   padding-bottom: 20px;
 }
 
+.discoverdrop {
+  min-width: 78rem;
+}
+
+.discoverdrop2 {
+  padding-left: 45px;
+  padding-bottom: 30px;
+}
+
 .biru {
+  padding: 0px;
+  margin: 0px;
   color:#152E7A !important;
 }
 
 a:hover{
   color: #0D1C4B !important;
 }
+
 
 .subjudulh5 {
   width: 50rem;

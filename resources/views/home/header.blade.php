@@ -16,40 +16,8 @@
                         </li>
                         <li class="nav-item dropdown">
                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Discover<span class="caret"></span></a>
-                           <ul class="dropdown-menu">
-                              <div class="row">
-                                 <div class="col-md-10">
-                                    <h1 class="drop-down-discovery discoverJudul">BROWSE BY GENRE</h1>
-                                    <div class="row">
-                                          <div class="col-md-4">
-                                             <li><a class="biru" href="category">FICTION</a></li>
-                                             <li><a class="biru" href="category">THRILLER & SUSPENSE</a></li>
-                                             <li><a class="biru" href="category">MYSTERY & DETECTIVE</a></li>
-                                             <li><a class="biru" href="category">ROMANCE</a></li>
-                                          </div>
-                                          <div class="col-md-4">
-                                             <li><a class="biru" href="category">SCIENCE FICTION & FANTASY</a></li>
-                                             <li><a class="biru" href="category">NONFICTION</a></li>
-                                             <li><a class="biru" href="category">BIOGRAPHY & MEMOIR</a></li>
-                                             <li><a class="biru" href="category">HISTORY</a></li>
-                                          </div>
-                                          <div class="col-md-4">
-                                             <li><a class="biru" href="category">SOCIAL ISSUES</a></li>
-                                             <li><a class="biru" href="category">GRAPHIC NOVELS</a></li>
-                                             <li><a class="biru" href="category">TEENS & YOUNG ADULT</a></li>
-                                             <li><a class="biru" href="category">CHILDREN'S</a></li>
-                                          </div>
-                                    </div>
-                                 </div>
-
-                                 <div class="col-md-2">
-                                    <h1 class="drop-down-discovery discoverJudul">ARTICLES</h1>
-                                       <li><a class="biru" href="#">BESTSELLERS</a></li>
-                                       <li><a class="biru" href="#">BOOK LISTS</a></li>
-                                       <li><a class="biru" href="#">BEST OF 2023</a></li>
-                                 </div>
-                              </div>
-                           </ul>
+                           @include('home.discovermenu')
+                     
                         </li>
 
                         <form class="form-inline">
@@ -68,10 +36,10 @@
 
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">{{ Auth::user()->name }}<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="route('profile.edit')">PROFILE</a></li>
+                                <ul class="dropdown-menu dropdown-menu2">
+                                    <li><a href="route('profile.edit')" class="biru">PROFILE</a></li>
                                     <li>
-                                        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">LOG OUT</a>
+                                        <a href="#" class="biru" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">LOG OUT</a>
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             @csrf
                                         </form>
