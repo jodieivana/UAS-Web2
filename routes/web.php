@@ -76,5 +76,7 @@ Route::get('/view_review', [AdminController::class, 'view_review']);
 
 Route::get('/view_bookdetail', [AdminController::class, 'view_bookdetail']);
 
+Route::get('/view_article', [AdminController::class, 'view_article']);
+
 
 require __DIR__.'/auth.php';

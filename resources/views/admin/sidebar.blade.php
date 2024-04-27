@@ -106,9 +106,9 @@
     </a>
     <div class="collapse" id="content">
         <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> ARTICLE </a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> NOTIFICATION </a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> NEWSLETTER </a></li>
+            <li class="nav-item"> <a class="nav-link" href="{{ url('view_article') }}"> ARTICLE </a></li>
+            <li class="nav-item"> <a class="nav-link" href="{{ url('view_notification') }}"> NOTIFICATION </a></li>
+            <li class="nav-item"> <a class="nav-link" href="{{ url('newsletter') }}"> NEWSLETTER </a></li>
         </ul>
     </div>
 </li>
