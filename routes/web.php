@@ -31,6 +31,10 @@ Route::get('/bookshelf', function () {
     return view('bookshelf.bookshelf');
 })->middleware(['auth', 'verified'])->name('bookshelf');
 
+Route::get('/category', function () {
+    return view('category.category');
+})->middleware(['auth', 'verified'])->name('category');
+
 Route::get('/',[HomeController::class,'index']);
 
 Route::middleware('auth')->group(function () {

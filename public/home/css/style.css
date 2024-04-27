@@ -1703,6 +1703,24 @@ form input[type="submit"]:focus {
   font-weight: 700;
 }
 
+.drop-down-discovery {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.discoverJudul{
+  padding-top:12px;
+  padding-bottom: 20px;
+}
+
+.biru {
+  color:#152E7A !important;
+}
+
+a:hover{
+  color: #0D1C4B !important;
+}
+
 http://kute-themes.com/html/boutique/html/index.html
 https://template.hasthemes.com/noraure/noraure/index.html
 https://preview.hasthemes.com/xoss-preview/xoss/index.html

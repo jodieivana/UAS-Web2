@@ -3056,21 +3056,21 @@ input[type="button"].btn-block {
 
 .dropdown-menu {
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 140%;
+  left: -41rem;
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 10rem;
+  min-width: 78rem; 
+  max-width: 100%;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #212529;
+  color:#152E7A;
   text-align: left;
   list-style: none;
   background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid;
   border-radius: 0.25rem;
 }
 
