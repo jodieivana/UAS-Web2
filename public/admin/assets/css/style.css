@@ -11929,6 +11929,7 @@ input[type="button"].btn-block {
   .row1 {
     float: right !important;
   }
+
   .save-book-button {
     width: 150px;
     background-color: #152E7A;
@@ -11939,6 +11940,23 @@ input[type="button"].btn-block {
     cursor: pointer;
     float: right !important;
     text-align: center;
+  }
+  .save-book-button:hover, .add-book-button:hover{
+    text-decoration: none;
+    background-color: #506093;
+    color: white;
+  }
+
+  .delete-book-button:hover{
+    text-decoration: none;
+    background-color: #B95C64;
+    color: white;
+  }
+  
+  .draft-book-button:hover {
+    text-decoration: none;
+    background-color: #E0E7FF;
+    color: #152E7A;
   }
 
   .edit-book-button {
@@ -11980,11 +11998,11 @@ input[type="button"].btn-block {
     text-align: center;
   }
 
-  .add-book-button:hover {
+  /* .add-book-button:hover {
     background-color: #152E7A;
     color: white;
     text-decoration: none;
-}
+  } */
 
 .ukuranbuku {
   height: 300px;
