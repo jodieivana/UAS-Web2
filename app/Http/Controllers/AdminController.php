@@ -92,4 +92,9 @@ class AdminController extends Controller
     {
         return view('admin.notification');
     }
+
+    public function view_addnotification()
+    {
+        return view('admin.addnotification');
+    }
 }

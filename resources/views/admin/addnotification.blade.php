@@ -17,26 +17,20 @@
                 <div class="card">
                     <div class="card-body">
                         <br>
-                        <h4 class="card-title m-0">Add Newsletter</h4>
+                        <h4 class="card-title m-0">Add Notification</h4>
                         <br>
                         <form class="form-sample">
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Title</label>
-                                        <input type="text" class="form-control placeholders" placeholder="Type ISBN"/>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>Recipients</label>
                                         <input type="text" class="form-control placeholders" placeholder="Type Title"/>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label>Email</label>
-                                        <select class="form-control" placeholder="Choose Genre">
+                                        <label>Recipients</label>
+                                        <select class="form-control" placeholder="Choose">
                                             <option>admin@gmail.com</option>
                                             <option>admin1@gmail.com</option>
                                         </select>
