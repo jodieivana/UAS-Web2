@@ -12004,6 +12004,10 @@ input[type="button"].btn-block {
     text-decoration: none;
   } */
 
+.disabled-sent {
+  color: #8996BC;
+}
+
 .ukuranbuku {
   height: 300px;
 }

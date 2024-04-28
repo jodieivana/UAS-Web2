@@ -82,5 +82,9 @@ Route::get('/view_addarticle', [AdminController::class, 'view_addarticle']);
 
 Route::get('/view_articledetail', [AdminController::class, 'view_articledetail']);
 
+Route::get('/view_newsletter', [AdminController::class, 'view_newsletter']);
+
+Route::get('/view_addnewsletter', [AdminController::class, 'view_addnewsletter']);
+
 
 require __DIR__.'/auth.php';

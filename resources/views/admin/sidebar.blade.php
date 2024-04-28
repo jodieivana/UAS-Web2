@@ -108,7 +108,7 @@
         <ul class="nav flex-column sub-menu">
             <li class="nav-item"> <a class="nav-link" href="{{ url('view_article') }}"> ARTICLE </a></li>
             <li class="nav-item"> <a class="nav-link" href="{{ url('view_notification') }}"> NOTIFICATION </a></li>
-            <li class="nav-item"> <a class="nav-link" href="{{ url('newsletter') }}"> NEWSLETTER </a></li>
+            <li class="nav-item"> <a class="nav-link" href="{{ url('view_newsletter') }}"> NEWSLETTER </a></li>
         </ul>
     </div>
 </li>

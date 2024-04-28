@@ -77,4 +77,14 @@ class AdminController extends Controller
     {
         return view('admin.articledetail');
     }
+    
+    public function view_newsletter()
+    {
+        return view('admin.newsletter');
+    }
+
+    public function view_addnewsletter()
+    {
+        return view('admin.addnewsletter');
+    }
 }
