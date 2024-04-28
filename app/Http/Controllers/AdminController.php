@@ -72,4 +72,9 @@ class AdminController extends Controller
     {
         return view('admin.addarticle');
     }
+
+    public function view_articledetail()
+    {
+        return view('admin.articledetail');
+    }
 }
