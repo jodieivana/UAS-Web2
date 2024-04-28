@@ -62,6 +62,7 @@
   margin-left: 10px;
   background-color: #152E7A;
   border-color: #152E7A;
+  color: #fff !important;
   border-radius: 30px;
   padding: 10px;
   padding-left: 25px;
@@ -979,14 +980,15 @@ select.classic:focus {
 
 .discoverhome_section .subscribe_form form input {
   width: 100%;
-  height: 60px;
-  border: none;
+  height: 50px;
+  border: #152E7A;
   border-radius: 90px;
-  outline: none;
+  outline:#152E7A;
   padding: 5px 25px;
   background-color: #ffffff;
   margin-top: 15px;
   text-align: left;
+  border: 1px solid #A1ABCA;
 }
 
 .bookshelftop_section .subscribe_form form input {
@@ -2199,6 +2201,10 @@ a:hover{
 
 .bellheader:hover {
   cursor: pointer;
+}
+
+.widthdrop {
+  width: 120px;
 }
 
 

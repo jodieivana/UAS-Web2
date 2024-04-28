@@ -35,8 +35,8 @@
 
                         @if (Route::has('login'))
                             @auth
-
-                            <li class="nav-item dropdown">
+                           
+                            <li class="nav-item dropdown widthdrop">
                                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">{{ Auth::user()->name }}<span class="caret"></span></a>
                                 <ul class="dropdown-menu dropdown-menu2">
                                     <li><a href="route('profile.edit')" class="biru">PROFILE</a></li>

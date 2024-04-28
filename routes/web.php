@@ -48,6 +48,14 @@ Route::get('/report', function () {
     return view('report.report');
 })->middleware(['auth', 'verified'])->name('report');
 
+Route::get('/feedback', function () {
+    return view('feedback.feedback');
+})->middleware(['auth', 'verified'])->name('feedback');
+
+Route::get('/search', function () {
+    return view('search.search');
+})->middleware(['auth', 'verified'])->name('search');
+
 Route::get('/',[HomeController::class,'index']);
 
 Route::middleware('auth')->group(function () {

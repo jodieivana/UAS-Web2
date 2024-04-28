@@ -8,10 +8,10 @@
                            <h3>We’d LOVE your FEEDBACK!</h3>
                         </div>
                         <p class="feedbackp">Your feedback is important to us! Let us know how we’re doing so we can improve.</p>
-                        <form action="">
-                           <button>
-                              GIVE FEEDBACK
-                           </button>
+                        <form method="GET" action="{{ route('feedback') }}">
+                        <button>
+                           GIVE FEEDBACK
+                        </button>
                            <div class="row feedbacktime">
                            <img src="{{ asset('home/images/clock.png') }}" class="img-fluid clocksml" alt="">
                               <p class="feedbackbwp">Takes 3 minutes only!</p>
