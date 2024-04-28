@@ -60,7 +60,7 @@
           <li class="nav-item menu-items">
             <a class="nav-link" href="{{ url('view_dashboard') }}">
               <span class="menu-icon">
-                <i class="mdi mdi-speedometer"></i>
+                <i class="fa fa-dashboard" style="font-size:20px; color: white;"></i>
               </span>
               <span class="menu-title">DASHBOARD</span>
             </a>
@@ -68,7 +68,7 @@
           <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
-                <i class="mdi mdi-laptop"></i>
+                <i class="fa fa-user-o" style="font-size:20px; color: white;"></i>
               </span>
               <span class="menu-title">USER</span>
               <i class="menu-arrow"></i>
@@ -84,7 +84,7 @@
           <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
               <span class="menu-icon">
-                <i class="mdi mdi-security"></i>
+                <i class="fa fa-book" style="font-size:20px; color: white;"></i>
               </span>
               <span class="menu-title">BOOKS</span>
               <i class="menu-arrow"></i>
@@ -99,7 +99,7 @@
 <li class="nav-item menu-items">
     <a class="nav-link" data-toggle="collapse" href="#content" aria-expanded="false" aria-controls="content">
         <span class="menu-icon">
-            <i class="mdi mdi-security"></i>
+          <i class="fa fa-edit" style="font-size:20px; color: white;"></i>
         </span>
         <span class="menu-title">CONTENT</span>
         <i class="menu-arrow"></i>

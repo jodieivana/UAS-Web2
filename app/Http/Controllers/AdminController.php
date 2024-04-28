@@ -97,4 +97,9 @@ class AdminController extends Controller
     {
         return view('admin.addnotification');
     }
+
+    public function view_allnotification()
+    {
+        return view('admin.allnotification');
+    }
 }

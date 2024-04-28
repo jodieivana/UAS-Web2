@@ -90,5 +90,7 @@ Route::get('/view_notification', [AdminController::class, 'view_notification']);
 
 Route::get('/view_addnotification', [AdminController::class, 'view_addnotification']);
 
+Route::get('/view_allnotification', [AdminController::class, 'view_allnotification']);
+
 
 require __DIR__.'/auth.php';
