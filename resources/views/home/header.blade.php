@@ -31,6 +31,8 @@
                            </div>
                         </form>
 
+                        <i class="fa fa-bell bellheader" onclick="window.location.href='{{ route('notification') }}';" aria-hidden="true" style="color: #152E7A; font-size:28px" ></i>
+
                         @if (Route::has('login'))
                             @auth
 

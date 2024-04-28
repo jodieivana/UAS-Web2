@@ -36,6 +36,18 @@ Route::get('/category', function () {
     return view('category.category');
 })->middleware(['auth', 'verified'])->name('category');
 
+Route::get('/buku', function () {
+    return view('buku.buku');
+})->middleware(['auth', 'verified'])->name('buku');
+
+Route::get('/notification', function () {
+    return view('notification.notification');
+})->middleware(['auth', 'verified'])->name('notification');
+
+Route::get('/report', function () {
+    return view('report.report');
+})->middleware(['auth', 'verified'])->name('report');
+
 Route::get('/',[HomeController::class,'index']);
 
 Route::middleware('auth')->group(function () {

@@ -60,7 +60,7 @@
                </div>
 
                <div class="ftrframebk">
-                  <img src="{{ asset('home/images/bestseller/book1.png') }}" class="img-fluid img-bestseller ftrbook" alt="" onclick="window.location.href='index.html';">
+                  <img src="{{ asset('home/images/bestseller/book1.png') }}" class="img-fluid img-bestseller ftrbook" alt="" onclick="window.location.href='{{ route('buku') }}';">
                </div>
 
                <div class="column ">

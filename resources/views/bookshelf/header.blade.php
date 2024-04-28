@@ -15,10 +15,8 @@
                         </li>
                         <li class="nav-item dropdown">
                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Discover<span class="caret"></span></a>
-                           <ul class="dropdown-menu">
-                              <li><a href="about.html">About</a></li>
-                              <li><a href="testimonial.html">Testimonial</a></li>
-                           </ul>
+                           @include('home.discovermenu')
+                     
                         </li>
 
                         <form class="form-inline">
@@ -32,15 +30,18 @@
                            </div>
                         </form>
 
+                        <i class="fa fa-bell bellheader" onclick="window.location.href='{{ route('notification') }}';" aria-hidden="true" style="color: #152E7A; font-size:28px" ></i>
+
+
                         @if (Route::has('login'))
                             @auth
 
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">{{ Auth::user()->name }}<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="route('profile.edit')">PROFILE</a></li>
+                                <ul class="dropdown-menu dropdown-menu2">
+                                    <li><a href="route('profile.edit')" class="biru">PROFILE</a></li>
                                     <li>
-                                        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">LOG OUT</a>
+                                        <a href="#" class="biru" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">LOG OUT</a>
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             @csrf
                                         </form>
