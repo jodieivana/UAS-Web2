@@ -19,7 +19,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Feedbacks</h4>
                     <div class="table-responsive">
-                      <table class="table table-bordered">
+                      <table class="table table-bordered datatable">
                         <thead>
                           <tr>
                             <th> ID</th>
@@ -31,94 +31,16 @@
                           </tr>
                         </thead>
                         <tbody>
+                          @foreach($reviews as $review)
                           <tr>
-                            <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
-                            <td> A timeless classic that touches on important societal issues. </td>
-                            <td> John Smith </td>
-                            <td> 2024-02-10 </td>
-                            <td><a href="#" class="delete-link">DELETE</a></td>
+                            <td> {{ $review->id}}</td>
+                            <td> {{ $review->book->title}}</td>
+                            <td> {{ $review->review_text}}</td>
+                            <td> {{ $review->user->name}}</td>
+                            <td> {{ Carbon\Carbon::parse($review->created_at)->format('d M Y') }}</td>
+                            <td><a href="/view_review/{{ $review['id'] }}/delete" class="btn btn-warning text-dark">Delete</td>
                           </tr>
-                          <tr>
-                            <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
-                            <td> A timeless classic that touches on important societal issues. </td>
-                            <td> John Smith </td>
-                            <td> 2024-02-10 </td>
-                            <td><a href="#" class="delete-link">DELETE</a></td>
-                          </tr>
-                          <tr>
-                            <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
-                            <td> A timeless classic that touches on important societal issues. </td>
-                            <td> John Smith </td>
-                            <td> 2024-02-10 </td>
-                            <td><a href="#" class="delete-link">DELETE</a></td>
-                          </tr>
-                          <tr>
-                            <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
-                            <td> A timeless classic that touches on important societal issues. </td>
-                            <td> John Smith </td>
-                            <td> 2024-02-10 </td>
-                            <td><a href="#" class="delete-link">DELETE</a></td>
-                          </tr>
-                          <tr>
-                            <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
-                            <td> A timeless classic that touches on important societal issues. </td>
-                            <td> John Smith </td>
-                            <td> 2024-02-10 </td>
-                            <td><a href="#" class="delete-link">DELETE</a></td>
-                          </tr>
-                          <tr>
-                            <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
-                            <td> A timeless classic that touches on important societal issues. </td>
-                            <td> John Smith </td>
-                            <td> 2024-02-10 </td>
-                            <td><a href="#" class="delete-link">DELETE</a></td>
-                          </tr>
-                          <tr>
-                            <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
-                            <td> A timeless classic that touches on important societal issues. </td>
-                            <td> John Smith </td>
-                            <td> 2024-02-10 </td>
-                            <td><a href="#" class="delete-link">DELETE</a></td>
-                          </tr>
-                          <tr>
-                            <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
-                            <td> A timeless classic that touches on important societal issues. </td>
-                            <td> John Smith </td>
-                            <td> 2024-02-10 </td>
-                            <td><a href="#" class="delete-link">DELETE</a></td>
-                          </tr>
-                          <tr>
-                            <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
-                            <td> A timeless classic that touches on important societal issues. </td>
-                            <td> John Smith </td>
-                            <td> 2024-02-10 </td>
-                            <td><a href="#" class="delete-link">DELETE</a></td>
-                          </tr>
-                          <tr>
-                            <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
-                            <td> A timeless classic that touches on important societal issues. </td>
-                            <td> John Smith </td>
-                            <td> 2024-02-10 </td>
-                            <td><a href="#" class="delete-link">DELETE</a></td>
-                          </tr>
-                          <tr>
-                            <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
-                            <td> A timeless classic that touches on important societal issues. </td>
-                            <td> John Smith </td>
-                            <td> 2024-02-10 </td>
-                            <td><a href="#" class="delete-link">DELETE</a></td>
-                          </tr>
+                          @endforeach
                         </tbody>
                       </table>
                     </div>

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('content');
             $table->timestamp('sent_date');
             $table->foreignId('user_id');
-            $table->foreignId('report_id');
+            $table->foreignId('report_id')->nullable();
             $table->timestamps();
         });
     }

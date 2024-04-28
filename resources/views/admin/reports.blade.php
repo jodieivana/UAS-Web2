@@ -18,6 +18,18 @@
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Reports</h4>
+                    @if(session()->has('success'))
+                        {{-- <div class="alert alert-success dismissable fade show" role="alert"> --}}
+                        {{ session('success') }}
+                        {{-- <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" style="float: right;"></button> --}}
+                        {{-- </div> --}}
+                        @endif
+                        @if(session()->has('error'))
+                        {{-- <div class="alert alert-danger dismissable fade show" role="alert"> --}}
+                        {{ session('error') }}
+                        {{-- <button type="button" class=" float-right btn-close" data-bs-dismiss="alert" aria-label="Close"></button> --}}
+                        {{-- </div> --}}
+                     @endif
                     <div class="table-responsive">
                       <table class="table table-bordered">
                         <thead>

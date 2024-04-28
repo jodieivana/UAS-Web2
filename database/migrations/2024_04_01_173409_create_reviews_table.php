@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('rating');
             $table->text('review_text');
-            $table->timestamp('review_date');
+            $table->timestamp('review_date')->nullable();
             $table->string('review_status');
             $table->foreignId('user_id');
             $table->foreignId('book_id');

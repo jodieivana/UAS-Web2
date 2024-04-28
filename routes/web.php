@@ -61,6 +61,7 @@ Route::get('/view_booklist', [AdminController::class, 'view_booklist']);
 Route::get('/view_addbooklist', [AdminController::class, 'view_addbooklist']);
 
 Route::get('/view_review', [AdminController::class, 'view_review']);
+Route::get('/view_review/{review}/delete', [AdminController::class, 'delete_review']);
 
 Route::get('/view_bookdetail', [AdminController::class, 'view_bookdetail']);
 
