@@ -42,7 +42,7 @@
                         <tbody>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
+                            <td class="book-link"> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
                             <td> John Doe </td>
                             <td> 2024-02-10 </td>
                             <td> 2024-02-12 </td>
@@ -60,7 +60,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
+                            <td class="book-link"> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
                             <td> John Doe </td>
                             <td> 2024-02-10 </td>
                             <td> 2024-02-12 </td>
@@ -77,7 +77,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
+                            <td class="book-link"> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
                             <td> John Doe </td>
                             <td> 2024-02-10 </td>
                             <td> 2024-02-12 </td>
@@ -94,7 +94,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
+                            <td class="book-link"> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
                             <td> John Doe </td>
                             <td> 2024-02-10 </td>
                             <td> 2024-02-12 </td>
@@ -111,7 +111,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
+                            <td class="book-link"> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
                             <td> John Doe </td>
                             <td> 2024-02-10 </td>
                             <td> 2024-02-12 </td>
@@ -128,7 +128,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
+                            <td class="book-link"> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
                             <td> John Doe </td>
                             <td> 2024-02-10 </td>
                             <td> 2024-02-12 </td>
@@ -145,7 +145,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
+                            <td class="book-link"> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
                             <td> John Doe </td>
                             <td> 2024-02-10 </td>
                             <td> 2024-02-12 </td>
@@ -162,7 +162,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
+                            <td class="book-link"> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
                             <td> John Doe </td>
                             <td> 2024-02-10 </td>
                             <td> 2024-02-12 </td>
@@ -179,7 +179,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
+                            <td class="book-link"> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
                             <td> John Doe </td>
                             <td> 2024-02-10 </td>
                             <td> 2024-02-12 </td>
@@ -196,7 +196,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
+                            <td class="book-link"> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
                             <td> John Doe </td>
                             <td> 2024-02-10 </td>
                             <td> 2024-02-12 </td>
@@ -213,7 +213,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
+                            <td class="book-link"> <a href="{{ url('view_articledetail') }}"> About Article </a> </td>
                             <td> John Doe </td>
                             <td> 2024-02-10 </td>
                             <td> 2024-02-12 </td>

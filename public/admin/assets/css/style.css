@@ -7571,7 +7571,7 @@ sup {
   top: -.5em; }
 
 a {
-  color: #007bff;
+  /* color: #007bff; */
   text-decoration: none;
   background-color: transparent; }
   a:hover {
@@ -12183,6 +12183,11 @@ input[type="button"].btn-block {
 .delete-link {
     color: #BA2532;
     text-decoration: underline;
+}
+
+.book-link {
+  color: #152E7A !important;;
+  text-decoration: underline;  
 }
 
 .list-group {

@@ -38,7 +38,7 @@
                         <tbody>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
+                            <td class="book-link"> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
                             <td> A timeless classic that touches on important societal issues. </td>
                             <td> J. B. Lippincott & Co. </td>
                             <td> 2024-02-10 </td>
@@ -46,7 +46,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
+                            <td class="book-link"> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
                             <td> A timeless classic that touches on important societal issues. </td>
                             <td> J. B. Lippincott & Co. </td>
                             <td> 2024-02-10 </td>
@@ -54,7 +54,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
+                            <td class="book-link"> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
                             <td> A timeless classic that touches on important societal issues. </td>
                             <td> J. B. Lippincott & Co. </td>
                             <td> 2024-02-10 </td>

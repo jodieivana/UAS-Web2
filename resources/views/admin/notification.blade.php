@@ -44,7 +44,7 @@
                             <td> All </td>
                             <td> John Doe </td>
                             <td> 2024-02-10 </td>
-                            <td> <a href="{{ url('view_draftnotification') }}"> Draft </a> </td>
+                            <td class="book-link"> <a href="{{ url('view_draftnotification') }}"> Draft </a> </td>
                           </tr>
                           <tr>
                             <td> 2 </td>

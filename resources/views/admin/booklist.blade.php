@@ -45,7 +45,7 @@
                         <tbody>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
+                            <td class="book-link"> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
                             <td> Harper Lee </td>
                             <td> J. B. Lippincott & Co. </td>
                             <td> July 11, 1960 </td>
@@ -60,7 +60,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
+                            <td class="book-link"> To Kill a Mockingbird </td>
                             <td> Harper Lee </td>
                             <td> J. B. Lippincott & Co. </td>
                             <td> July 11, 1960 </td>
@@ -75,7 +75,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
+                            <td class="book-link"> To Kill a Mockingbird </td>
                             <td> Harper Lee </td>
                             <td> J. B. Lippincott & Co. </td>
                             <td> July 11, 1960 </td>
@@ -90,7 +90,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
+                            <td class="book-link"> To Kill a Mockingbird </td>
                             <td> Harper Lee </td>
                             <td> J. B. Lippincott & Co. </td>
                             <td> July 11, 1960 </td>
@@ -105,7 +105,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
+                            <td class="book-link"> To Kill a Mockingbird </td>
                             <td> Harper Lee </td>
                             <td> J. B. Lippincott & Co. </td>
                             <td> July 11, 1960 </td>
@@ -120,7 +120,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
+                            <td class="book-link"> To Kill a Mockingbird </td>
                             <td> Harper Lee </td>
                             <td> J. B. Lippincott & Co. </td>
                             <td> July 11, 1960 </td>
@@ -135,7 +135,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
+                            <td class="book-link"> To Kill a Mockingbird </td>
                             <td> Harper Lee </td>
                             <td> J. B. Lippincott & Co. </td>
                             <td> July 11, 1960 </td>
@@ -150,7 +150,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
+                            <td class="book-link"> To Kill a Mockingbird </td>
                             <td> Harper Lee </td>
                             <td> J. B. Lippincott & Co. </td>
                             <td> July 11, 1960 </td>
@@ -165,7 +165,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
+                            <td class="book-link"> To Kill a Mockingbird </td>
                             <td> Harper Lee </td>
                             <td> J. B. Lippincott & Co. </td>
                             <td> July 11, 1960 </td>
@@ -180,7 +180,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
+                            <td class="book-link"> To Kill a Mockingbird </td>
                             <td> Harper Lee </td>
                             <td> J. B. Lippincott & Co. </td>
                             <td> July 11, 1960 </td>
@@ -195,7 +195,7 @@
                           </tr>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td> To Kill a Mockingbird </td>
+                            <td class="book-link"> To Kill a Mockingbird </td>
                             <td> Harper Lee </td>
                             <td> J. B. Lippincott & Co. </td>
                             <td> July 11, 1960 </td>

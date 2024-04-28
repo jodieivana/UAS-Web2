@@ -29,6 +29,7 @@
                         {{ session('error') }}
                         </div>
                      @endif
+                    <h4 class="card-title">Review</h4>
                     <div class="table-responsive">
                       <table class="table table-bordered datatable">
                         <thead>
@@ -50,6 +51,92 @@
                             <td> {{ $review->user->name}}</td>
                             <td> {{ Carbon\Carbon::parse($review->created_at)->format('d M Y') }}</td>
                             <td><a href="/view_review/{{ $review['id'] }}/delete" class="btn btn-warning text-dark">Delete</td>
+                            <td> 978-3-16-148410-0 </td>
+                            <td class="book-link"> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
+                            <td> A timeless classic that touches on important societal issues. </td>
+                            <td> John Smith </td>
+                            <td> 2024-02-10 </td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td class="book-link"> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
+                            <td> A timeless classic that touches on important societal issues. </td>
+                            <td> John Smith </td>
+                            <td> 2024-02-10 </td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td class="book-link"> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
+                            <td> A timeless classic that touches on important societal issues. </td>
+                            <td> John Smith </td>
+                            <td> 2024-02-10 </td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td class="book-link"> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
+                            <td> A timeless classic that touches on important societal issues. </td>
+                            <td> John Smith </td>
+                            <td> 2024-02-10 </td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td class="book-link"> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
+                            <td> A timeless classic that touches on important societal issues. </td>
+                            <td> John Smith </td>
+                            <td> 2024-02-10 </td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td class="book-link"> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
+                            <td> A timeless classic that touches on important societal issues. </td>
+                            <td> John Smith </td>
+                            <td> 2024-02-10 </td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td class="book-link"> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
+                            <td> A timeless classic that touches on important societal issues. </td>
+                            <td> John Smith </td>
+                            <td> 2024-02-10 </td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td class="book-link"> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
+                            <td> A timeless classic that touches on important societal issues. </td>
+                            <td> John Smith </td>
+                            <td> 2024-02-10 </td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td class="book-link"> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
+                            <td> A timeless classic that touches on important societal issues. </td>
+                            <td> John Smith </td>
+                            <td> 2024-02-10 </td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td class="book-link"> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
+                            <td> A timeless classic that touches on important societal issues. </td>
+                            <td> John Smith </td>
+                            <td> 2024-02-10 </td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td class="book-link"> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
+                            <td> A timeless classic that touches on important societal issues. </td>
+                            <td> John Smith </td>
+                            <td> 2024-02-10 </td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
                           </tr>
                           @endforeach
                         </tbody>
