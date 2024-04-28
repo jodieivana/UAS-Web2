@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('buy_ons', function (Blueprint $table) {
             $table->id();
             $table->string('url');
+            $table->foreignId('book_id');
             $table->timestamps();
         });
     }

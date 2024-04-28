@@ -16,8 +16,10 @@ class BookshelfFactory extends Factory
      */
     public function definition(): array
     {
-        return [
-            //
+        return[
+            'progress' => fake()->randomElement(['to read', 'reading', 'read']),
+            'book_id' => mt_rand(1,50),
+            'user_id' => mt_rand(1,10)
         ];
     }
 }

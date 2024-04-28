@@ -3,12 +3,29 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class AdminController extends Controller
 {
     public function view_userlist()
     {
-        return view('admin.userlist');
+        return view('admin.userlist', [
+            'users' => User::all()
+        ]);
+    }
+
+    public function ban_userlist(User $user)
+    {
+        if ($user->account_status == 'active') {
+            $user->account_status = 'banned';
+        } else {
+            $user->account_status = 'active';
+        }
+
+        // $user->account_status = 'banned';
+        $user->save();
+
+        return redirect('/view_userlist');
     }
 
     public function view_reports()

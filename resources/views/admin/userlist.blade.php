@@ -24,122 +24,29 @@
                           <tr>
                             <th> Email</th>
                             <th> Nama </th>
-                            <th> Password </th>
                             <th> Register Date </th>
                             <th> Last Login </th>
-                            <th> Subscription </th>
                             <th> Account Status </th>
+                            <th> Action </th>
                           </tr>
                         </thead>
                         <tbody>
+                          @foreach($users as $user)
                           <tr>
-                            <td> jodie@gmail.com </td>
-                            <td> Jodie </td>
-                            <td> ************* </td>
-                            <td> 20/02/2024 </td>
-                            <td> 20/02/2024 </td>
-                            <td> NO </td>
-                            <td><label class="badge badge-danger">BANNED</label></td>
+                            <td> {{ $user->email }} </td>
+                            <td> {{ $user->nama }} </td>
+                            <td> {{ Carbon\Carbon::parse($user->created_at)->format('d M Y') }}</td>
+                            <td> {{ Carbon\Carbon::parse($user->last_login)->format('d M Y') }}</td>
+                            <td> 
+                              @if($user->account_status == 'active')<label class="badge badge-success">ACTIVE</label> @endif
+                              @if($user->account_status == 'banned')<label class="badge badge-danger">BANNED</label> @endif
+                            </td>
+                            <td> 
+                              @if($user->account_status == 'active')<a href="/view_userlist/{{ $user['id'] }}/ban" class="btn btn-warning text-dark">Ban @endif
+                              @if($user->account_status == 'banned')<a href="/view_userlist/{{ $user['id'] }}/ban" class="btn btn-warning text-dark">Activate @endif 
+                            </td>
                           </tr>
-                          <tr>
-                            <td> vellyn@gmail.com </td>
-                            <td> Pelin </td>
-                            <td> ************* </td>
-                            <td> 20/02/2024 </td>
-                            <td> 20/02/2024 </td>
-                            <td> NO </td>
-                            <td><label class="badge badge-warning">INACTIVE</label></td>
-                          </tr>
-                          <tr>
-                            <td> callista@gmail.com </td>
-                            <td> Callista </td>
-                            <td> ************* </td>
-                            <td> 20/02/2024 </td>
-                            <td> 20/02/2024 </td>
-                            <td> NO </td>
-                            <td><label class="badge badge-success">ACTIVE</label></td>
-                          </tr>
-                          <tr>
-                            <td> jojojo@gmail.com </td>
-                            <td> DIIDI </td>
-                            <td> ************* </td>
-                            <td> 20/02/2024 </td>
-                            <td> 20/02/2024 </td>
-                            <td> NO </td>
-                            <td><label class="badge badge-success">ACTIVE</label></td>
-                          </tr>
-                          <tr>
-                            <td> natali@gmail.com </td>
-                            <td> Naata </td>
-                            <td> ************* </td>
-                            <td> 20/02/2024 </td>
-                            <td> 20/02/2024 </td>
-                            <td> NO </td>
-                            <td><label class="badge badge-success">ACTIVE</label></td>
-                          </tr>
-                          <tr>
-                            <td> cooooo@gmail.com </td>
-                            <td> Conadi </td>
-                            <td> ************* </td>
-                            <td> 20/02/2024 </td>
-                            <td> 20/02/2024 </td>
-                            <td> NO </td>
-                            <td><label class="badge badge-success">ACTIVE</label></td>
-                          </tr>
-                          <tr>
-                            <td> apaja@gmail.com </td>
-                            <td> Ada deh </td>
-                            <td> ************* </td>
-                            <td> 20/02/2024 </td>
-                            <td> 20/02/2024 </td>
-                            <td> NO </td>
-                            <td><label class="badge badge-success">ACTIVE</label></td>
-                          </tr>
-                          <tr>
-                            <td> pageturner@gmail.com </td>
-                            <td> Page Turner </td>
-                            <td> ************* </td>
-                            <td> 20/02/2024 </td>
-                            <td> 20/02/2024 </td>
-                            <td> NO </td>
-                            <td><label class="badge badge-warning">INACTIVE</label></td>
-                          </tr>
-                          <tr>
-                            <td> pageturner@gmail.com </td>
-                            <td> Page Turner </td>
-                            <td> ************* </td>
-                            <td> 20/02/2024 </td>
-                            <td> 20/02/2024 </td>
-                            <td> NO </td>
-                            <td><label class="badge badge-warning">INACTIVE</label></td>
-                          </tr>
-                          <tr>
-                            <td> jisoo@gmail.com </td>
-                            <td> Jisoo </td>
-                            <td> ************* </td>
-                            <td> 20/02/2024 </td>
-                            <td> 20/02/2024 </td>
-                            <td> NO </td>
-                            <td><label class="badge badge-warning">INACTIVE</label></td>
-                          </tr>
-                          <tr>
-                            <td> jennie@gmail.com </td>
-                            <td> Jennie Blackpink </td>
-                            <td> ************* </td>
-                            <td> 20/02/2024 </td>
-                            <td> 20/02/2024 </td>
-                            <td> NO </td>
-                            <td><label class="badge badge-warning">INACTIVE</label></td>
-                          </tr>
-                          <tr>
-                            <td> seonho@gmail.com </td>
-                            <td> Kim Seon ho </td>
-                            <td> ************* </td>
-                            <td> 20/02/2024 </td>
-                            <td> 20/02/2024 </td>
-                            <td> NO </td>
-                            <td><label class="badge badge-success">ACTIVE</label></td>
-                          </tr>
+                          @endforeach
                         </tbody>
                       </table>
                     </div>

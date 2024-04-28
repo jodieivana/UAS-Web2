@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('bookshelves', function (Blueprint $table) {
             $table->id();
             $table->string('progress');
-            $table->string('review_status');
             $table->foreignId('book_id');
             $table->foreignId('user_id');
             $table->timestamps();

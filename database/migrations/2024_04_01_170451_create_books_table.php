@@ -21,8 +21,7 @@ return new class extends Migration
             $table->string('language');
             $table->string('tags');
             $table->timestamp('published_date');
-            $table->foreignId('buyOn_id');
-            $table->foreignId('subgenre_id');
+            $table->foreignId('category_id');
             $table->timestamps();
         });
     }

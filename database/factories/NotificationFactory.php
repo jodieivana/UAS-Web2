@@ -17,7 +17,11 @@ class NotificationFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'subject' => fake()->sentence(3,6),
+            'content' => fake()->sentence(10,20),
+            'sent_date' => fake()->date(),
+            'user_id' => mt_rand(1,10),
+            'report_id' => mt_rand(1,10)
         ];
     }
 }

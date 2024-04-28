@@ -17,7 +17,8 @@ class BuyOnFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'url' => 'www.google.com',
+            'book_id' => mt_rand(1,50)
         ];
     }
 }

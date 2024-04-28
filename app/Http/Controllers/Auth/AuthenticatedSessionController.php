@@ -9,6 +9,8 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
+use Carbon\Carbon;
+use App\Models\User;
 
 class AuthenticatedSessionController extends Controller
 {
@@ -28,7 +30,17 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate();
-
+        if (Auth::check()) {
+            $user = User::where('email', $request['email'])->first();
+            if($user->account_status=='banned') {
+                Auth::guard('web')->logout();
+                $request->session()->invalidate();
+                return redirect('/login')->with('error','BANNED');
+            } else {
+                $user->last_login = Carbon::now();
+                $user->save();
+            }
+        }
         return redirect()->intended(RouteServiceProvider::HOME);
     }
 
