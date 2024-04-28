@@ -228,7 +228,7 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
     margin-right: 10px;
-    padding: 10px 25px;
+    padding: 10px 15px;
     color: #152E7A;
     text-align: center;
     text-transform: uppercase;
@@ -2194,7 +2194,7 @@ a:hover{
   display: flex;
   align-items: center;
   padding: 10px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .bellheader:hover {
