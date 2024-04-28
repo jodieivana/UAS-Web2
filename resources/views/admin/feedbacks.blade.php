@@ -3,7 +3,6 @@
   <head>
     <!-- Required meta tags -->
     @include('admin.css')
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="container-scroller">
@@ -20,7 +19,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Feedbacks</h4>
                     <div class="table-responsive">
-                      <table class="table table-bordered">
+                      <table class="table table-bordered datatable">
                         <thead>
                           <tr>
                             <th> ID</th>
@@ -49,6 +48,7 @@
                             </td>
 
                             <td> 
+
                               @if($feedback->status == 'on progress')
                                 <a href="/view_feedbacks/{{ $feedback['id'] }}/approved" class="btn btn-warning text-dark">Resolve
                                 <a href="/view_feedbacks/{{ $feedback['id'] }}/declined" class="btn btn-warning text-dark">Reject
