@@ -86,5 +86,7 @@ Route::get('/view_newsletter', [AdminController::class, 'view_newsletter']);
 
 Route::get('/view_addnewsletter', [AdminController::class, 'view_addnewsletter']);
 
+Route::get('/view_notification', [AdminController::class, 'view_notification']);
+
 
 require __DIR__.'/auth.php';
