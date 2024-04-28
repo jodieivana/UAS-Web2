@@ -3,6 +3,7 @@
   <head>
     <!-- Required meta tags -->
     @include('admin.css')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="container-scroller">
@@ -44,7 +45,7 @@
                         <tbody>
                           <tr>
                             <td> 978-3-16-148410-0 </td>
-                            <td href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </td>
+                            <td> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
                             <td> Harper Lee </td>
                             <td> J. B. Lippincott & Co. </td>
                             <td> July 11, 1960 </td>

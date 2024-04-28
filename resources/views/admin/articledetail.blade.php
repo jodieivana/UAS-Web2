@@ -21,8 +21,8 @@
                     <div class="row">
                         <div class="col-md-6">                              
                         {{-- <div class="isbn-container"> --}}
-                            <h4 class="isbn">ISBN: 978-3-16-148410-0</h4>
-                            <h4 class="judulbesar">To Kill a Mockingbird</h4>
+                            <h4 class="isbn">ID: 978-3-16-2000</h4>
+                            <h4 class="judulbesar">About Article</h4>
                         {{-- </div> --}}
                         </div>
                         <div class="col-md-6">
@@ -36,22 +36,13 @@
                     </div>
                     <br>
                         <div class="row">
-                        <div class="col-md-7">                
-                            <p class="text-muted"> Author(s): Harper Lee </p>
-                            <p class="text-muted"> Publishers: J. B. Lippincott & Co. </p>
-                            <p class="text-muted"> Publication Date: July 11, 1960 </p>
-                            <p class="text-muted"> Genre: Fiction, Drama </p>
-                            <p class="text-muted"> Language: English </p>
-                            <p class="text-muted"> Buy On: Gramedia (gramed.com/123) </p>
-                        
-                        
-                            <h4 class="card-title">SUMMARY</h4>
-                            <p class="text-muted"> A classic novel set in the American South during the Great Depression  </p>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="book-cover">
-                                <img src="admin/assets/images/byron.png" alt="Book Cover" class="ukuranbuku">
-                            </div>
+                        <div class="col-md-12">                
+                            <p class="text-muted"> By John Smith, February 27, 2024 </p>
+                            <br>
+                            <p class="text-muted"> Books have been an integral part of human civilization for centuries, serving as vessels of knowledge, entertainment, and inspiration. From ancient scrolls to modern e-readers, the written word has captivated minds and hearts across cultures and generations.</p>
+                            <br>
+                            <p class="text-muted"> Diving into Different Genres</p>
+                            <p class="text-muted"> One of the most fascinating aspects of literature is its diversity. Whether you're drawn to the thrilling suspense of a mystery novel, the heartwarming tales of romance, or the epic adventures of fantasy, there's a genre for every taste and inclination. Each genre offers a unique experience, transporting readers to distant lands, introducing them to unforgettable characters, and exploring timeless themes.</p>
                         </div>
                     </div>
                 </div>

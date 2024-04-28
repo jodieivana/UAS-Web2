@@ -9913,7 +9913,7 @@ input[type="button"].btn-block {
   height: 0;
   margin: 0.5rem 0;
   overflow: hidden;
-  border-top: 1px solid #2c2e33; }
+  border-top: 1px solid; }
 
 .dropdown-item {
   display: block;
@@ -11904,6 +11904,22 @@ input[type="button"].btn-block {
     float: right;
   }
 
+.all-notif {
+  margin-bottom: 10px;
+}
+
+.subject{
+  color: #152E7A;
+  font-size: 20px;
+}
+
+.content-notif{
+  font-size: 15px;
+}
+
+.tanggal {
+  color: #7081B2;
+}
   #coverUpload {
     display: none;
 }
@@ -11929,7 +11945,38 @@ input[type="button"].btn-block {
   .row1 {
     float: right !important;
   }
+
   .save-book-button {
+    width: 150px;
+    background-color: #152E7A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    float: right !important;
+    text-align: center;
+  }
+  .save-book-button:hover, .add-book-button:hover{
+    text-decoration: none;
+    background-color: #506093;
+    color: white;
+  }
+
+  .delete-book-button:hover{
+    text-decoration: none;
+    background-color: #B95C64;
+    color: white;
+  }
+  
+  .draft-book-button:hover {
+    text-decoration: none;
+    background-color: #E0E7FF;
+    color: #152E7A;
+  }
+
+  .edit-book-button {
+    margin-right: 10px;
     width: 150px;
     background-color: #152E7A;
     color: white;
@@ -11954,10 +12001,40 @@ input[type="button"].btn-block {
     text-align: center;
   }
 
-  .add-book-button:hover {
+  .draft-book-button {
+    width: 180px;
+    margin-right: 10px;
+    background-color: #F7F9FF;
+    color: #152E7A;
+    padding: 10px 20px;
+    border: 2px solid #8493BD;
+    border-radius: 30px;
+    cursor: pointer;
+    float: right !important; 
+    text-align: center;
+  }
+
+  /* .add-book-button:hover {
     background-color: #152E7A;
     color: white;
     text-decoration: none;
+  } */
+
+.disabled-sent {
+  color: #8996BC;
+}
+
+.ukuranbuku {
+  height: 300px;
+}
+
+.isbn-container {
+  display: flex;
+  align-items: center;
+}
+
+.actions {
+  margin-left: auto;
 }
 
   
@@ -14056,7 +14133,9 @@ button.bg-dark:focus {
   padding-left: 0.5rem !important; }
 
 .p-3 {
-  padding: 1rem !important; }
+  padding: 1rem !important; 
+  color: black;
+}
 
 .pt-3,
 .py-3 {
@@ -16816,6 +16895,17 @@ code {
       .card.corona-gradient-card h4 {
         font-size: 0.75rem; } }
 
+
+.isbn {
+  color: #8593BC;
+  font-weight: normal;
+}
+
+.judulbesar {
+  color: #152E7A;
+  font-size: 40px;
+}
+
 .card-inverse-primary {
   background: rgba(0, 144, 231, 0.2);
   border: 1px solid #0084d5;
@@ -17932,7 +18022,8 @@ div.tagsinput {
       padding-left: 0; }
     .preview-list .preview-item .preview-item-content p {
       margin-bottom: 10px;
-      line-height: 1; }
+      line-height: 1; 
+      color: black;}
       .preview-list .preview-item .preview-item-content p .content-category {
         font-family: 'source-sans-pro-semibold', sans-serif;
         padding-right: 15px;
@@ -20719,7 +20810,7 @@ div.tagsinput {
             left: auto;
             -webkit-box-shadow: 0px 0px 35px -3px black;
             -moz-box-shadow: 0px 0px 35px -3px black;
-            box-shadow: 0px 0px 35px -3px black;
+            box-shadow: 0px 0px 35px -3px #AAB2CE;
             padding: 0; }
             .rtl .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown {
               right: auto;

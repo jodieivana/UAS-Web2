@@ -169,4 +169,44 @@ class AdminController extends Controller
     {
         return view('admin.bookdetail');
     }
+
+    public function view_article()
+    {
+        return view('admin.article');
+    }
+
+    public function view_addarticle()
+    {
+        return view('admin.addarticle');
+    }
+
+    public function view_articledetail()
+    {
+        return view('admin.articledetail');
+    }
+    
+    public function view_newsletter()
+    {
+        return view('admin.newsletter');
+    }
+
+    public function view_addnewsletter()
+    {
+        return view('admin.addnewsletter');
+    }
+
+    public function view_notification()
+    {
+        return view('admin.notification');
+    }
+
+    public function view_addnotification()
+    {
+        return view('admin.addnotification');
+    }
+
+    public function view_allnotification()
+    {
+        return view('admin.allnotification');
+    }
 }

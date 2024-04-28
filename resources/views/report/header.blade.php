@@ -13,7 +13,7 @@
                         <li class="nav-item">
                            <a class="nav-link" href="{{ route('bookshelf') }}">Bookshelf</a>
                         </li>
-                        <li class="nav-item dropdown active">
+                        <li class="nav-item dropdown">
                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Discover<span class="caret"></span></a>
                            @include('home.discovermenu')
                      
@@ -31,7 +31,6 @@
                         </form>
 
                         <i class="fa fa-bell bellheader" onclick="window.location.href='{{ route('notification') }}';" aria-hidden="true" style="color: #152E7A; font-size:25px" ></i>
-
 
                         @if (Route::has('login'))
                             @auth

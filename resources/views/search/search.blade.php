@@ -22,33 +22,21 @@
       <link href="home/css/responsive.css" rel="stylesheet" />
    </head>
    <body>
-      <div class="hero_area">
+      <!-- <div class="hero_area"> -->
          <!-- header section strats -->
-         @include('home.header')
+         @include('search.header')
          <!-- end header section -->
          <!-- slider section -->
-         @include('home.slider')
+         @include('search.top')
          <!-- end slider section -->
-      </div>
-      <!-- why section -->
-      @include('home.bestseller')
-      <!-- end why section -->
-      
-      <!-- arrival section -->
-      @include('home.release')
-      <!-- end arrival section -->
+      <!-- </div> -->
       
       <!-- product section -->
-      @include('home.newrelease')
+      @include('search.')
       <!-- end product section -->
 
-      @include('home.discoverhome')
+      @include('search.footer')
 
-      @include('home.feedbackpart')
-      <!-- end client section -->
-      <!-- footer start -->
-      @include('home.footer')
-      <!-- footer end -->
       <div class="cpy_">
          <p class="mx-auto">Copyright © 2024 PageTurner 
          </p>

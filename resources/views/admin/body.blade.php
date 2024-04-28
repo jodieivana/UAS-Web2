@@ -37,9 +37,10 @@
                   </div>
                 </div>
                 <div class="col-3">
-                  <div class="icon icon-box-success ">
+                  
+                    <i class="fa fa-user-o" style="font-size:24px; color: #152E7A;"></i>
                     <span class="mdi mdi-arrow-top-right icon-item"></span>
-                  </div>
+                  
                 </div>
               </div>
               <p class="text-success ml-2 mb-0 font-weight-medium persen">+3.5%<span class="week"> From last week</span></p>
@@ -57,9 +58,10 @@
                     </div>
                   </div>
                   <div class="col-3">
-                    <div class="icon icon-box-success ">
+                    
+                      <i class="fa fa-book" style="font-size:24px; color: #152E7A;"></i>
                       <span class="mdi mdi-arrow-top-right icon-item"></span>
-                    </div>
+                    
                   </div>
                 </div>
                 <p class="text-success ml-2 mb-0 font-weight-medium persen">+3.5%<span class="week"> From last week</span></p>
@@ -77,9 +79,10 @@
                     </div>
                   </div>
                   <div class="col-3">
-                    <div class="icon icon-box-success ">
+                    
+                      <i class="fa fa-edit" style="font-size:24px; color: #152E7A;"></i>
                       <span class="mdi mdi-arrow-top-right icon-item"></span>
-                    </div>
+                    
                   </div>
                 </div>
                 <p class="text-success ml-2 mb-0 font-weight-medium persen">+3.5%<span class="week"> From last week</span></p>

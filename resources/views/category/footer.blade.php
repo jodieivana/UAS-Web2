@@ -19,9 +19,9 @@
                                 <div class="widget_menu">
                                     <h3>Menu</h3>
                                     <ul>
-                                        <li><a href="#">HOME</a></li>
-                                        <li><a href="#">BOOKSHELF</a></li>
-                                        <li><a href="#">DISCOVER</a></li>
+                                        <li><a href="{{ route('userpage') }}">HOME</a></li>
+                                        <li><a href="{{ route('bookshelf') }}">BOOKSHELF</a></li>
+                                        <li><a href="{{ route('category') }}">DISCOVER</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -31,7 +31,7 @@
                         <!-- New section -->
                         <div class="full text-right">
                             <div class="logo_footer">
-                                <a href="#"><img width="210" src="home/images/logo.png" alt="#" /></a>
+                                <a href="{{ route('userpage') }}"><img width="210" src="home/images/logo.png" alt="#" /></a>
                             </div>
                             <div class="information_f">
                                  <p><strong>FOLLOW US ON</strong></p>
