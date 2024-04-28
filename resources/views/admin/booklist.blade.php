@@ -55,7 +55,7 @@
                             <td> English </td>
                             <td> Gramedia </td>
                             <td><a href="#" class="review-edit-link">REVIEW</a></td>
-                            <td><a href="#" class="review-edit-link">EDIT</a></td>
+                            <td><a href="{{ url('view_editbooklist') }}" class="review-edit-link">EDIT</a></td>
                             <td><a href="#" class="delete-link">DELETE</a></td>
                           </tr>
                         </tbody>

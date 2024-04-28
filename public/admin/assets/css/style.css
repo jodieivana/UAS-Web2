@@ -11975,6 +11975,12 @@ input[type="button"].btn-block {
     color: #152E7A;
   }
 
+  .edit-book-button:hover {
+    text-decoration: none;
+    background-color: #506093;
+    color: white;
+  }
+
   .edit-book-button {
     margin-right: 10px;
     width: 150px;

@@ -18,7 +18,7 @@
                 <div class="card">
                     <div class="card-body">
                         <br>
-                        <h4 class="card-title m-0">Add Article</h4>
+                        <h4 class="card-title m-0">Edit Article</h4>
                         <br>
                         <form class="form-sample">
                             <div class="row">

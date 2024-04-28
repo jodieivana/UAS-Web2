@@ -55,7 +55,7 @@
                                 </select>
                             </td>
                         
-                            <td><a href="#" class="review-edit-link">EDIT</a></td>
+                            <td><a href="{{ url('view_editarticle') }}" class="review-edit-link">EDIT</a></td>
                             <td><a href="#" class="delete-link">DELETE</a></td>
                           </tr>
                           <tr>

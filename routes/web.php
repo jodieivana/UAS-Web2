@@ -92,11 +92,15 @@ Route::get('/view_review/{review}/delete', [AdminController::class, 'delete_revi
 
 Route::get('/view_bookdetail', [AdminController::class, 'view_bookdetail']);
 
+Route::get('/view_editbooklist', [AdminController::class, 'view_editbooklist']);
+
 Route::get('/view_article', [AdminController::class, 'view_article']);
 
 Route::get('/view_addarticle', [AdminController::class, 'view_addarticle']);
 
 Route::get('/view_articledetail', [AdminController::class, 'view_articledetail']);
+
+Route::get('/view_editarticle', [AdminController::class, 'view_editarticle']);
 
 Route::get('/view_newsletter', [AdminController::class, 'view_newsletter']);
 

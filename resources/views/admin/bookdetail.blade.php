@@ -27,7 +27,7 @@
                         </div>
                         <div class="col-md-6">
                             {{-- <div class="actions"> --}}
-                                <a href="#" class="edit-book-button">EDIT</a>
+                                <a href="{{ url('view_editbooklist') }}" class="edit-book-button">EDIT</a>
                                 <a href="#" class="delete-book-button">DELETE</a>
 
                             {{-- </div> --}}
