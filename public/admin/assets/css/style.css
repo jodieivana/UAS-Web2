@@ -11967,6 +11967,19 @@ input[type="button"].btn-block {
     text-align: center;
   }
 
+  .draft-book-button {
+    width: 180px;
+    margin-right: 10px;
+    background-color: #F7F9FF;
+    color: #152E7A;
+    padding: 10px 20px;
+    border: 2px solid #8493BD;
+    border-radius: 30px;
+    cursor: pointer;
+    float: right !important; 
+    text-align: center;
+  }
+
   .add-book-button:hover {
     background-color: #152E7A;
     color: white;
