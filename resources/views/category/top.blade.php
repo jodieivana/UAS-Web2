@@ -23,11 +23,6 @@
                                 </div>
                                 <div class="row filterdis1">
                                     <h5 class="disbook">FILTER BY</h5>
-                                    <select name="readstatus" id="readstatus" class="readstatus classic filtersub">
-                                        <option value="read">SUBGENRE</option>
-                                        <option value="toread">TO READ</option>
-                                        <option value="reading">READING</option>
-                                    </select>
                                     <select name="readstatus" id="readstatus" class="readstatus classic">
                                         <option value="read">RATING</option>
                                         <option value="toread">TO READ</option>

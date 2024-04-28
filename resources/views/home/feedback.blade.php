@@ -1,5 +1,5 @@
-<section class="discoverhome_section">
-         <div class="container-fuild">
+<section class="subscribe_section">
+<div class="container-fuild">
             <div class="box">
                <div class="row">
                   <div class="col-md-6 offset-md-3">

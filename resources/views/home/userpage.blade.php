@@ -44,9 +44,6 @@
 
       @include('home.discoverhome')
 
-      <!-- client section -->
-      @include('home.subscribe')
-
       @include('home.feedback')
       <!-- end client section -->
       <!-- footer start -->
