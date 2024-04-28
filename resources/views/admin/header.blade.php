@@ -107,11 +107,11 @@
               <h6 class="p-3 mb-0">Profile</h6>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item preview-item" href="{{ route('logout') }}"
-              onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-              <div class="preview-item-content">
-                  <p class="preview-subject mb-1">Log out</p>
-              </div>
-          </a>
+                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                <div class="preview-item-content">
+                    <p class="preview-subject mb-1">Log out</p>
+                </div>
+              </a>
           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
               @csrf
           </form>
