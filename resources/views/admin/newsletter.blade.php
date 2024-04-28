@@ -43,7 +43,7 @@
                             <td> Check out our top picks for this week1 </td>
                             <td> John Doe </td>
                             <td> 2024-02-10 </td>
-                            <td> <a href="{{ url('view_addnewsletter') }}"> Sent </a></td>
+                            <td> <a href="{{ url('view_draftnewsletter') }}"> Draft </a></td>
                             <td> newsletter@example.com </td>
                           </tr>
                           <tr>

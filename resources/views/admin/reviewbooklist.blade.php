@@ -20,51 +20,46 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
-                        <h4 class="card-title m-0">Notification</h4>
-                        <a href="{{ url('view_addnotification') }}" class="add-book-button">+ Add Notification</a>
+                        <h4 class="card-title">Book List Review</h4>
+                        
                       </div>
                     <div class="table-responsive">
                       <table class="table table-bordered">
                         <thead>
                           <tr>
                             <th> ID </th>
-                            <th> Title </th>
-                            <th> Content </th>
-                            <th> Recipients </th>
-                            <th> Sender </th>
-                            <th> Date Sent </th>
-                            <th> Status </th>
+                            <th> Book Title </th>
+                            <th> Review </th>
+                            <th> Reviewer </th>
+                            <th> Date Submitted </th>
+                            <th> Delete </th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td> 1 </td>
-                            <td> New Book Release </td>
-                            <td> Check out our latest book release! </td>
-                            <td> All </td>
-                            <td> John Doe </td>
+                            <td> 978-3-16-148410-0 </td>
+                            <td> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
+                            <td> A timeless classic that touches on important societal issues. </td>
+                            <td> J. B. Lippincott & Co. </td>
                             <td> 2024-02-10 </td>
-                            <td> <a href="{{ url('view_draftnotification') }}"> Draft </a> </td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
                           </tr>
                           <tr>
-                            <td> 2 </td>
-                            <td> New Book Release </td>
-                            <td> Check out our latest book release! </td>
-                            <td> All </td>
-                            <td> John Doe </td>
+                            <td> 978-3-16-148410-0 </td>
+                            <td> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
+                            <td> A timeless classic that touches on important societal issues. </td>
+                            <td> J. B. Lippincott & Co. </td>
                             <td> 2024-02-10 </td>
-                            <td class="disabled-sent"> Sent </a> </td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
                           </tr>
                           <tr>
-                            <td> 3 </td>
-                            <td> New Book Release </td>
-                            <td> Check out our latest book release! </td>
-                            <td> All </td>
-                            <td> John Doe </td>
+                            <td> 978-3-16-148410-0 </td>
+                            <td> <a href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </a> </td>
+                            <td> A timeless classic that touches on important societal issues. </td>
+                            <td> J. B. Lippincott & Co. </td>
                             <td> 2024-02-10 </td>
-                            <td class="disabled-sent"> Sent </a> </td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
                           </tr>
-                          <tr>
                         </tbody>
                       </table>
                     </div>

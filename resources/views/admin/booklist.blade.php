@@ -54,7 +54,157 @@
                             <td> Fiction, Drama </td>
                             <td> English </td>
                             <td> Gramedia </td>
-                            <td><a href="#" class="review-edit-link">REVIEW</a></td>
+                            <td><a href="{{ url('view_reviewbooklist') }}" class="review-edit-link">REVIEW</a></td>
+                            <td><a href="{{ url('view_editbooklist') }}" class="review-edit-link">EDIT</a></td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td> To Kill a Mockingbird </td>
+                            <td> Harper Lee </td>
+                            <td> J. B. Lippincott & Co. </td>
+                            <td> July 11, 1960 </td>
+                            <td> A classic novel set in the American South during the Great Depression... </td>
+                            <td> IMG_1080.png </td>
+                            <td> Fiction, Drama </td>
+                            <td> English </td>
+                            <td> Gramedia </td>
+                            <td><a href="{{ url('view_reviewbooklist') }}" class="review-edit-link">REVIEW</a></td>
+                            <td><a href="{{ url('view_editbooklist') }}" class="review-edit-link">EDIT</a></td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td> To Kill a Mockingbird </td>
+                            <td> Harper Lee </td>
+                            <td> J. B. Lippincott & Co. </td>
+                            <td> July 11, 1960 </td>
+                            <td> A classic novel set in the American South during the Great Depression... </td>
+                            <td> IMG_1080.png </td>
+                            <td> Fiction, Drama </td>
+                            <td> English </td>
+                            <td> Gramedia </td>
+                            <td><a href="{{ url('view_reviewbooklist') }}" class="review-edit-link">REVIEW</a></td>
+                            <td><a href="{{ url('view_editbooklist') }}" class="review-edit-link">EDIT</a></td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td> To Kill a Mockingbird </td>
+                            <td> Harper Lee </td>
+                            <td> J. B. Lippincott & Co. </td>
+                            <td> July 11, 1960 </td>
+                            <td> A classic novel set in the American South during the Great Depression... </td>
+                            <td> IMG_1080.png </td>
+                            <td> Fiction, Drama </td>
+                            <td> English </td>
+                            <td> Gramedia </td>
+                            <td><a href="{{ url('view_reviewbooklist') }}" class="review-edit-link">REVIEW</a></td>
+                            <td><a href="{{ url('view_editbooklist') }}" class="review-edit-link">EDIT</a></td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td> To Kill a Mockingbird </td>
+                            <td> Harper Lee </td>
+                            <td> J. B. Lippincott & Co. </td>
+                            <td> July 11, 1960 </td>
+                            <td> A classic novel set in the American South during the Great Depression... </td>
+                            <td> IMG_1080.png </td>
+                            <td> Fiction, Drama </td>
+                            <td> English </td>
+                            <td> Gramedia </td>
+                            <td><a href="{{ url('view_reviewbooklist') }}" class="review-edit-link">REVIEW</a></td>
+                            <td><a href="{{ url('view_editbooklist') }}" class="review-edit-link">EDIT</a></td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td> To Kill a Mockingbird </td>
+                            <td> Harper Lee </td>
+                            <td> J. B. Lippincott & Co. </td>
+                            <td> July 11, 1960 </td>
+                            <td> A classic novel set in the American South during the Great Depression... </td>
+                            <td> IMG_1080.png </td>
+                            <td> Fiction, Drama </td>
+                            <td> English </td>
+                            <td> Gramedia </td>
+                            <td><a href="{{ url('view_reviewbooklist') }}" class="review-edit-link">REVIEW</a></td>
+                            <td><a href="{{ url('view_editbooklist') }}" class="review-edit-link">EDIT</a></td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td> To Kill a Mockingbird </td>
+                            <td> Harper Lee </td>
+                            <td> J. B. Lippincott & Co. </td>
+                            <td> July 11, 1960 </td>
+                            <td> A classic novel set in the American South during the Great Depression... </td>
+                            <td> IMG_1080.png </td>
+                            <td> Fiction, Drama </td>
+                            <td> English </td>
+                            <td> Gramedia </td>
+                            <td><a href="{{ url('view_reviewbooklist') }}" class="review-edit-link">REVIEW</a></td>
+                            <td><a href="{{ url('view_editbooklist') }}" class="review-edit-link">EDIT</a></td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td> To Kill a Mockingbird </td>
+                            <td> Harper Lee </td>
+                            <td> J. B. Lippincott & Co. </td>
+                            <td> July 11, 1960 </td>
+                            <td> A classic novel set in the American South during the Great Depression... </td>
+                            <td> IMG_1080.png </td>
+                            <td> Fiction, Drama </td>
+                            <td> English </td>
+                            <td> Gramedia </td>
+                            <td><a href="{{ url('view_reviewbooklist') }}" class="review-edit-link">REVIEW</a></td>
+                            <td><a href="{{ url('view_editbooklist') }}" class="review-edit-link">EDIT</a></td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td> To Kill a Mockingbird </td>
+                            <td> Harper Lee </td>
+                            <td> J. B. Lippincott & Co. </td>
+                            <td> July 11, 1960 </td>
+                            <td> A classic novel set in the American South during the Great Depression... </td>
+                            <td> IMG_1080.png </td>
+                            <td> Fiction, Drama </td>
+                            <td> English </td>
+                            <td> Gramedia </td>
+                            <td><a href="{{ url('view_reviewbooklist') }}" class="review-edit-link">REVIEW</a></td>
+                            <td><a href="{{ url('view_editbooklist') }}" class="review-edit-link">EDIT</a></td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td> To Kill a Mockingbird </td>
+                            <td> Harper Lee </td>
+                            <td> J. B. Lippincott & Co. </td>
+                            <td> July 11, 1960 </td>
+                            <td> A classic novel set in the American South during the Great Depression... </td>
+                            <td> IMG_1080.png </td>
+                            <td> Fiction, Drama </td>
+                            <td> English </td>
+                            <td> Gramedia </td>
+                            <td><a href="{{ url('view_reviewbooklist') }}" class="review-edit-link">REVIEW</a></td>
+                            <td><a href="{{ url('view_editbooklist') }}" class="review-edit-link">EDIT</a></td>
+                            <td><a href="#" class="delete-link">DELETE</a></td>
+                          </tr>
+                          <tr>
+                            <td> 978-3-16-148410-0 </td>
+                            <td> To Kill a Mockingbird </td>
+                            <td> Harper Lee </td>
+                            <td> J. B. Lippincott & Co. </td>
+                            <td> July 11, 1960 </td>
+                            <td> A classic novel set in the American South during the Great Depression... </td>
+                            <td> IMG_1080.png </td>
+                            <td> Fiction, Drama </td>
+                            <td> English </td>
+                            <td> Gramedia </td>
+                            <td><a href="{{ url('view_reviewbooklist') }}" class="review-edit-link">REVIEW</a></td>
                             <td><a href="{{ url('view_editbooklist') }}" class="review-edit-link">EDIT</a></td>
                             <td><a href="#" class="delete-link">DELETE</a></td>
                           </tr>

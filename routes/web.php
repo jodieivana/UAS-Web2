@@ -94,6 +94,8 @@ Route::get('/view_bookdetail', [AdminController::class, 'view_bookdetail']);
 
 Route::get('/view_editbooklist', [AdminController::class, 'view_editbooklist']);
 
+Route::get('/view_reviewbooklist', [AdminController::class, 'view_reviewbooklist']);
+
 Route::get('/view_article', [AdminController::class, 'view_article']);
 
 Route::get('/view_addarticle', [AdminController::class, 'view_addarticle']);
@@ -109,6 +111,8 @@ Route::get('/view_addnewsletter', [AdminController::class, 'view_addnewsletter']
 Route::get('/view_notification', [AdminController::class, 'view_notification']);
 
 Route::get('/view_addnotification', [AdminController::class, 'view_addnotification']);
+
+Route::get('/view_draftnotification', [AdminController::class, 'view_draftnotification']);
 
 Route::get('/view_allnotification', [AdminController::class, 'view_allnotification']);
 

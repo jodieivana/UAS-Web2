@@ -175,6 +175,12 @@ class AdminController extends Controller
         return view('admin.editbooklist');
     }
 
+    public function view_reviewbooklist()
+    {
+        return view('admin.reviewbooklist');
+    }
+
+
     public function view_article()
     {
         return view('admin.article');
@@ -213,6 +219,11 @@ class AdminController extends Controller
     public function view_addnotification()
     {
         return view('admin.addnotification');
+    }
+
+    public function view_draftnotification()
+    {
+        return view('admin.draftnotification');
     }
 
     public function view_allnotification()

@@ -18,7 +18,7 @@
                 <div class="card">
                     <div class="card-body">
                         <br>
-                        <h4 class="card-title m-0">Add Notification</h4>
+                        <h4 class="card-title m-0">Add Notification - Draft</h4>
                         <br>
                         <form class="form-sample">
                             <div class="row">
