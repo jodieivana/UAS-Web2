@@ -55,8 +55,8 @@
                             <td> <a href="/view_reports/{{ $report['id'] }}/delete" class="btn btn-warning text-dark">Delete</td>
                             <td> 
                               @if($report->report_status == 'on progress')
-                                <a href="/view_reports/{{ $report['id'] }}/approved" class="btn btn-warning text-dark">Resolve
-                                <a href="/view_reports/{{ $report['id'] }}/declined" class="btn btn-warning text-dark">Reject
+                                <a href="/view_reports/{{ $report['id'] }}/approved" class="btn btn-success text-dark">Resolve
+                                <a href="/view_reports/{{ $report['id'] }}/declined" class="btn mx-2 btn-danger text-dark">Reject
                               @else 
                                 {{ $report->report_status }}
                               @endif

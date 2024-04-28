@@ -16,7 +16,7 @@ class AdminController extends Controller
     public function view_userlist()
     {
         return view('admin.userlist', [
-            'users' => User::all()
+            'users' => User::orderByDesc('created_at')->get()
         ]);
     }
 
@@ -132,6 +132,14 @@ class AdminController extends Controller
         return view('admin.booklist', [
             'books' => Book::all()
         ]);
+    }
+
+    public function delete_booklist(Book $book)
+    {
+        $book->delete();
+
+        return redirect()->back()->with('success', 'Book Deleted');
+    
     }
 
     public function view_addbooklist()

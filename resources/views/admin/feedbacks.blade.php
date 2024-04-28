@@ -50,8 +50,8 @@
                             <td> 
 
                               @if($feedback->status == 'on progress')
-                                <a href="/view_feedbacks/{{ $feedback['id'] }}/approved" class="btn btn-warning text-dark">Resolve
-                                <a href="/view_feedbacks/{{ $feedback['id'] }}/declined" class="btn btn-warning text-dark">Reject
+                                <a href="/view_feedbacks/{{ $feedback['id'] }}/approved" class="btn btn-success text-dark">Resolve
+                                <a href="/view_feedbacks/{{ $feedback['id'] }}/declined" class="btn mx-2 btn-danger text-dark">Reject
                               @else 
                                 {{ $feedback->status }}
                               @endif 

@@ -84,6 +84,7 @@ Route::get('/view_feedbacks/{feedback}/declined', [AdminController::class, 'decl
 
 
 Route::get('/view_booklist', [AdminController::class, 'view_booklist']);
+Route::get('/view_booklist/{book}/delete', [AdminController::class, 'delete_booklist']);
 
 Route::get('/view_addbooklist', [AdminController::class, 'view_addbooklist']);
 

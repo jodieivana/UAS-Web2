@@ -37,7 +37,7 @@
                           </tr>
                         </thead>
                         <tbody>
-                          @foreach($reviews as $review)
+                          
                           <tr>
                             <td> 1 </td>
                             <td> New Book Release </td>
@@ -47,7 +47,7 @@
                             <td> 2024-02-10 </td>
                             <td class="book-link"> <a href="{{ url('view_draftnotification') }}"> Draft </a> </td>
                           </tr>
-                          @endforeach
+                          
                         </tbody>
                       </table>
                     </div>
