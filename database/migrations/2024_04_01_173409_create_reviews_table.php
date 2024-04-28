@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('review_status');
             $table->foreignId('user_id');
             $table->foreignId('book_id');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

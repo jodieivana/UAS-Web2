@@ -41,11 +41,90 @@ class AdminController extends Controller
         ]);
     }
 
+    public function delete_reports(Report $report)
+    {
+        $report->delete();
+        Notification::create([
+            'subject' => 'Report Deleted',
+            'content' => 'Your report on ' . $report->review->book->name . " not accepted",
+            'sent_date' => Carbon::now(),
+            'user_id' => $report->reporter_user->id
+        ]);
+
+        return redirect()->back()->with('success', 'Report Deleted');
+    
+    }
+
+    public function approved_reports(Report $report)
+    {
+        $report->report_status = 'aprroved';
+        $report->save();
+            
+        Notification::create([
+            'subject' => 'Report Resolved',
+            'content' => 'Your report on ' . $report->reported_user->name . " accepted",
+            'sent_date' => Carbon::now(),
+            'user_id' => $report->reporter_user->id,
+        ]);
+
+        return redirect()->back()->with('success', 'Status Successfully Changed');
+        
+    }
+
+    public function declined_reports(Report $report)
+    {
+        $report->report_status = 'declined';
+        $report->save();
+            
+        Notification::create([
+            'subject' => 'Report Rejected',
+            'content' => 'Your report on ' . $report->reported_user->name . " not accepted",
+            'sent_date' => Carbon::now(),
+            'user_id' => $report->reporter_user->id,
+        ]);
+
+        return redirect()->back()->with('success', 'Status Successfully Changed');
+    }
+
     public function view_feedbacks()
     {
         return view('admin.feedbacks', [
             'feedbacks' => Feedback::all()
         ]);
+    }
+
+
+    public function approved_feedbacks(Feedback $feedback)
+    {
+        $feedback->status = 'aprroved';
+        $feedback->date_resolved = Carbon::now();
+
+        $feedback->save();
+            
+        Notification::create([
+            'subject' => 'Feedback Resolved',
+            'content' => 'Thankyou for your feedback!',
+            'sent_date' => Carbon::now(),
+            'user_id' => $feedback->user_id,
+        ]);
+        return redirect()->back()->with('success', 'Status Successfully Changed');
+        
+    }
+
+    public function declined_feedbacks(Feedback $feedback)
+    {
+        $feedback->status = 'declined';
+        $feedback->date_resolved = Carbon::now();
+        $feedback->save();
+            
+        Notification::create([
+            'subject' => 'Feedback Resolved',
+            'content' => 'Your feedback is rejected!',
+            'sent_date' => Carbon::now(),
+            'user_id' => $feedback->user_id,
+        ]);
+
+        return redirect()->back()->with('success', 'Status Successfully Changed');
     }
 
     public function view_booklist()

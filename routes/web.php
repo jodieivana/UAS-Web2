@@ -53,8 +53,15 @@ Route::get('/view_userlist', [AdminController::class, 'view_userlist']);
 Route::get('/view_userlist/{user}/ban', [AdminController::class, 'ban_userlist']);
 
 Route::get('/view_reports', [AdminController::class, 'view_reports']);
+Route::get('/view_reports/{report}/delete', [AdminController::class, 'delete_reports']);
+Route::get('/view_reports/{report}/approved', [AdminController::class, 'approved_reports']);
+Route::get('/view_reports/{report}/declined', [AdminController::class, 'declined_reports']);
 
 Route::get('/view_feedbacks', [AdminController::class, 'view_feedbacks']);
+Route::get('/view_feedbacks/{feedback}/delete', [AdminController::class, 'delete_feedbacks']);
+Route::get('/view_feedbacks/{feedback}/approved', [AdminController::class, 'approved_feedbacks']);
+Route::get('/view_feedbacks/{feedback}/declined', [AdminController::class, 'declined_feedbacks']);
+
 
 Route::get('/view_booklist', [AdminController::class, 'view_booklist']);
 
@@ -64,5 +71,6 @@ Route::get('/view_review', [AdminController::class, 'view_review']);
 Route::get('/view_review/{review}/delete', [AdminController::class, 'delete_review']);
 
 Route::get('/view_bookdetail', [AdminController::class, 'view_bookdetail']);
+
 
 require __DIR__.'/auth.php';

@@ -8,4 +8,21 @@ use Illuminate\Database\Eloquent\Model;
 class Report extends Model
 {
     use HasFactory;
+
+    protected $guarded = [];
+    public function book() {
+        return $this->belongsTo(Book::class);
+    }
+
+    public function reported_user() {
+        return $this->belongsTo(User::class, 'reported_user_id');
+    }
+
+    public function reporter_user() {
+        return $this->belongsTo(User::class, 'reporter_user_id');
+    }
+
+    public function review() {
+        return $this->belongsTo(Review::class, 'reported_review_id');
+    }
 }

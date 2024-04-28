@@ -18,6 +18,16 @@
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Feedbacks</h4>
+                    @if(session()->has('success'))
+                        <div class="alert alert-success dismissable fade show" role="alert">
+                        {{ session('success') }}
+                        </div>
+                        @endif
+                        @if(session()->has('error'))
+                        <div class="alert alert-danger dismissable fade show" role="alert">
+                        {{ session('error') }}
+                        </div>
+                     @endif
                     <div class="table-responsive">
                       <table class="table table-bordered datatable">
                         <thead>

@@ -19,7 +19,7 @@ class FeedbackFactory extends Factory
         return [
             'title' => fake()->sentence(3,6),
             'content' => fake()->sentence(5,15),
-            'type' => '-',
+            'type' => fake()->randomElement(['complaint', 'suggestion']),
             'status' => fake()->randomElement(['approved', 'declined', 'on progress']),
             'date_submitted' => fake()->date(),
             'date_resolved' => fake()->date(),

@@ -42,7 +42,6 @@
                           </tr>
                         </thead>
                         <tbody>
-                          @foreach($reviews as $review)
                           <tr>
                             <td> 978-3-16-148410-0 </td>
                             <td href="{{ url('view_bookdetail') }}"> To Kill a Mockingbird </td>
@@ -58,7 +57,6 @@
                             <td><a href="#" class="review-edit-link">EDIT</a></td>
                             <td><a href="#" class="delete-link">DELETE</a></td>
                           </tr>
-                        @endforeach
                         </tbody>
                       </table>
                     </div>
