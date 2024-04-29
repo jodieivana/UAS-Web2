@@ -57,7 +57,7 @@
                </div>
 
                <div class="ftrframebk">
-                  <img src="{{ $book_fiction[0] -> cover_image}}" class="img-fluid img-bestseller ftrbook" alt="" onclick="window.location.href='{{ route('buku') }}';">
+                  <img src="{{ $book_fiction[0] -> cover_image}}" class="img-fluid img-bestseller ftrbook" alt="">
                </div>
 
                <div class="column ">

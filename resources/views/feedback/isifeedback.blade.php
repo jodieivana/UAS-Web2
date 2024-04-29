@@ -14,28 +14,29 @@
                                 <div class="container">
                                     <div class="row">
                                        <div class="col mt-4">
-                                          <form class="py-2 px-4" action=""  method="POST" autocomplete="off">
+                                          <form class="py-2 px-4" action="/submit_feedback"  method="POST" autocomplete="off">
                                              @csrf
                                              <div class=" filterdis1">
                                                    <h5 class="isistars">TITLE:</h5>
-                                                   <input type="text" class="form-control placeholders" placeholder="Type Title"/>
+                                                   <input type="text" name='title' class="form-control placeholders" placeholder="Type Title"/>
                                              </div>
 
                                              <div class=" filterdis1">
                                                    <h5 class="isistars">TYPE:</h5>
-                                                   <select name="readstatus" id="readstatus" class="readstatus classic">
-                                                      <option value="read">COMPLAINT</option>
-                                                      <option value="toread">SUGGESTION</option>
+                                                   <select name="type" id="readstatus" class="readstatus classic">
+                                                      <option value="complaint">COMPLAINT</option>
+                                                      <option value="suggestion">SUGGESTION</option>
                                                    </select>
                                              </div>
                                              <div class="form-group row mt-4">
                                                 <div class="col">
-                                                   <textarea class="form-control tmptreview" name="comment" rows="6 " placeholder="Write us your feedback now." maxlength="200"></textarea>
+                                                   <textarea class="form-control tmptreview" name="content" rows="6 " placeholder="Write us your feedback now." maxlength="200"></textarea>
                                                 </div>
                                              </div>
 
                                              <div class="mt-3 text-right">
                                                 <input type='submit' value='SUBMIT FEEDBACK'>
+                                           
                                              </div>
                                           </form>
                                        </div>

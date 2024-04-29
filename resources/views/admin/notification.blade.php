@@ -22,16 +22,17 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <h4 class="card-title m-0">Notification</h4>
                         <a href="{{ url('view_addnotification') }}" class="add-book-button">+ Add Notification</a>
-                        @if(session()->has('success'))
-                            <div class="alert alert-success dismissable fade show" role="alert">
-                            {{ session('success') }}
-                            </div>
-                            @endif
-                            @if(session()->has('error'))
-                            <div class="alert alert-danger dismissable fade show" role="alert">
-                            {{ session('error') }}
-                            </div>
-                        @endif
+                      </div>
+                      @if(session()->has('success'))
+                      <div class="alert alert-success dismissable fade show" role="alert">
+                      {{ session('success') }}
+                      </div>
+                      @endif
+                      @if(session()->has('error'))
+                      <div class="alert alert-danger dismissable fade show" role="alert">
+                      {{ session('error') }}
+                      </div>
+                   @endif
                     <div class="table-responsive">
                       <table class="table table-bordered">
                         <thead>

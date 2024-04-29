@@ -28,7 +28,7 @@
                   </div>
 
                   <div class="col text-right">
-                  <p class="lightp authorisibuku" onclick="window.location.href='{{ route('report') }}';">REPORT</p>
+                     <p class="lightp authorisibuku" onclick="window.location.href='/report/{{ $review->id }}'">REPORT</p>
                   </div>
                </div>
 
@@ -38,6 +38,7 @@
 
                <hr class="linev">
             </div>
+            @endforeach
 
 
             

@@ -27,7 +27,7 @@
                         </div>
                         <div class="col-md-6">
                             {{-- <div class="actions"> --}}
-                                <a href="{{ url('view_editbooklist') }}" class="edit-book-button">EDIT</a>
+                                <a href="{{ url('view_editbooklist/' . $book->id) }}" class="edit-book-button">EDIT</a>
                                 <a href="{{ url('/view_booklist/' . $book->id . '/delete') }}" class="delete-book-button">DELETE</a>
 
                             {{-- </div> --}}

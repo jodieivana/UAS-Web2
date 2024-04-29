@@ -35,7 +35,13 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/userpage', function () {
-    return view('home.userpage');
+    return view('home.userpage',[
+        'book' => Book::inRandomOrder()->limit(12)->get(),
+        'book_fiction' => Book::where('category_id', 1)->limit(3)->get(),
+        'book_bm' => Book::where('category_id', 7)->limit(3)->get(),
+        'book_md' => Book::where('category_id', 3)->limit(3)->get(),
+        'book_tya' => Book::where('category_id', 11)->limit(3)->get()
+    ]);
 })->middleware(['auth', 'verified'])->name('userpage');
 
 Route::get('/bookshelf', function () {
@@ -58,7 +64,6 @@ Route::post('/bookshelf', function(Request $request) {
         })
         ->orderByDesc('updated_at')
         ->get()
-        //ini yg bookshelves aku chatgpt tp semoga ngerti
     
     ]);
 })->middleware(['auth', 'verified']);
@@ -152,7 +157,7 @@ Route::get('/notification', function () {
     ]);
 })->middleware(['auth', 'verified'])->name('notification');
 
-Route::get('/report', function () {
+Route::get('/report/{review}', function (Review $review) {
     return view('report.report',[
         'review' => $review
     ]);
@@ -255,9 +260,9 @@ Route::post('/view_addbooklist', [AdminController::class, 'save_addbooklist']);
 Route::get('/view_review', [AdminController::class, 'view_review']);
 Route::get('/view_review/{review}/delete', [AdminController::class, 'delete_review']);
 
-Route::get('/view_bookdetail', [AdminController::class, 'view_bookdetail']);
+Route::get('/view_bookdetail/{book}', [AdminController::class, 'view_bookdetail']);
 
-Route::get('/view_editbooklist', [AdminController::class, 'view_editbooklist']);
+Route::get('/view_editbooklist/{book}', [AdminController::class, 'view_editbooklist']);
 Route::put('/view_editbooklist/{book}', [AdminController::class, 'submit_editbooklist']);
 
 Route::get('/view_reviewbooklist/{book}', [AdminController::class, 'view_reviewbooklist']);

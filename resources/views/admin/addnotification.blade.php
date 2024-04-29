@@ -20,7 +20,8 @@
                         <br>
                         <h4 class="card-title m-0">Add Notification</h4>
                         <br>
-                        <form class="form-sample">
+                        <form class="form-sample" action='/view_addnotification' method='post'>
+                            @csrf
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
@@ -31,9 +32,10 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Recipients</label>
-                                        <select name='subject' class="form-control" placeholder="Choose">
-                                            <option>admin@gmail.com</option>
-                                            <option>admin1@gmail.com</option>
+                                        <select name='user_id' class="form-control" placeholder="Choose">
+                                            @foreach($users as $user) 
+                                                <option value='{{ $user->id }}'>{{ $user->email}}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                 </div>
@@ -42,7 +44,7 @@
                                 <div class="col-md-8">
                                     <div class="form-group">
                                         <label>Content</label>
-                                        <input type="text" class="form-control" style="height: 200px;" placeholder="Type Content"/>
+                                        <input type="text" name='content' class="form-control" style="height: 200px;" placeholder="Type Content"/>
                                     </div>
                                 </div>
                             </div>

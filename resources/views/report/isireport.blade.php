@@ -21,14 +21,14 @@
                                              <p class="isistar2">“{{ $review->review_text }}”</p>
                                              <div class=" filterdis1">
                                                    <h5 class="isistars">TYPE:</h5>
-                                                   <select name="readstatus" id="readstatus" class="readstatus classic">
-                                                      <option value="read">SPAM</option>
-                                                      <option value="toread">OFFENSIVE</option>
+                                                   <select name="report_type" id="readstatus" class="readstatus classic">
+                                                      <option value="spam">SPAM</option>
+                                                      <option value="offensive">OFFENSIVE</option>
                                                    </select>
                                              </div>
                                              <div class="form-group row mt-4">
                                                 <div class="col">
-                                                   <textarea class="form-control tmptreview" name="comment" rows="6 " placeholder="Why is it violating? (Write your report) " maxlength="200"></textarea>
+                                                   <textarea class="form-control tmptreview" name="content" rows="6 " placeholder="Why is it violating? (Write your report) " maxlength="200"></textarea>
                                                 </div>
                                              </div>
 

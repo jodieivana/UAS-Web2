@@ -36,6 +36,7 @@
                           </tr>
                         </thead>
                         <tbody>
+                          @foreach($reviews as $review)
                           <tr>
                             <td> {{ $review->id}}</td>
                               <td class="book-link"><a href="{{url('view_bookdetail')}}"> {{ $review->book->title}}</a></td>
@@ -44,6 +45,7 @@
                               <td> {{ Carbon\Carbon::parse($review->created_at)->format('d M Y') }}</td>
                               <td><a href="/view_review/{{ $review['id'] }}/delete" class="btn btn-warning text-dark">Delete</td>
                             </tr>
+                            @endforeach
                         </tbody>
                       </table>
                     </div>

@@ -17,8 +17,8 @@
 
                             <div class="row filterbook2">
                                 <div class="row filterdis1">
-                                <h5 class="disbook">SELECT</h5>
-                                    <select name="readstatus" id="readstatus" class="readstatus classic selectdis">
+                                <h5 class="disbook">FILTER BY</h5>
+                                    <select name="category_id" id="readstatus" class="readstatus classic selectdis">
                                         @foreach($categories as $category)
                                             <option value='{{ $category->id }}'>{{ $category->category_name }}</option>
                                         @endforeach

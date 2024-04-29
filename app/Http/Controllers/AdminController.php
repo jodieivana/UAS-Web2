@@ -162,7 +162,7 @@ class AdminController extends Controller
             'buy_on' => 'required'
         ]);
 
-
+        $validatedData['tags'] = '-';
         Book::create($validatedData);
 
         return redirect('/view_booklist')->with('success', 'New book created.');
@@ -232,7 +232,7 @@ class AdminController extends Controller
     public function view_reviewbooklist(Book $book)
     {
         return view('admin.reviewbooklist',[
-            'reviews' => Review::where('book_id', $book->id)->sortByDesc('created_at')->get()
+            'reviews' => Review::where('book_id', $book->id)
         ]);
     }
 
