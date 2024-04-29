@@ -139,13 +139,13 @@
                   </div>
 
                   <div class="row newscont">
-                     <img src="{{ $book_tya[2] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
+                     <img src="{{ $book_tya[1] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
                      <div class="column textboxt">
                         <p class="titlepbk" onclick="window.location.href='index.html';">
-                           {{ $book_tya[2] -> title}}
+                           {{ $book_tya[1] -> title}}
                         </p>
                         <p class="lightp2" onclick="window.location.href='index.html';">
-                           {{ $book_tya[2] -> authors}}
+                           {{ $book_tya[1] -> authors}}
                         </p>
                      </div>
                   </div>
