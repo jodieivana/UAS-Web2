@@ -4,27 +4,36 @@
          <div class="grid-item">
 
             <div>
-               <img src="{{ asset('home/images/bestseller/book3.png') }}" class="img-fluid img-bestseller nwrbook3" alt="" onclick="window.location.href='index.html';"></td>
+               <img src="{{ $book->cover_image }}" class="img-fluid img-bestseller nwrbook3" style='width: 300px' alt="" ></td>
                <div class="column ">
                   
+                  @if(!$book->isBookshelved())
                   <div class="btn-box4">
-                     <a href="" class="btn1">
+                     <a href="/add_bookshelf/{{ $book->id }}" class="btn1">
                         <div class="row allignbuyon">
                            <p class="btnkcl2">+</p>
                            <p class="btnkcl1">BOOKSHELF</p>
                         </div>
                      </a>
                   </div>
-
+                  @else
                   <div class="btn-box5">
-                     <a href="" class="btn1">
+                     <a href="/add_bookshelf/{{ $book->id }}" class="btn1">
                         <div class="row allignbuyon">
-                           <p class="btnkcl5">BUY ON</p>
-                           <i class="fa fa-caret-down" aria-hidden="true"></i>
+                           <p class="btnkcl1">SAVED</p>
                         </div>
                      </a>
                   </div>
-            
+                  @endif    
+                  
+                  <div class="btn-box5">
+                     <a href="{{ url($book->buy_on) }}" class="btn1">
+                        <div class="row allignbuyon">
+                           <p class="btnkcl5" onclick="window.location.href='{{ $book->buy_on }}';">BUY ON</p>
+                           {{-- <i class="fa fa-caret-down" aria-hidden="true"></i> --}}
+                        </div>
+                     </a>
+                  </div>
                </div>
             </div>
          </div>
@@ -33,41 +42,41 @@
 
             <div class="teksisibuku">
                <h1 class="judulbuku">
-                  THE BREAKUP TOUR
+                  {{ $book->title }}
                </h1>
                <p class="lightp32 authorisibuku" onclick="window.location.href='index.html';">
-                  EMILY WIBERLY & AUSTIN SIEGEMUND
+                  {{ $book->authors }}
                </p>
 
                <div class ="row ratingrapi">
+                  @for($i = 0; $i < intval($book->book_rating); $i++)
                   <p class="rate2">★</span>
-                  <p class="rate2">★</span>
-                  <p class="rate2">★</span>
-                  <p class="rate2">★</span>
-                  <p class="rate2" style="padding-right:10px;">★</span>
+                  @endfor
+
+                  <p class="rate2" style="padding-right:10px;"></span>
                   <p class="lightp31 authorisibuku" >
-                     5.0 (1,873)
+                     {{ $book->book_rating }}.0
                   </p>
                </div>
 
                <div class="column ">
                   
                   <p class="teksbuku">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                     {{ $book->summary }}
                   </p>
 
-                  <p class="teksbuku">
+                  {{-- <p class="teksbuku">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                   </p>
-            
+             --}}
                </div>
 
                <div class="row ratingrapi">
                   <div class="col">
-                     <p class="lightp33 authorisibuku">330 pages, Kindle Edition</p>
+                     <p class="lightp33 authorisibuku">Written in {{ $book->language }}</p>
                   </div>
                   <div class="col text-right">
-                     <p class="lightp33 authorisibuku">First published January 14, 2024</p>
+                     <p class="lightp33 authorisibuku">First published {{ Carbon\Carbon::parse($book->published_date)->format('d M Y') }}</p>
                   </div>
                </div>
 

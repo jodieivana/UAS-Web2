@@ -8,8 +8,10 @@
                            <h3>BOOKSHELF</h3>
                            <hr class="line">
                         </div>
-                        <form action="">
-                           <input class="" type="search" placeholder="Search books form your Bookshelf" aria-label="Search" style="color: #152E7A; border: none; border-radius: 30px;">
+                        <form action="bookshelf" method='post'>
+                           @csrf
+                           <input class="" value='{{ $search }}' type="search" name='search' placeholder="Search books from your Bookshelf" aria-label="Search" style="color: #152E7A; border: none; border-radius: 30px;">
+                           <input type='submit'>
                         </form>
 
                      

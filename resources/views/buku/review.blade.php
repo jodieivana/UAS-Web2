@@ -38,7 +38,7 @@
                                 <div class="container">
                                     <div class="row">
                                        <div class="col mt-4">
-                                          <form class="py-2 px-4" action=""  method="POST" autocomplete="off">
+                                          <form class="py-2 px-4" action="/submit_review/{{ $book->id }}"  method="POST" autocomplete="off">
                                              @csrf
                                              <p class="isistar">GIVE US YOUR RATING :</p>
                                              <div class="form-group row">
@@ -60,15 +60,11 @@
                                              </div>
                                              <div class="form-group row mt-4">
                                                 <div class="col">
-                                                   <textarea class="form-control tmptreview" name="comment" rows="6 " placeholder="What do you think? (Enter your review)" maxlength="200"></textarea>
+                                                   <textarea class="form-control tmptreview" name="review_text" rows="6 " placeholder="What do you think? (Enter your review)" maxlength="200"></textarea>
                                                 </div>
                                              </div>
                                              <div class="mt-3 text-right">
-                                             <form action="">
-                                                <button>
-                                                SUBMIT REVIEW
-                                                </button>
-                                             </form>
+                                                <input type='submit' value='SUBMIT REVIEW'>
                                              </div>
                                           </form>
                                        </div>

@@ -8,22 +8,21 @@
         </div>
 
         <div class="grid-container3">
+            @foreach($reviews as $review)
             <div class="grid-item">
-
                <div class="row ratingrapi2">
                   <div class="col">
-                     <p class="lightp33 authorisibuku">Jodie Ivana Salim</p>
+                     <p class="lightp33 authorisibuku">{{ $review->user->name }}</p>
                      <div class ="row ratingrapi">
+                        @for($i = 0; $i < intval($review->rating); $i++)
                         <p class="rate2">★</span>
-                        <p class="rate2">★</span>
-                        <p class="rate2">★</span>
-                        <p class="rate2">★</span>
-                        <p class="rate2" style="padding-right:10px;">★</span>
+                        @endfor
+                        <p class="rate2" style="padding-right:10px;"></span>
                         <p class="lightp31 authorisibuku" >
-                           5.0
+                           {{ $review->rating }} .0
                         </p>
                         <p class="lightp31 authorisibuku" >
-                           (about an hour ago)
+                           ({{ Carbon\Carbon::parse($review->created_at)->diffForHumans() }})
                         </p>
                      </div>
                   </div>
@@ -34,7 +33,7 @@
                </div>
 
                <p class="teksbuku2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.               
+                  {{ $review->review_text }}
                </p>
 
                <hr class="linev">
