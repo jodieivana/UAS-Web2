@@ -10,7 +10,7 @@
       <meta name="keywords" content="" />
       <meta name="description" content="" />
       <meta name="author" content="" />
-      <link rel="shortcut icon" href="home/images/favicon.png" type="">
+      <link rel="shortcut icon" href="images/favicon.png" type="">
       <title>PageTurner - Your Gateway to Riveting Reads</title>
       <!-- bootstrap core css -->
       <link rel="stylesheet" type="text/css" href="home/css/bootstrap.css" />
