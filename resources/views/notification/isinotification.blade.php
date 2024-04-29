@@ -8,25 +8,27 @@
         </div>
 
         <div class="grid-container3">
+            @foreach($notifications as $notification)
             <div class="grid-item">
 
                <div class="row ratingrapi2">
                   <div class="col">
-                     <p class="lightp33 authorisibuku">Report resolved</p>
+                     <p class="lightp33 authorisibuku">{{ $notification->subject }}</p>
 
                         <p class="lightp314 authorisibuku" >
-                           23 April 2024, 2:04 PM
+                           {{ Carbon\Carbon::parse($notification->created_at)->diffForHumans() }}
                         </p>
                   </div>
 
                </div>
 
-               <p class="teksbuku2" onclick="window.location.href='index.html';">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.               
+               <p class="teksbuku2" >
+                  {{ $notification->content }}               
                </p>
 
                <hr class="linev">
             </div>
+         @endforeach
 
 
             

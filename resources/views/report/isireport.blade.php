@@ -14,10 +14,11 @@
                                 <div class="container">
                                     <div class="row">
                                        <div class="col mt-4">
-                                          <form class="py-2 px-4" action=""  method="POST" autocomplete="off">
+                                          <form class="py-2 px-4" action="/submit_report"  method="POST" autocomplete="off">
                                              @csrf
+                                             <input type='hidden' name='review_id' value='{{ $review->id }}'>
                                              <p class="isistar">YOU ARE REPORTING:</p>
-                                             <p class="isistar2">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                                             <p class="isistar2">“{{ $review->review_text }}”</p>
                                              <div class=" filterdis1">
                                                    <h5 class="isistars">TYPE:</h5>
                                                    <select name="readstatus" id="readstatus" class="readstatus classic">
@@ -32,11 +33,7 @@
                                              </div>
 
                                              <div class="mt-3 text-right">
-                                             <form action="">
-                                                <button>
-                                                SUBMIT REPORT
-                                                </button>
-                                             </form>
+                                                <input type='submit' value='SUBMIT REPORT'>
                                              </div>
                                           </form>
                                        </div>

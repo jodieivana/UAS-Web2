@@ -10,23 +10,18 @@
                            <hr class="linex">
                         </div>
 
-            
+                        <form action="category" method='post'>
+                            @csrf
+                            <input class="" value='' type="search" name='search' placeholder="Search books" aria-label="Search" style="color: #152E7A; border: none; border-radius: 30px;">
+                            <input type='submit'>
 
                             <div class="row filterbook2">
                                 <div class="row filterdis1">
                                 <h5 class="disbook">SELECT</h5>
                                     <select name="readstatus" id="readstatus" class="readstatus classic selectdis">
-                                        <option value="read">FICTION</option>
-                                        <option value="toread">TO READ</option>
-                                        <option value="reading">READING</option>
-                                    </select>
-                                </div>
-                                <div class="row filterdis1">
-                                    <h5 class="disbook">FILTER BY</h5>
-                                    <select name="readstatus" id="readstatus" class="readstatus classic">
-                                        <option value="read">RATING</option>
-                                        <option value="toread">TO READ</option>
-                                        <option value="reading">READING</option>
+                                        @foreach($categories as $category)
+                                            <option value='{{ $category->id }}'>{{ $category->category_name }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>

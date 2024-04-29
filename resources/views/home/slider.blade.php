@@ -20,7 +20,7 @@
                                     Welcome to our book review haven, where every page is a new adventure waiting to be discovered!
                                     </p>
                                     <div class="btn-box">
-                                          <a href="" class="btn1">
+                                          <a href="/category" class="btn1">
                                              DISCOVER NOW!
                                           </a>
                                     </div>
@@ -49,7 +49,7 @@
                                     Stay updated with the latest releases, author interviews, and literary insights in our book news section!
                                     </p>
                                     <div class="btn-box">
-                                          <a href="" class="btn1">
+                                          <a href="/category" class="btn1">
                                              BOOK NEWS
                                           </a>
                                     </div>
@@ -78,7 +78,7 @@
                                     Dive into a captivating world of literature with our curated book lists, selected to every reader's preference.
                                     </p>
                                     <div class="btn-box">
-                                          <a href="" class="btn1">
+                                          <a href="/category" class="btn1">
                                              BOOK LISTS
                                           </a>
                                     </div>

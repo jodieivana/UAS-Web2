@@ -36,8 +36,8 @@
                            </div>
                         </div>
 
-                        <form action="">
-                           <button>
+                        <form action="/category">
+                           <button onclick="window.location.href='/category';">
                            DISCOVER BOOKS
                            </button>
                         </form>
