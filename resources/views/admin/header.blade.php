@@ -10,9 +10,9 @@
         </button>
         <ul class="navbar-nav w-100">
           <li class="nav-item w-100">
-            <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+            {{-- <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
               <input type="text" class="form-control" placeholder="Search">
-            </form>
+            </form> --}}
           </li>
         </ul>
         <ul class="navbar-nav navbar-nav-right">
@@ -64,10 +64,10 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+            {{-- <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
               <i class="fa fa-bell" style="font-size:24px; color: #152E7A;"></i>
               <span class="count bg-danger"></span>
-            </a>
+            </a> --}}
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
               <h6 class="p-3 mb-0">Notifications</h6>
               <div class="dropdown-divider"></div>
@@ -99,7 +99,7 @@
             <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
               <div class="navbar-profile">
                 {{-- <img class="img-xs rounded-circle" src="admin/assets/images/faces/face15.jpg" alt=""> --}}
-                <p class="mb-0 d-none d-sm-block navbar-profile-name">Pelin Natali</p>
+                <p class="mb-0 d-none d-sm-block navbar-profile-name">{{ Auth::user()->name }}</p>
                 <i class="mdi mdi-menu-down d-none d-sm-block"></i>
               </div>
             </a>
