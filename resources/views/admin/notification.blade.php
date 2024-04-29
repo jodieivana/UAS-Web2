@@ -22,32 +22,39 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <h4 class="card-title m-0">Notification</h4>
                         <a href="{{ url('view_addnotification') }}" class="add-book-button">+ Add Notification</a>
-                      </div>
+                        @if(session()->has('success'))
+                            <div class="alert alert-success dismissable fade show" role="alert">
+                            {{ session('success') }}
+                            </div>
+                            @endif
+                            @if(session()->has('error'))
+                            <div class="alert alert-danger dismissable fade show" role="alert">
+                            {{ session('error') }}
+                            </div>
+                        @endif
                     <div class="table-responsive">
                       <table class="table table-bordered">
                         <thead>
                           <tr>
-                            <th> ID </th>
+                            <th> # </th>
                             <th> Title </th>
                             <th> Content </th>
-                            <th> Recipients </th>
-                            <th> Sender </th>
                             <th> Date Sent </th>
-                            <th> Status </th>
+                            <th> Edit </th>
+                            <th> Delete </th>
                           </tr>
                         </thead>
                         <tbody>
-                          
+                          @foreach($notifications as $notification)
                           <tr>
-                            <td> 1 </td>
-                            <td> New Book Release </td>
-                            <td> Check out our latest book release! </td>
-                            <td> All </td>
-                            <td> John Doe </td>
-                            <td> 2024-02-10 </td>
-                            <td class="book-link"> <a href="{{ url('view_draftnotification') }}"> Draft </a> </td>
+                            <td> {{ $loop->index + 1}} </td>
+                            <td> {{ $notification->subject }} </td>
+                            <td> {{ $notification->content }} </td>
+                            <td> {{ Carbon\Carbon::parse($notification->created_at)->format('d M Y') }} </td>
+                            <td class="book-link"> <a class="btn btn-warning text-dark" href="edit_notif/{{ $notification->id }}"> Edit </a> </td>
+                            <td class="book-link"> <a class="btn btn-warning text-dark" href="delete_notif/{{ $notification->id }}"> Delete </a> </td>
                           </tr>
-                          
+                          @endforeach
                         </tbody>
                       </table>
                     </div>

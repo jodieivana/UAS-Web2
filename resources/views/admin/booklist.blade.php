@@ -23,11 +23,21 @@
                         <h4 class="card-title m-0">Book List</h4>
                         <a href="{{ url('view_addbooklist') }}" class="add-book-button">+ Add Book</a>
                       </div>
+                      @if(session()->has('success'))
+                      <div class="alert alert-success dismissable fade show" role="alert">
+                      {{ session('success') }}
+                      </div>
+                      @endif
+                      @if(session()->has('error'))
+                      <div class="alert alert-danger dismissable fade show" role="alert">
+                      {{ session('error') }}
+                      </div>
+                   @endif
                     <div class="table-responsive">
                       <table class="table table-bordered datatable">
                         <thead>
                           <tr>
-                            <th> ISBN </th>
+                            <th> # </th>
                             <th> Title </th>
                             <th> Author(s) </th>
                             <th> Publication Date </th>
@@ -43,19 +53,17 @@
                         <tbody>
                           @foreach($books as $book)
                           <tr>
-                            <td> {{ $book->id }} </td>
-                            <td class="book-link"> <a href="{{ url('view_bookdetail') }}"> {{ $book->title }} </a> </td>
+                            <td> {{ $loop->index + 1 }} </td>
+                            <td class="book-link"> <a href="{{ url('view_bookdetail/' . $book->id) }}"> {{ $book->title }} </a> </td>
                             <td> {{ $book->authors }} </td>
-                            <td> {{ $book->published_date }} </td>
+                            <td> {{ Carbon\Carbon::parse($book->published_date)->format('d M Y') }} </td>
                             <td> {{ $book->summary }} </td>
                             <td> {{ $book->cover_image }} </td>
                             <td> {{ $book->category_id }} </td>
                             <td> {{ $book->language }} </td>
-                            <td><a href="{{ url('view_reviewbooklist') }}" class="btn btn-warning text-dark">REVIEW</td>
-                            <td><a href="{{ url('view_editbooklist') }}" class="btn btn-warning text-dark">EDIT</td>
+                            <td><a href="{{ url('view_reviewbooklist/' . $book->id) }}" class="btn btn-warning text-dark">REVIEW</td>
+                            <td><a href="{{ url('view_editbooklist/' . $book->id) }}" class="btn btn-warning text-dark">EDIT</td>
                             <td><a href="/view_booklist/{{ $book['id'] }}/delete" class="btn btn-warning text-dark">DELETE</td>
-                            
-  
                           </tr>
                           @endforeach
                         </tbody>

@@ -18,22 +18,25 @@
                 <div class="card">
                     <div class="card-body">
                         <br>
-                        <h4 class="card-title m-0">Add Notification</h4>
+                        <h4 class="card-title m-0">Edit Notification</h4>
                         <br>
-                        <form class="form-sample">
+                        <form class="form-sample" action='/edit_notif/{{$notification->id}}' method='post'>
+                            @csrf
+                            @method('put')
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Title</label>
-                                        <input type="text" name='subject' class="form-control placeholders" placeholder="Type Title"/>
+                                        <input type="text" name='subject' value='{{$notification->subject}}' class="form-control placeholders" placeholder="Type Title"/>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Recipients</label>
-                                        <select name='subject' class="form-control" placeholder="Choose">
-                                            <option>admin@gmail.com</option>
-                                            <option>admin1@gmail.com</option>
+                                        <select name='user_id' class="form-control" placeholder="Choose">
+                                            @foreach($users as $user) 
+                                                <option value='{{ $user->id }}' @if($notification->user_id == $user->id) selected @endif>{{ $user->email}}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                 </div>
@@ -42,7 +45,7 @@
                                 <div class="col-md-8">
                                     <div class="form-group">
                                         <label>Content</label>
-                                        <input type="text" class="form-control" style="height: 200px;" placeholder="Type Content"/>
+                                        <input type="text" name='content' value='{{ $notification->content}}' class="form-control" style="height: 200px;" placeholder="Type Content"/>
                                     </div>
                                 </div>
                             </div>
@@ -50,7 +53,7 @@
                             <div class="row row1">
                                 {{-- <a href="#" class="draft-book-button">SAVE TO DRAFT</a>
                                 <a href="#" class="delete-book-button">DELETE</a> --}}
-                                <input type='submit' href="#" class="save-book-button" value='SEND'>
+                                <input type='submit' href="#" class="save-book-button" value='EDIT'>
                             </div>
                         </form>
                     </div>
