@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Bookshelf extends Model
 {
     use HasFactory;
+    protected $guarded = [];
+
+    public function book() {
+        return $this->belongsTo(Book::class);
+    }
 }

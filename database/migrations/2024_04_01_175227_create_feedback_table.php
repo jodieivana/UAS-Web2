@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('type');
             $table->string('status');
             $table->timestamp('date_submitted');
-            $table->date('date_resolved');
+            $table->date('date_resolved')->nullable();;
             $table->foreignId('user_id');
             $table->timestamps();
         });

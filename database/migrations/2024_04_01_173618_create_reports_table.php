@@ -17,8 +17,8 @@ return new class extends Migration
             $table->text('content');
             $table->string('report_type');
             $table->string('report_status');
-            $table->date('date_reported');
-            $table->date('date_resolved');
+            $table->date('date_reported')->nullable();
+            $table->date('date_resolved')->nullable();
             $table->foreignId('reported_user_id')->constrained('users');
             $table->foreignId('reporter_user_id')->constrained('users');
             $table->foreignId('reported_review_id');

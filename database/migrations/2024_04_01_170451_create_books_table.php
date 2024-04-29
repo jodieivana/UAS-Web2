@@ -20,6 +20,7 @@ return new class extends Migration
             $table->text('cover_image');
             $table->string('language');
             $table->string('tags');
+            $table->string('buy_on');
             $table->timestamp('published_date');
             $table->foreignId('category_id');
             $table->softDeletes();

@@ -21,9 +21,10 @@ class BookFactory extends Factory
             'authors' => fake()->name(),
             'summary' => fake()->sentence(10,20),
             'book_rating' => mt_rand(1,50) / 10,
-            'cover_image' => 'https://source.unsplash.com/random',
+            'cover_image' => 'https://source.unsplash.com/random' . fake()->city(),
             'language' => 'English',
             'tags' => '-',
+            'buy_on' => 'https://www.google.com',
             'published_date' => fake()->date(),
             'category_id' => mt_rand(1,12)
         ];
