@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('tags');
             $table->timestamp('published_date');
             $table->foreignId('category_id');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

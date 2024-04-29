@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Models\Book;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,7 +26,13 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/userpage', function () {
-    return view('home.userpage');
+    return view('home.userpage',[
+        'book' => Book::inRandomOrder()->limit(12)->get(),
+        'book_fiction' => Book::where('category_id', 1)->limit(3)->get(),
+        'book_bm' => Book::where('category_id', 7)->limit(3)->get(),
+        'book_md' => Book::where('category_id', 3)->limit(3)->get(),
+        'book_tya' => Book::where('category_id', 11)->limit(3)->get()
+    ]);
 })->middleware(['auth', 'verified'])->name('userpage');
 
 Route::get('/bookshelf', function () {

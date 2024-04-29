@@ -54,24 +54,21 @@
                   <p class="headlinep date">
                      feautured review
                   </p>
-                  <p class="lightp date">
-                     february 20, 2024
-                  </p>
                </div>
 
                <div class="ftrframebk">
-                  <img src="{{ asset('home/images/bestseller/book1.png') }}" class="img-fluid img-bestseller ftrbook" alt="" onclick="window.location.href='{{ route('buku') }}';">
+                  <img src="{{ $book_fiction[0] -> cover_image}}" class="img-fluid img-bestseller ftrbook" alt="" onclick="window.location.href='{{ route('buku') }}';">
                </div>
 
                <div class="column ">
                   <p class="lightp" onclick="window.location.href='index.html';">
-                     fiction
+                     {{ $book_fiction[0] -> category -> category_name}}
                   </p>
-                  <p class="titlep" onclick="window.location.href='index.html';">
-                     VERITY
+                  <p class="titlepbk" onclick="window.location.href='index.html';">
+                     {{ $book_fiction[0] -> title}}
                   </p>
                   <p class="lightp ftrauthor" onclick="window.location.href='index.html';">
-                     by colleen hoover
+                     {{ $book_fiction[0] -> authors}}
                   </p>
                </div>
             </div>

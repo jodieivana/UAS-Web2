@@ -17,42 +17,45 @@
                      <i class="fa fa-caret-right" aria-hidden="true"></i>
                   </div>
                      
+
                   <div class="row newscont">
-                     <img src="{{ asset('home/images/bestseller/book1.png') }}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
+                     <img src="{{ $book_bm[0] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
                      <div class="column textboxt">
-                        <p class="titlep" onclick="window.location.href='index.html';">
-                           BYRON: A LIFE IN TEN LETTERS
+                        <p class="titlepbk" onclick="window.location.href='index.html';">
+                           {{ $book_bm[0] -> title}}
                         </p>
                         <p class="lightp2" onclick="window.location.href='index.html';">
-                           ANDREW STAUFFER
+                           {{ $book_bm[0] -> authors}}
                         </p>
                      </div>
                   </div>
 
                   <div class="row newscont">
-                     <img src="{{ asset('home/images/bestseller/book2.png') }}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
+                     <img src="{{ $book_bm[1] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
                      <div class="column textboxt">
-                        <p class="titlep" onclick="window.location.href='index.html';">
-                           TAMING THE OCTOPUS
+                        <p class="titlepbk" onclick="window.location.href='index.html';">
+                           {{ $book_bm[1] -> title}}
                         </p>
                         <p class="lightp2" onclick="window.location.href='index.html';">
-                           KYLE EDWARD WILLIAMS
+                           {{ $book_bm[1] -> authors}}
                         </p>
                      </div>
                   </div>
 
                   <div class="row newscont">
-                     <img src="{{ asset('home/images/bestseller/book3.png') }}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
+                     <img src="{{ $book_bm[1] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
                      <div class="column textboxt">
-                        <p class="titlep" onclick="window.location.href='index.html';">
-                           BATTLE FOR THE BIRD
+                        <p class="titlepbk" onclick="window.location.href='index.html';">
+                           {{ $book_bm[1] -> title}}
                         </p>
                         <p class="lightp2" onclick="window.location.href='index.html';">
-                           KURT WAGNER
+                           {{ $book_bm[1] -> authors}}
                         </p>
                      </div>
                   </div>
+
                </div> 
+
 
                <div id="verticle-line"></div>
 
@@ -65,37 +68,37 @@
                   </div>
                      
                   <div class="row newscont">
-                     <img src="{{ asset('home/images/bestseller/book4.png') }}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
+                     <img src="{{ $book_md[0] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
                      <div class="column textboxt">
-                        <p class="titlep" onclick="window.location.href='index.html';">
-                           HARD GIRLS
+                        <p class="titlepbk" onclick="window.location.href='index.html';">
+                           {{ $book_md[0] -> title}}
                         </p>
                         <p class="lightp2" onclick="window.location.href='index.html';">
-                           J. ROBERT LENNON
+                           {{ $book_md[0] -> authors}}
                         </p>
                      </div>
                   </div>
 
                   <div class="row newscont">
-                     <img src="{{ asset('home/images/bestseller/book5.png') }}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
+                     <img src="{{ $book_md[1] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
                      <div class="column textboxt">
-                        <p class="titlep" onclick="window.location.href='index.html';">
-                           GONE WITH THE WITCH
+                        <p class="titlepbk" onclick="window.location.href='index.html';">
+                           {{ $book_md[1] -> title}}
                         </p>
                         <p class="lightp2" onclick="window.location.href='index.html';">
-                           ANGELA M. SANDERS
+                           {{ $book_md[1] -> authors}}
                         </p>
                      </div>
                   </div>
 
                   <div class="row newscont">
-                     <img src="{{ asset('home/images/bestseller/book6.png') }}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
+                     <img src="{{ $book_md[2] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
                      <div class="column textboxt">
-                        <p class="titlep" onclick="window.location.href='index.html';">
-                           CRIME AND CHERRY PITS
+                        <p class="titlepbk" onclick="window.location.href='index.html';">
+                           {{ $book_md[2] -> title}}
                         </p>
                         <p class="lightp2" onclick="window.location.href='index.html';">
-                           AMANDA FLOWER
+                           {{ $book_md[2] -> authors}}
                         </p>
                      </div>
                   </div>
@@ -112,37 +115,37 @@
                   </div>
                      
                   <div class="row newscont">
-                     <img src="{{ asset('home/images/bestseller/book7.png') }}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
+                     <img src="{{ $book_tya[0] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
                      <div class="column textboxt">
-                        <p class="titlep" onclick="window.location.href='index.html';">
-                           AMBER'S WAY
+                        <p class="titlepbk" onclick="window.location.href='index.html';">
+                           {{ $book_tya[0] -> title}}
                         </p>
                         <p class="lightp2" onclick="window.location.href='index.html';">
-                           GLORIA GALLOWAY
+                           {{ $book_tya[0] -> authors}}
                         </p>
                      </div>
                   </div>
 
                   <div class="row newscont">
-                     <img src="{{ asset('home/images/bestseller/book8.png') }}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
+                     <img src="{{ $book_tya[1] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
                      <div class="column textboxt">
-                        <p class="titlep" onclick="window.location.href='index.html';">
-                           THE BREAKUP TOUR
+                        <p class="titlepbk" onclick="window.location.href='index.html';">
+                           {{ $book_tya[1] -> title}}
                         </p>
                         <p class="lightp2" onclick="window.location.href='index.html';">
-                           EMILY WIBERLY
+                           {{ $book_tya[1] -> authors}}
                         </p>
                      </div>
                   </div>
 
                   <div class="row newscont">
-                     <img src="{{ asset('home/images/bestseller/book9.png') }}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
+                     <img src="{{ $book_tya[2] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
                      <div class="column textboxt">
-                        <p class="titlep" onclick="window.location.href='index.html';">
-                           MY THROAT AN OPEN GRAVE
+                        <p class="titlepbk" onclick="window.location.href='index.html';">
+                           {{ $book_tya[2] -> title}}
                         </p>
                         <p class="lightp2" onclick="window.location.href='index.html';">
-                           TORI BOVALINO
+                           {{ $book_tya[2] -> authors}}
                         </p>
                      </div>
                   </div>

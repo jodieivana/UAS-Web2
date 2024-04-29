@@ -1628,7 +1628,22 @@ form input[type="submit"]:focus {
   cursor: pointer;
 }
 
+.titlepbk {
+  font-size: larger;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+  line-height: 23px;
+  cursor: pointer;
+  width: 180px;
+}
+
 .titlep:hover {
+  text-decoration: underline;
+}
+
+.titlepbk:hover {
   text-decoration: underline;
 }
 
@@ -1718,13 +1733,13 @@ form input[type="submit"]:focus {
 
 .ftrbook {
   height: 230px;
-  width: fit-content;
+  width: 150px;
   cursor: pointer;
 }
 
 .nwrbook {
   height: 130px;
-  width: fit-content;
+  width: 85px;
   cursor: pointer;
 }
 
@@ -1753,7 +1768,8 @@ form input[type="submit"]:focus {
 }
 
 .ftrframebk {
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 35px;
 }
 
 .bklistisi {
