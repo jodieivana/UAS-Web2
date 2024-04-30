@@ -20,7 +20,6 @@ return new class extends Migration
             $table->string('subscription_status')->default("Not Subscribed");
             $table->string('account_status')->default("active");
             $table->timestamp();
-     */
     public function down(): void
     {
         Schema::dropIfExists('users');
