@@ -15,8 +15,10 @@ class AdminController extends Controller
 {
     public function view_userlist()
     {
+        $users = User::paginate(10);
+
         return view('admin.userlist', [
-            'users' => User::all()->sortByDesc('created_at')
+            'users' => $users
         ]);
     }
 
@@ -36,10 +38,13 @@ class AdminController extends Controller
 
     public function view_reports()
     {
+        $reports = Report::paginate(10);
+
         return view('admin.reports', [
-            'reports' => Report::all()->sortByDesc('created_at')
+            'reports' => $reports
         ]);
     }
+
 
     public function delete_reports(Report $report)
     {
@@ -88,8 +93,10 @@ class AdminController extends Controller
 
     public function view_feedbacks()
     {
+        $feedbacks = Feedback::paginate(10);
+
         return view('admin.feedbacks', [
-            'feedbacks' => Feedback::all()->sortByDesc('created_at')
+            'feedbacks' => $feedbacks
         ]);
     }
 
@@ -129,16 +136,19 @@ class AdminController extends Controller
 
     public function view_booklist()
     {
+        $books = Book::paginate(10);
+
         return view('admin.booklist', [
-            'books' => Book::all()->sortByDesc('created_at')
+            'books' => $books
         ]);
+
     }
 
     public function delete_booklist(Book $book)
     {
         $book->delete();
 
-        return redirect()->back()->with('success', 'Book Deleted');
+        return redirect('/view_booklist')->with('success', 'Book Deleted');
     
     }
 
@@ -196,9 +206,12 @@ class AdminController extends Controller
 
     public function view_review()
     {
+        $reviews = Review::paginate(10);
+
         return view('admin.review', [
-            'reviews' => Review::all()->sortByDesc('created_at')
+            'reviews' => $reviews
         ]);
+
     }
 
     public function delete_review(Review $review)
@@ -269,9 +282,13 @@ class AdminController extends Controller
 
     public function view_notification()
     {
+        $notifications = Notification::paginate(10);
+
         return view('admin.notification', [
-            'notifications' => Notification::all()->sortByDesc('created_at')
+            'notifications' => $notifications
         ]);
+        
+
     }
 
     public function view_addnotification()

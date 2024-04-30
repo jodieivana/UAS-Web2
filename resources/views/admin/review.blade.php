@@ -45,7 +45,7 @@
                           @foreach($reviews as $review)
                           <tr>
                             <td> {{ $review->id}}</td>
-                            <td class="book-link"><a href="{{url('view_bookdetail')}}"> {{ $review->book->title}}</a></td>
+                            <td class="book-link"><a href="{{ url('view_bookdetail/'. $review->book->id) }}"> {{ $review->book->title}}</a></td>
                             <td> {{ $review->review_text}}</td>
                             <td> {{ $review->user->name}}</td>
                             <td> {{ Carbon\Carbon::parse($review->created_at)->format('d M Y') }}</td>
@@ -54,6 +54,13 @@
                           @endforeach
                         </tbody>
                       </table>
+                                <div class="pagination">
+                                    <a href="{{ $reviews->previousPageUrl() }}" class="paginationbtn" >Previous</a>
+                                    @for ($i = 1; $i <= $reviews->lastPage(); $i++)
+                                        <a href="{{ $reviews->url($i) }}" class="paginationbtn">{{ $i }}</a>
+                                    @endfor
+                                    <a href="{{ $reviews->nextPageUrl() }}" class="paginationbtn">Next</a>
+                                </div>
                     </div>
                   </div>
                 </div>

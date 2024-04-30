@@ -54,7 +54,7 @@
                           @foreach($books as $book)
                           <tr>
                             <td> {{ $loop->index + 1 }} </td>
-                            <td class="book-link"> <a href="{{ url('view_bookdetail/' . $book->id) }}"> {{ $book->title }} </a> </td>
+                            <td class="book-link"> <a href="{{ url('view_bookdetail/'. $book->id) }}"> {{ $book->title }} </a> </td>
                             <td> {{ $book->authors }} </td>
                             <td> {{ Carbon\Carbon::parse($book->published_date)->format('d M Y') }} </td>
                             <td> {{ $book->summary }} </td>
@@ -68,6 +68,15 @@
                           @endforeach
                         </tbody>
                       </table>
+
+                                <div class="pagination">
+                                    <a href="{{ $books->previousPageUrl() }}" class="paginationbtn" >Previous</a>
+                                    @for ($i = 1; $i <= $books->lastPage(); $i++)
+                                        <a href="{{ $books->url($i) }}" class="paginationbtn">{{ $i }}</a>
+                                    @endfor
+                                    <a href="{{ $books->nextPageUrl() }}" class="paginationbtn">Next</a>
+                                </div>
+
                     </div>
                   </div>
                 </div>

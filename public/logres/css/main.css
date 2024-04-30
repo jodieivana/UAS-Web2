@@ -1,48 +1,27 @@
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet');
 
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
-@font-face {
-  font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
-}
-
-@font-face {
-  font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
-}
-
-@font-face {
-  font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
-}
-
-@font-face {
-  font-family: Poppins-SemiBold;
-  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
-}
-
-@font-face {
-  font-family: Montserrat-Bold;
-  src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
-}
-
-@font-face {
-  font-family: Montserrat-SemiBold;
-  src: url('../fonts/montserrat/Montserrat-SemiBold.ttf'); 
-}
-
-@font-face {
-  font-family: Montserrat-Regular;
-  src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
+
+.adjisi {
+  border: #152e7a69;
+  border-radius: 50px;
+  border-width: 1px;
+  border-style: ridge;
+  padding: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
 
 * {
 	margin: 0px; 
@@ -50,17 +29,25 @@
 	box-sizing: border-box;
 }
 
+.adjform {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
 body, html {
+  color: #152E7A;
+  font-size: 14px;
 	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
+	font-family: "Lato", sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Poppins-Regular;
+	font-family: "Lato", sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
-	color: #666666;
+	color: #152E7A;
+  opacity: 0.5;
 	margin: 0px;
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
@@ -73,8 +60,9 @@ a:focus {
 }
 
 a:hover {
+  opacity: 1;
 	text-decoration: none;
-  color: #6675df;
+  color: #152E7A;
 }
 
 /*---------------------------------------------*/
@@ -83,10 +71,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Poppins-Regular;
+	font-family: "Lato", sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
-	color: #666666;
+	color: #152E7A;
 	margin: 0px;
 }
 
@@ -97,6 +85,16 @@ ul, li {
 
 
 /*---------------------------------------------*/
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
 input {
 	outline: none;
 	border: none;
@@ -108,7 +106,7 @@ textarea {
 }
 
 textarea:focus, input:focus {
-  border-color: transparent !important;
+  border-color: #152E7A !important;
 }
 
 input:focus::-webkit-input-placeholder { color:transparent; }
@@ -152,20 +150,24 @@ iframe {
 	border: none !important;
 }
 
+.rgstnw {
+  padding-left: 5px;
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ utility ]*/
 
 /*==================================================================
 [ Text ]*/
 .txt1 {
-  font-family: Montserrat-Regular;
+  font-family: "Lato", sans-serif;
   font-size: 13px;
   line-height: 1.4;
-  color: #555555;
+  color: #152E7A;
 }
 
 .txt2 {
-  font-family: Montserrat-Regular;
+  font-family: "Lato", sans-serif;
   font-size: 13px;
   line-height: 1.4;
   color: #999999;
@@ -247,7 +249,10 @@ iframe {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,0.1);
+  background-image: url('logresfoto.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
 }
 
 
@@ -255,22 +260,28 @@ iframe {
 /*==================================================================
 [ Form ]*/
 
+.adjlgn {
+  padding-top: 50px;
+}
+
 .login100-form {
   width: 560px;
   min-height: 100vh;
   display: block;
-  background-color: #f7f7f7;
-  padding: 173px 55px 55px 55px;
+  background-color: #ffffff;
+  padding: 100px 55px 55px 55px;
 }
 
 .login100-form-title {
   width: 100%;
   display: block;
-  font-family: Poppins-Regular;
-  font-size: 30px;
-  color: #333333;
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #152E7A;
   line-height: 1.2;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 
@@ -295,7 +306,7 @@ iframe {
 }
 
 .label-input100 {
-  font-family: Montserrat-Regular;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   color: #999999;
   line-height: 1.2;
@@ -318,9 +329,9 @@ iframe {
   display: block;
   width: 100%;
   background: transparent;
-  font-family: Montserrat-Regular;
-  font-size: 18px;
-  color: #555555;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #152E7A;
   line-height: 1.2;
   padding: 0 26px;
 }
@@ -343,7 +354,7 @@ input.input100 {
   top: -1px;
   left: -1px;
   pointer-events: none;
-  border: 1px solid #6675df;
+  border: 1px solid #152E7A;
   border-radius: 10px;
 
   visibility: hidden;
@@ -409,9 +420,9 @@ input.input100 {
 }
 
 .label-checkbox100 {
-  font-family: Poppins-Regular;
+  font-family: "Lato", sans-serif;
   font-size: 13px;
-  color: #999999;
+  color: #152E7A;
   line-height: 1.4;
 
   display: block;
@@ -422,7 +433,7 @@ input.input100 {
 
 .label-checkbox100::before {
   content: "\f00c";
-  font-family: FontAwesome;
+  font-family: "Lato", sans-serif;
   font-size: 13px;
   color: transparent;
 
@@ -438,7 +449,7 @@ input.input100 {
   height: 18px;
   border-radius: 2px;
   background: #fff;
-  border: 1px solid #6675df;
+  border: 1px solid #152E7A;
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -449,7 +460,7 @@ input.input100 {
 }
 
 .input-checkbox100:checked + .label-checkbox100::before {
-  color: #6675df;
+  color: #152E7A;
 }
 
 
@@ -464,6 +475,8 @@ input.input100 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .login100-form-btn {
@@ -477,11 +490,11 @@ input.input100 {
   padding: 0 20px;
   width: 100%;
   height: 50px;
-  border-radius: 10px;
-  background: #6675df;
+  border-radius: 50px;
+  background: #152E7A;
 
-  font-family: Montserrat-Bold;
-  font-size: 12px;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
   color: #fff;
   line-height: 1.2;
   text-transform: uppercase;
@@ -494,7 +507,7 @@ input.input100 {
 }
 
 .login100-form-btn:hover {
-  background: #333333;
+  background: #0a1944;
 }
 
 
@@ -558,7 +571,7 @@ input.input100 {
   right: 12px;
   pointer-events: none;
 
-  font-family: Poppins-Regular;
+  font-family: "Lato", sans-serif;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
@@ -575,7 +588,7 @@ input.input100 {
 
 .alert-validate::after {
   content: "\f12a";
-  font-family: FontAwesome;
+  font-family: "Lato", sans-serif;
   display: block;
   position: absolute;
   z-index: 110;

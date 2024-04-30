@@ -9,15 +9,18 @@ use Illuminate\Support\Facades\Auth;
 
 class Book extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
     protected $guarded = [];
     public function category() {
         return $this->belongsTo(Category::class);
     }
     
     public function isBookshelved() {
-        $alreadyBookshelved = Bookshelf::where('user_id', Auth::user()->id)
-        ->where('book_id', $this->id)->first();
+        $alreadyBookshelved = 
+        Bookshelf::
+        where('user_id', Auth::user()->id)
+        ->where('book_id', $this->id)
+        ->first();
         if ($alreadyBookshelved) return true;
         else return false;
     }

@@ -19,36 +19,36 @@
                      
 
                   <div class="row newscont">
-                     <img src="{{ $book_bm[0] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
+                     <img src="{{ $book_bm[0] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='buku/{{ $book_bm[0]->id }}';">
                      <div class="column textboxt">
-                        <p class="titlepbk" onclick="window.location.href='index.html';">
+                        <p class="titlepbk" onclick="window.location.href='buku/{{ $book_bm[0]->id }}';">
                            {{ $book_bm[0] -> title}}
                         </p>
-                        <p class="lightp2" onclick="window.location.href='index.html';">
+                        <p class="lightp2" onclick="window.location.href='buku/{{ $book_bm[0]->id }}';">
                            {{ $book_bm[0] -> authors}}
                         </p>
                      </div>
                   </div>
 
                   <div class="row newscont">
-                     <img src="{{ $book_bm[1] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
+                     <img src="{{ $book_bm[1] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='buku/{{ $book_bm[1]->id }}';">
                      <div class="column textboxt">
-                        <p class="titlepbk" onclick="window.location.href='index.html';">
+                        <p class="titlepbk" onclick="window.location.href='buku/{{ $book_bm[1]->id }}';">
                            {{ $book_bm[1] -> title}}
                         </p>
-                        <p class="lightp2" onclick="window.location.href='index.html';">
+                        <p class="lightp2" onclick="window.location.href='buku/{{ $book_bm[1]->id }}';">
                            {{ $book_bm[1] -> authors}}
                         </p>
                      </div>
                   </div>
 
                   <div class="row newscont">
-                     <img src="{{ $book_bm[1] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
+                     <img src="{{ $book_bm[1] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='buku/{{ $book_bm[1]->id }}';">
                      <div class="column textboxt">
-                        <p class="titlepbk" onclick="window.location.href='index.html';">
+                        <p class="titlepbk" onclick="window.location.href='buku/{{ $book_bm[1]->id }}l';">
                            {{ $book_bm[1] -> title}}
                         </p>
-                        <p class="lightp2" onclick="window.location.href='index.html';">
+                        <p class="lightp2" onclick="window.location.href='buku/{{ $book_bm[1]->id }}';">
                            {{ $book_bm[1] -> authors}}
                         </p>
                      </div>
@@ -68,36 +68,36 @@
                   </div>
                      
                   <div class="row newscont">
-                     <img src="{{ $book_md[0] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
+                     <img src="{{ $book_md[0] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='buku/{{ $book_md[0]->id }}';">
                      <div class="column textboxt">
-                        <p class="titlepbk" onclick="window.location.href='index.html';">
+                        <p class="titlepbk" onclick="window.location.href='buku/{{ $book_md[0]->id }}';">
                            {{ $book_md[0] -> title}}
                         </p>
-                        <p class="lightp2" onclick="window.location.href='index.html';">
+                        <p class="lightp2" onclick="window.location.href='buku/{{ $book_md[0]->id }}';">
                            {{ $book_md[0] -> authors}}
                         </p>
                      </div>
                   </div>
 
                   <div class="row newscont">
-                     <img src="{{ $book_md[1] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
+                     <img src="{{ $book_md[1] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='buku/{{ $book_md[1]->id }}';">
                      <div class="column textboxt">
-                        <p class="titlepbk" onclick="window.location.href='index.html';">
+                        <p class="titlepbk" onclick="window.location.href='buku/{{ $book_md[1]->id }}';">
                            {{ $book_md[1] -> title}}
                         </p>
-                        <p class="lightp2" onclick="window.location.href='index.html';">
+                        <p class="lightp2" onclick="window.location.href='buku/{{ $book_md[1]->id }}';">
                            {{ $book_md[1] -> authors}}
                         </p>
                      </div>
                   </div>
 
                   <div class="row newscont">
-                     <img src="{{ $book_md[2] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
+                     <img src="{{ $book_md[2] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='buku/{{ $book_md[2]->id }}';">
                      <div class="column textboxt">
-                        <p class="titlepbk" onclick="window.location.href='index.html';">
+                        <p class="titlepbk" onclick="window.location.href='buku/{{ $book_md[2]->id }}';">
                            {{ $book_md[2] -> title}}
                         </p>
-                        <p class="lightp2" onclick="window.location.href='index.html';">
+                        <p class="lightp2" onclick="window.location.href='buku/{{ $book_md[2]->id }}';">
                            {{ $book_md[2] -> authors}}
                         </p>
                      </div>
@@ -115,36 +115,36 @@
                   </div>
                      
                   <div class="row newscont">
-                     <img src="{{ $book_tya[0] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
+                     <img src="{{ $book_tya[0] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='buku/{{ $book_tya[0]->id }}';">
                      <div class="column textboxt">
-                        <p class="titlepbk" onclick="window.location.href='index.html';">
+                        <p class="titlepbk" onclick="window.location.href='buku/{{ $book_tya[0]->id }}';">
                            {{ $book_tya[0] -> title}}
                         </p>
-                        <p class="lightp2" onclick="window.location.href='index.html';">
+                        <p class="lightp2" onclick="window.location.href='buku/{{ $book_tya[0]->id }}';">
                            {{ $book_tya[0] -> authors}}
                         </p>
                      </div>
                   </div>
 
                   <div class="row newscont">
-                     <img src="{{ $book_tya[1] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
+                     <img src="{{ $book_tya[1] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='buku/{{ $book_tya[1]->id }}';">
                      <div class="column textboxt">
-                        <p class="titlepbk" onclick="window.location.href='index.html';">
+                        <p class="titlepbk" onclick="window.location.href='buku/{{ $book_tya[1]->id }}l';">
                            {{ $book_tya[1] -> title}}
                         </p>
-                        <p class="lightp2" onclick="window.location.href='index.html';">
+                        <p class="lightp2" onclick="window.location.href='buku/{{ $book_tya[1]->id }}';">
                            {{ $book_tya[1] -> authors}}
                         </p>
                      </div>
                   </div>
 
                   <div class="row newscont">
-                     <img src="{{ $book_tya[1] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='index.html';">
+                     <img src="{{ $book_tya[1] -> cover_image}}" class="img-fluid img-bestseller nwrbook" alt="" onclick="window.location.href='buku/{{ $book_tya[1]->id }}';">
                      <div class="column textboxt">
-                        <p class="titlepbk" onclick="window.location.href='index.html';">
+                        <p class="titlepbk" onclick="window.location.href='buku/{{ $book_tya[1]->id }}l';">
                            {{ $book_tya[1] -> title}}
                         </p>
-                        <p class="lightp2" onclick="window.location.href='index.html';">
+                        <p class="lightp2" onclick="window.location.href='buku/{{ $book_tya[1]->id }}';">
                            {{ $book_tya[1] -> authors}}
                         </p>
                      </div>

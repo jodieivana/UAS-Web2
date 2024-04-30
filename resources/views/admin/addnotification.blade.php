@@ -44,7 +44,7 @@
                                 <div class="col-md-8">
                                     <div class="form-group">
                                         <label>Content</label>
-                                        <input type="text" name='content' class="form-control" style="height: 200px;" placeholder="Type Content"/>
+                                        <textarea  type="text" name='content' class="form-control" style="height: 200px;" placeholder="Type Content"></textarea>
                                     </div>
                                 </div>
                             </div>

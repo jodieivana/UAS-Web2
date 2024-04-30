@@ -50,6 +50,15 @@
                           @endforeach
                         </tbody>
                       </table>
+
+                                <div class="pagination">
+                                    <a href="{{ $users->previousPageUrl() }}" class="paginationbtn" >Previous</a>
+                                    @for ($i = 1; $i <= $users->lastPage(); $i++)
+                                        <a href="{{ $users->url($i) }}" class="paginationbtn">{{ $i }}</a>
+                                    @endfor
+                                    <a href="{{ $users->nextPageUrl() }}" class="paginationbtn">Next</a>
+                                </div>
+
                     </div>
                   </div>
                 </div>

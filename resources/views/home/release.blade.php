@@ -57,17 +57,17 @@
                </div>
 
                <div class="ftrframebk">
-                  <img src="{{ $book_fiction[0] -> cover_image}}" class="img-fluid img-bestseller ftrbook" alt="">
+                  <img src="{{ $book_fiction[0] -> cover_image}}" class="img-fluid img-bestseller ftrbook" alt="" onclick="window.location.href='buku/{{ $book_fiction[0]->id }}';">
                </div>
 
                <div class="column ">
-                  <p class="lightp" onclick="window.location.href='index.html';">
+                  <p class="lightp" onclick="window.location.href='buku/{{ $book_fiction[0]->id }}';">
                      {{ $book_fiction[0] -> category -> category_name}}
                   </p>
-                  <p class="titlepbk" onclick="window.location.href='index.html';">
+                  <p class="titlepbk" onclick="window.location.href='buku/{{ $book_fiction[0]->id }}';">
                      {{ $book_fiction[0] -> title}}
                   </p>
-                  <p class="lightp ftrauthor" onclick="window.location.href='index.html';">
+                  <p class="lightp ftrauthor" onclick="window.location.href='buku/{{ $book_fiction[0]->id }}';">
                      {{ $book_fiction[0] -> authors}}
                   </p>
                </div>

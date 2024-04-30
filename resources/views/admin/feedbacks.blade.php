@@ -3,6 +3,8 @@
   <head>
     <!-- Required meta tags -->
     @include('admin.css')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
   </head>
   <body>
     <div class="container-scroller">
@@ -60,6 +62,13 @@
                           @endforeach
                         </tbody>
                       </table>
+                                <div class="pagination">
+                                    <a href="{{ $feedbacks->previousPageUrl() }}" class="paginationbtn" >Previous</a>
+                                    @for ($i = 1; $i <= $feedbacks->lastPage(); $i++)
+                                        <a href="{{ $feedbacks->url($i) }}" class="paginationbtn">{{ $i }}</a>
+                                    @endfor
+                                    <a href="{{ $feedbacks->nextPageUrl() }}" class="paginationbtn">Next</a>
+                                </div>
                     </div>
                   </div>
                 </div>

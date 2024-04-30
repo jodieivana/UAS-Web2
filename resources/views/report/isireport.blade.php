@@ -33,7 +33,7 @@
                                              </div>
 
                                              <div class="mt-3 text-right">
-                                                <input type='submit' value='SUBMIT REPORT'>
+                                                <input type='submit' class='btnrevisi' value='SUBMIT REPORT'>
                                              </div>
                                           </form>
                                        </div>

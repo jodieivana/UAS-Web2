@@ -47,7 +47,7 @@
                           @foreach($reports as $report)
                           <tr>
                             <td> {{$report->id}}  </td>
-                            <td class="book-link"><a href="{{url('view_bookdetail')}}"> {{$report->review->book->title }}</a>  </td>
+                            <td class="book-link"><a href="{{ url('view_bookdetail/'. $report->review->book->id) }}"> {{$report->review->book->title }}</a>  </td>
                             <td> {{$report->content}} </td>
                             <td> {{$report->report_type}} </td>
                             <td> {{$report->reporter_user_id}} </td>
@@ -65,6 +65,14 @@
                           @endforeach
                         </tbody>
                       </table>
+
+                                <div class="pagination">
+                                    <a href="{{ $reports->previousPageUrl() }}" class="paginationbtn" >Previous</a>
+                                    @for ($i = 1; $i <= $reports->lastPage(); $i++)
+                                        <a href="{{ $reports->url($i) }}" class="paginationbtn">{{ $i }}</a>
+                                    @endfor
+                                    <a href="{{ $reports->nextPageUrl() }}" class="paginationbtn">Next</a>
+                                </div>
                     </div>
                   </div>
                 </div>

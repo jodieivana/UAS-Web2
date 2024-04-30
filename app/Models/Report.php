@@ -10,9 +10,6 @@ class Report extends Model
     use HasFactory;
 
     protected $guarded = [];
-    public function book() {
-        return $this->belongsTo(Book::class);
-    }
 
     public function reported_user() {
         return $this->belongsTo(User::class, 'reported_user_id');
@@ -23,6 +20,6 @@ class Report extends Model
     }
 
     public function review() {
-        return $this->belongsTo(Review::class, 'reported_review_id');
+        return $this->belongsTo(Review::class, 'reported_review_id')->withTrashed();
     }
 }

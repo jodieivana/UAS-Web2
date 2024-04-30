@@ -14,20 +14,15 @@
                         <li class="nav-item">
                            <a class="nav-link" href="{{ route('bookshelf') }}">Bookshelf</a>
                         </li>
-                        <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Discover<span class="caret"></span></a>
-                           @include('home.discovermenu')
-                     
-                        </li>
 
                         <form class="form-inline">
-                           <div class="input-group">
+                           <div class="input-group" onclick="window.location.href='/category';">
                               <div class="input-group-prepend" style="margin-right: -10px;">
                                     <span class="input-group-text" style="background-color: #fff; border: none; padding-left: 20px; border-radius: 30px 0px 0px 30px;">
                                        <i class="fa fa-search" aria-hidden="true" style="color: #808080;"></i>
                                     </span>
                               </div>
-                              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="color: #152E7A; border: none; border-radius: 0px 30px 30px 0px;">
+                              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" style="color: #152E7A; border: none; border-radius: 0px 30px 30px 0px;">
                            </div>
                         </form>
 

@@ -58,6 +58,14 @@
                           @endforeach
                         </tbody>
                       </table>
+
+                                <div class="pagination">
+                                    <a href="{{ $notifications->previousPageUrl() }}" class="paginationbtn" >Previous</a>
+                                    @for ($i = 1; $i <= $notifications->lastPage(); $i++)
+                                        <a href="{{ $notifications->url($i) }}" class="paginationbtn">{{ $i }}</a>
+                                    @endfor
+                                    <a href="{{ $notifications->nextPageUrl() }}" class="paginationbtn">Next</a>
+                                </div>
                     </div>
                   </div>
                 </div>

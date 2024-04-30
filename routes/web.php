@@ -84,12 +84,21 @@ Route::post('/category', function(Request $request) {
     ]);
     $searchTerm = $validatedData['search'];
 
-    $books = Book::where('title', 'like',  '%' . $searchTerm . '%')
-    ->where('authors', 'like',  '%' . $searchTerm . '%')
-    ->where('category_id', $validatedData['category_id'])->get();
+    $query = Book::query();
+    $search_category = 'All';
+    if ($validatedData['category_id'] != 0) {
+        $query->where('category_id', $validatedData['category_id']);
+        $search_category = Category::find($validatedData['category_id'])->category_name;
+    }
+    
+    $books = $query->where('title', 'like', '%' . $searchTerm . '%')
+                   ->orWhere('authors', 'like', '%' . $searchTerm . '%')
+                   ->get();
+
+
     return view('category.category',[
         'search' => $searchTerm,
-        'search_category' => Category::find($validatedData['category_id'])->category_name,
+        'search_category' => $search_category,
         'categories' => Category::all(),
         'books' => $books
     ]);

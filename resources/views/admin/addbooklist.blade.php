@@ -115,7 +115,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Summary</label>
-                                        <input type="text" name='summary' class="form-control summary" placeholder="Type Description"/>
+                                        <textarea type="text" name='summary' class="form-control summary" placeholder="Type Description" style="height:150px"></textarea>
                                     </div>
                                     @error('summary')
                                     {{ $message }}
@@ -157,7 +157,6 @@
 
                             </div>
                             <div class="row row1">
-                                <a href="/view_addbooklist" class="delete-book-button">DELETE</a>
                                 <input type='submit'  class="save-book-button" value='ADD BOOK'>
                             </div>
                         </form>

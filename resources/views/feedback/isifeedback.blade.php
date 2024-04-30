@@ -35,7 +35,7 @@
                                              </div>
 
                                              <div class="mt-3 text-right">
-                                                <input type='submit' value='SUBMIT FEEDBACK'>
+                                                <input class ="btnrevisi" type='submit' value='SUBMIT FEEDBACK'>
                                            
                                              </div>
                                           </form>
