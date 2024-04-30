@@ -19,10 +19,14 @@ return new class extends Migration
             $table->integer('usertype')->default(0);
             $table->string('subscription_status')->default("Not Subscribed");
             $table->string('account_status')->default("active");
-            // $table->timestamp();
+            $table->timestamp('last_login');
+            $table->timestamps();
         });
     }
 
+    /**
+     * Reverse the migrations.
+     */
     public function down(): void
     {
         Schema::dropIfExists('users');
