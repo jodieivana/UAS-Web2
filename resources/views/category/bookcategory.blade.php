@@ -16,15 +16,15 @@
             <div class="grid-item">
 
                 <div class="row newscont2">
-                <img src="{{ $book->cover_image }}" style='height:170px; width:110px' class="img-fluid img-bestseller nwrbook2" alt="" onclick="window.location.href='index.html';"></td>
+                <img src="{{ $book->cover_image }}" style='height:170px; width:110px' class="img-fluid img-bestseller nwrbook2" alt="" onclick="window.location.href='/add_bookshelf/{{ $book->id }}';"></td>
                      <div class="column textboxt2">
-                        <p class="lightp3" onclick="window.location.href='index.html';">
+                        <p class="lightp3" onclick="window.location.href='/add_bookshelf/{{ $book->id }}';">
                             {{ $book->category->category_name }}
                         </p>
-                        <p class="titlep3" onclick="window.location.href='index.html';">
+                        <p class="titlep3" onclick="window.location.href='/add_bookshelf/{{ $book->id }}';">
                             {{ $book->title }}
                         </p>
-                        <p class="lightp32" onclick="window.location.href='index.html';">
+                        <p class="lightp32" onclick="window.location.href='/add_bookshelf/{{ $book->id }}';">
                             {{ $book->title }}
                         </p>
                         @if(!$book->isBookshelved())
