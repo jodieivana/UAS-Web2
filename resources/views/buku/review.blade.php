@@ -64,7 +64,7 @@
                                                 </div>
                                              </div>
                                              <div class="mt-3 text-right">
-                                                <input type='submit' value='SUBMIT REVIEW'>
+                                                <input class='btnrevisi' type='submit' value='SUBMIT REVIEW'>
                                              </div>
                                           </form>
                                        </div>
