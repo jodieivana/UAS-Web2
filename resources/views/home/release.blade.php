@@ -10,7 +10,7 @@
             </div>
                
             <div class="row newscont">
-               <img src="home/images/news/news1.png" alt="news1" onclick="window.location.href='index.html';" class="newssmall">
+               <img src="{{ asset('home/images/news/news1.png')}}" alt="news1" onclick="window.location.href='index.html';" class="newssmall">
                <div class="column textboxt">
                   <p class="lightp" onclick="window.location.href='index.html';">
                      nonfiction
@@ -22,7 +22,7 @@
             </div>
 
             <div class="row newscont">
-               <img src="home/images/news/news2.png" alt="news1" class="newssmall" onclick="window.location.href='index.html';">
+               <img src="{{ asset('home/images/news/news2.png')}}" alt="news1" class="newssmall" onclick="window.location.href='index.html';">
                <div class="column textboxt">
                   <p class="lightp" onclick="window.location.href='index.html';">
                      fiction
@@ -34,7 +34,7 @@
             </div>
 
             <div class="row newscont">
-               <img src="home/images/news/news3.png" alt="news1" class="newssmall" onclick="window.location.href='index.html';">
+               <img src="{{ asset('home/images/news/news3.png')}}" alt="news1" class="newssmall" onclick="window.location.href='index.html';">
                <div class="column textboxt">
                   <p class="lightp" onclick="window.location.href='index.html';">
                      fiction

@@ -27,7 +27,7 @@
                                  </div>
                               </div>
                               <div class="col-md-7 col-lg-6">
-                                 <img src="home/images/slide1.png" class="img-fluid" alt="Image">
+                                 <img src="{{ asset('home/images/slide1.png')}}" class="img-fluid" alt="Image">
                               </div>
                         </div>
                      </div>
@@ -56,7 +56,7 @@
                                  </div>
                               </div>
                               <div class="col-md-7 col-lg-6">
-                                 <img src="home/images/slide2.png" class="img-fluid" alt="Image">
+                                 <img src="{{ asset('home/images/slide2.png')}}" class="img-fluid" alt="Image">
                               </div>
                         </div>
                      </div>
@@ -85,7 +85,7 @@
                                  </div>
                               </div>
                               <div class="col-md-7 col-lg-6">
-                                 <img src="home/images/slide3.png" class="img-fluid" alt="Image">
+                                 <img src="{{ asset('home/images/slide3.png')}}" class="img-fluid" alt="Image">
                               </div>
                         </div>
                      </div>
