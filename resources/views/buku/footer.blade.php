@@ -31,7 +31,7 @@
                         <!-- New section -->
                         <div class="full text-right">
                             <div class="logo_footer">
-                                <a href="{{ route('userpage') }}"><img width="210" src="home/images/logo.png" alt="#" /></a>
+                                <a href="{{ route('userpage') }}"><img width="210" src="{{ asset('home/images/logo.png') }}" alt="#" /></a>
                             </div>
                             <div class="information_f">
                                  <p><strong>FOLLOW US ON</strong></p>
