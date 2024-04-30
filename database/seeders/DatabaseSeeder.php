@@ -51,7 +51,7 @@ class DatabaseSeeder extends Seeder
         }
 
         User::factory(10)->create();
-        Book::factory(50)->create();
+        Book::factory(100)->create();
         Bookshelf::factory(200)->create();
         Article::factory(20)->create();
         Review::factory(15)->create();
